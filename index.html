@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- metadata is information about data-->
+        <!-- specified character encoding, reccomended to use utf-8 -->
         <meta charset="utf-8">
+        <!-- defining the area of the window in which content is seen -->
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <!-- link to external resource, css style sheet used for map styling-->
         <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-        <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+        <!--defining the external script file where things are defined so we can use them here -->
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"> </script>
         
+        <!--styles are in css-->
         <style>
-            body { margin: 0; padding: 0; }
-            #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+            /* styling everything in a body */
+            body { margin: 0; 
+                   padding: 0; }
+
+            /* styling the map div specifically*/
+            #map { position: absolute; 
+                   top: 0; 
+                   bottom: 0; 
+                   width: 100%; }
         </style>
     </head>
     
     <body>
-        <div id="map"> </div>
+        <!-- map div-->
+        <div id = "map"> </div>
+        <!-- script is in javascript-->
         <script>
+            // used to access mapbox functionalities
             mapboxgl.accessToken = 'pk.eyJ1IjoicHV6emxlZGNoZXJyeSIsImEiOiJjbHBqenY1c2owNHI4MmpzZGJtdXN6OTJyIn0.mXagBlsNigKA9zr2C7BDXw';
             // initialize new map object
             const map = new mapboxgl.Map({ 
