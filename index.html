@@ -34,11 +34,33 @@
             mapboxgl.accessToken = 'pk.eyJ1IjoicHV6emxlZGNoZXJyeSIsImEiOiJjbHBqenY1c2owNHI4MmpzZGJtdXN6OTJyIn0.mXagBlsNigKA9zr2C7BDXw';
             // initialize new map object
             const map = new mapboxgl.Map({ 
-            container: 'map',                               // where the map will be rendered, in this case the map div
-            style: 'mapbox://styles/puzzledcherry/clpu0q5gy00fo01r7h8wu5e71',    // styling of the map
-            center: [-74.5, 100],                           // the geographic centring of the map
-            zoom: 1                                         // how far in/out the map should be zoomed
+                container: 'map',                               // where the map will be rendered, in this case the map div
+                style: 'mapbox://styles/puzzledcherry/clpu0q5gy00fo01r7h8wu5e71',    // styling of the map
+                center: [-74.5, 100],                           // the geographic centring of the map
+                zoom: 1                                         // how far in/out the map should be zoomed
             });
+            
+            // set event listener for when the map loads
+            map.on('load', () => {
+                // add whale api as a source
+                map.addSource ('acartia', {
+                    type: 'geojson', 
+                    data: 'https://acartia.io/api/v1/sightings/current'
+                });
+
+                map.addLayer ({
+                    'id': 'acartia-layer', 
+                    'type': 'circle', 
+                    'source': 'acartia', 
+                    'paint': {
+                        'circle-radius': 4, 
+                        'circle-stroke-width': 2, 
+                        'circle-color': 'red', 
+                        'circle-stoke-color': 'white'
+                    }
+                });
+            });
+            
         </script>
     </body>
 </html>
