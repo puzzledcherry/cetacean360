@@ -43,12 +43,13 @@
             // set event listener for when the map loads
             map.on('load', () => {
                 // add whale api as a source
+                // need to convert json to geojson
                 map.addSource ('acartia', {
                     type: 'geojson', 
                     data: 'https://acartia.io/api/v1/sightings/current'
                 });
                 
-                // add a new map layer with all the points
+                // add a new map layer with all the points as circles
                 map.addLayer ({
                     'id': 'acartia-layer', 
                     'type': 'circle', 
