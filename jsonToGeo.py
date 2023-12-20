@@ -13,7 +13,7 @@ geojson = {
         "type": "Feature",
         "geometry" : {
             "type": "Point",
-            "coordinates": [d["lon"], d["lat"]],
+            "coordinates": [d["longitude"], d["latitude"]],
             },
         "properties" : d,
      } for d in data]
