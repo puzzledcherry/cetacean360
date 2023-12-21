@@ -42,9 +42,14 @@
             
             // set event listener for when the map loads
             map.on('load', () => {
-                // add whale api as a source
-                // need to convert json to geojson
+                // add whale api as a source 
                 map.addSource ('acartia', {
+                    type: 'json', 
+                    data: 'https://acartia.io/api/v1/sightings/current'
+                });
+
+                // !!! need to convert json to geojson though
+                map.addSource('acartia_geo', {
                     type: 'geojson', 
                     data: 'https://acartia.io/api/v1/sightings/current'
                 });
