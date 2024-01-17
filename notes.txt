@@ -1,13 +1,14 @@
-// author: skyla tran
+author: skyla tran
 
-simple breakdown:
-***
 Dash is a web application framework for building in python.
     - https://dash.plotly.com/tutorial
+
 Plotly is a data visualization library in python.
     - https://plotly.com/python/
+
 Pandas is a data management library in python. 
     - https://pandas.pydata.org/docs/user_guide/index.html
 
+ 
 
 
