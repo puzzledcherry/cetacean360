@@ -1,17 +1,13 @@
-Plotly and Dash are related but serve different purposes. 
-Plotly is a data visualization library, while Dash is a web application framework 
-for building interactive web-based analytical applications.
+// author: skyla tran
 
-Plotly provides a set of tools for creating various types of interactive plots and charts. 
-It supports multiple programming languages, including Python, R, and JavaScript. 
-Users can use Plotly to generate visually appealing and interactive visualizations.
+simple breakdown:
+***
+Dash is a web application framework for building in python.
+    - https://dash.plotly.com/tutorial
+Plotly is a data visualization library in python.
+    - https://plotly.com/python/
+Pandas is a data management library in python. 
+    - https://pandas.pydata.org/docs/user_guide/index.html
 
-Dash, on the other hand, is built on top of Plotly and allows users to create web 
-applications with interactive dashboards. Dash enables the creation of web-based 
-data visualizations, interactive dashboards, and analytical applications using Python. 
-It integrates seamlessly with Plotly for creating the visual components of the dashboard.
 
-In summary, while Plotly is primarily a data visualization library, Dash extends 
-its capabilities by providing a framework to build interactive web applications 
-using Plotly charts and other interactive components. Users often use both Plotly 
-and Dash together to create powerful and interactive data-driven web applications.
+
