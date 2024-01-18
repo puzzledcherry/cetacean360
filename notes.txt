@@ -9,11 +9,14 @@ Plotly is a data visualization library in python.
 Pandas is a data management library in python. 
     - https://pandas.pydata.org/docs/user_guide/index.html
 
- 
+
+--------
 learning python
 applications: software development (websites), data science (machine learning), 
 automation (scripts)
 
+
+---------
 clean code & conventions
 class names should follow CapsWords rather then underscore (MyDog)
 function names should be all lowercase and utilize underscores (calc_force)
@@ -24,3 +27,73 @@ indentation is important, groups lines of code together
 
 # comments marked with hashtag, block and in-line both utilize hashtag
 
+
+---------
+running python code
+no compile step, literally just write it using "python myscript.py"
+
+
+---------
+program structure
+
+def main():                     # defines the start of the program
+    print('Hello World!')
+ 
+if __name__ == '__main__':      # check if the program is running independently or or a library
+    main()                      # this seems to be at the end of like every program
+
+
+---------
+input & output
+
+literally just input() method call
+ex. name = input('what is your name?')
+
+ouput using print()
+-> may concatenate variables to a string using commas, and string to strings using + or comma
+ex. print('You are ', age, ' years old')
+ex. print('Very nice to meet you, ' + name + '!')
+
+formatting string literals when printing
+example belows makes all uppercase
+ex. print(f'Very nice to meet you, {name.upper()}!')
+
+str.format() is a more manua way of string manipluation 
+define a placholder with {} then using .format to format the data that goes into the placeholder
+
+examples
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+txt3 = "My name is {}, I'm {}".format("John",36)
+
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49))
+
+
+---------
+if, elif, else 
+
+if score >= 80:
+   print('You pass the course with flying colors!')
+ 
+elif score > 65:
+   print('You pass the course! Talk to your instructor.')
+  
+else:
+   print('You do not pass the course!')
+
+
+---------
+for loops, while loops
+
+nums = [1, 2, 3, 4, 5]
+for num in nums:        # each element is referred to as 'num'
+  print(num + 1)
+
+for i in range(3):      # iterates between 0 - 2
+  print(i)
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
