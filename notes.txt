@@ -97,3 +97,137 @@ i = 1
 while i < 6:
   print(i)
   i += 1
+
+pass: basically a line that does nothing and continues running the code
+break: stops the loop
+continue: skips over the rest of the current iteration and starts the next
+
+
+---------
+error handeling with try/except/finally
+
+nums = ['x', 'y', 'z']
+ 
+try:
+   print(sum(nums))
+ 
+except:
+   print('Cannot print the sum! Your variables are not numbers.')
+ 
+finally:
+   print('Hope you got the result you want!')
+
+relating to an if/else, the try is the if and the except is the else and
+finally just happens no matter what
+
+
+---------
+function basics
+
+def add_three(num1, num2, num3):
+   sum_three = num1 + num2 + num3
+   return sum_three
+
+def: built in keyword for defining function
+: denotes the beginning of the function body
+return: returns and output, not necessary though
+
+notice no variable type declarations or anything, so weird
+
+calling the function:
+sum_output = add_three(2, 4, 6)
+print(sum_output)
+
+parameters: what variables the function requires, found within the ()
+arguments: what is actually passed into the function
+
+
+---------
+recursion
+benefits of recursion- produce clear, consise code; used for advanced data structure
+problems; splits complex tasks into smaller tasks
+
+def factorial(num):
+   call_stack = []
+   if num == 1:
+       print('base case reached! Num is 1.')
+       return 1
+   else:
+       call_stack.append({'input': num})
+       print('call stack: ', call_stack)
+       return num * factorial(num-1)
+ 
+factorial(5)
+ 
+# call stack:  [{'input': 5}]
+# call stack:  [{'input': 4}]
+# call stack:  [{'input': 3}]
+# call stack:  [{'input': 2}]
+# base case reached! Num is 1.
+# 120
+
+
+---------
+lambda functions
+annonymous functions defined without a name
+may have multiple arguments but onlt one expression
+usually contained in a single line of code
+
+syntax:
+variable name = lamdba argument(s): expression
+add_two = lambda x: x + 2
+
+call: add_two(5)
+      print(add_two)
+
+example using pandas: 
+import pandas as pd
+ 
+df = pd.DataFrame({
+   'name': ['Amy', 'Jackie', 'Sue'],
+   'grades': [90, 84, 76]
+})
+ 
+# use the lambda function to multiply bump up the values in the grades column by 1.2!
+df['grades'] = df['grades'].apply(lambda x: x * 1.2)
+
+print(df)
+
+
+---------
+classes and objects
+
+class keyword to define a class
+objects are instances off a class, an object contains everything from the class
+
+class ClassSchedule:
+   def __init__(self, course):    # constructor def, self allows reference to itself
+       self.course = course       # self refers to the current instance
+    
+    def __del__(self):            # destructor def, self parameter to delete instance
+      print('deleted')
+
+first = ClassSchedule('Chemistry')  # notice you don't pass anything in for self parameter
+print(first.course)
+del first                           # call to destructor, again no argument for self parameter
+
+---------
+access modifiers
+
+used to control and restrict access to instance variables and methods (members)
+
+public: all members set to public by default, members can be directly accessed
+  def __init__(self, course, instructor):
+       self.course = course
+       self.instructor = instructor
+
+protected: can be directly accessed within or by subclasses, but others must call on get/set
+  def __init__(self, course, instructor):
+       self._course = course # protected
+       self._instructor = instructor # protected
+
+private: only directly accessable within the class, others must call on get/set
+  def __init__(self, course, instructor):
+       self.__course = course # private
+       self.__instructor = instructor # private
+
