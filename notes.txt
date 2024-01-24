@@ -231,3 +231,69 @@ private: only directly accessable within the class, others must call on get/set
        self.__course = course # private
        self.__instructor = instructor # private
 
+
+---------
+strings
+
+defined with either '' or ""
+think like a char array so access chars of string using []
+can do this with ranges like myString[0:2] will give us char at index 0, 1 (noninclusive range of 0-2)
+
+.lower(), .upper(), .title()
+
+
+---------
+lists
+
+not confined to one type, can hold multiple types within one lists
+ex. contains strings, ints, floats, and a list
+lst = ['abc', 123, 'def', 10.5, 62, ['g', 'h', 'i']]
+
+indexing [] and ranges [:] on lists
+
+.append(), .remove(item), .pop(): index as arguement otherwise pops last element
+
+
+---------
+tuples
+
+basically lists are vectors and tuples are arrays
+ex. contents must be defined at initialization and cannot be altered afterwards
+my_tuple = ('abc', 123, 'def', 456, 789, 'ghi')
+
+
+---------
+dictionaries
+
+groceries = {'fruits': ['mangoes', 'bananas', 'kiwis'],
+            'protein': ['beef', 'pork', 'salmon'],
+            'carbs': ['rice', 'pasta', 'bread'],
+            'veggies': ['lettuce', 'cabbage', 'onions']}
+
+party_planning = {'Yes': 10,
+                  'No': 15,
+                  'Maybe': 30,
+                  'Location': 'Our Backyard',
+                  'Date': '2022/05/01'}
+ 
+party_planning['Location']                # returns 'Our Backyard'
+party_planning['Dress Code'] = 'Casual'   # adds new key-value pair
+
+no indexing, only rely on key-value pairs so must use key to access/update value
+
+
+---------
+sets
+
+unordered collection of unique elements, except for mutable items like
+lists, sets, or dictionaries
+no keys or indexing, can use 'in' keyword to check if a value exists
+ex. print('Chau' in students)
+
+previously added elements cannot be altered however new items can be added
+.update() combines two iterable objects to update duplicates and add elements that differ
+
+
+---------
+queues and stacks
+already know its all the same
