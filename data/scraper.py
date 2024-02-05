@@ -7,10 +7,12 @@ import os
 import requests
 import pandas as pd
 
+from secrets import TOKEN
+
 # method def
 def scrape(acartia_path='./data/'):
   # acartia token
-  token = os.environ['ACARTIA_TOKEN_HERE']
+  token = os.environ[TOKEN]
   
   # acartia API call, provide token and get JSON back
   url='https://acartia.io/api/v1/sightings/'
@@ -29,7 +31,7 @@ def scrape(acartia_path='./data/'):
   acartia = acartia.sort_values(by=['created'])
   
   # acartia to csv
-  acartia.to_csv(acartia_path+'acartia.csv', index=False)
+  acartia.to_csv(acartia_path +'acartia.csv', index = False)
 
 # method call
 scrape()
