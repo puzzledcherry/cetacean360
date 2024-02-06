@@ -10,9 +10,9 @@ import pandas as pd
 from hidden import TOKEN
 
 # method def
-def scrape(acartia_path='./data/'):
+def scrape (): 
   # acartia token
-  token = os.environ[TOKEN]
+  token = TOKEN
   
   # acartia API call, provide token and get JSON back
   url='https://acartia.io/api/v1/sightings/'
@@ -28,10 +28,10 @@ def scrape(acartia_path='./data/'):
   # reducing columns, dropping duplicates, sorting by newest
   acartia = acartia[['type','created','latitude','longitude','no_sighted','data_source_id','data_source_comments']]
   acartia = acartia.drop_duplicates()
-  acartia = acartia.sort_values(by=['created'])
+  acartia = acartia.sort_values(by = ['created'], ascending = False)
   
   # acartia to csv
-  acartia.to_csv(acartia_path +'acartia.csv', index = False)
+  acartia.to_csv('acartiaDataPull.csv', index = False)
 
 # method call
 scrape()
