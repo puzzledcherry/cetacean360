@@ -7,7 +7,7 @@ import os
 import requests
 import pandas as pd
 
-from secrets import TOKEN
+from hidden import TOKEN
 
 # method def
 def scrape(acartia_path='./data/'):
