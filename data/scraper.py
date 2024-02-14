@@ -26,7 +26,8 @@ def scrape ():
   
   # cleaning the table
   # reducing columns, dropping duplicates, sorting by newest
-  acartia = acartia[['type','created','latitude','longitude','no_sighted','data_source_id','data_source_comments']]
+  acartia = acartia[(acartia['trusted'] == 1)]
+  acartia = acartia[['type','created','trusted','latitude','longitude','no_sighted','data_source_id','data_source_comments']]
   acartia = acartia.drop_duplicates()
   acartia = acartia.sort_values(by = ['created'], ascending = False)
   
