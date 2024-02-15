@@ -8,11 +8,15 @@ import requests
 import pandas as pd
 
 from hidden import TOKEN
+from datetime import datetime, timedelta
 
 # method def
 def scrape (): 
   # acartia token
   token = TOKEN
+  # calculate a week ago
+  weekAgo = datetime.now() - timedelta(days = 7)
+  weekAgo = weekAgo.replace(tzinfo = None)
   
   # acartia API call, provide token and get JSON back
   url='https://acartia.io/api/v1/sightings/'
@@ -25,13 +29,21 @@ def scrape ():
                               'data_source_name','ssemmi_date_added','data_source_entity', 'data_source_witness', 'data_source_comments'])
   
   # cleaning the table
-  # reducing columns, dropping duplicates, sorting by newest
-  acartia = acartia[(acartia['trusted'] == 1)]
+  # reducing columns, dropping untrusted enteries
   acartia = acartia[['type','created','trusted','latitude','longitude','no_sighted','data_source_id','data_source_comments']]
+  acartia = acartia[(acartia['trusted'] == 1)]
+  
+  # parsing 'created' datafield into datetime format, ignore errors
+  acartia['created'] = pd.to_datetime(acartia['created'], errors='coerce')
+  # no timezone localization, drop all values from more than a week ago
+  acartia['created'] = acartia['created'].dt.tz_localize(None)
+  acartia = acartia[acartia['created'] >= weekAgo]
+  
+  # drop duplicates, sort by most recent
   acartia = acartia.drop_duplicates()
   acartia = acartia.sort_values(by = ['created'], ascending = False)
   
-  # acartia to csv
+  # save acartia pull to csv
   acartia.to_csv('acartiaDataPull.csv', index = False)
 
 # method call
