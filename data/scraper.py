@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 def scrape (): 
   # acartia token
   token = TOKEN
-  # calculate a week ago
+  # calculate a week ago, remove timezone info
   weekAgo = datetime.now() - timedelta(days = 7)
   weekAgo = weekAgo.replace(tzinfo = None)
   
@@ -35,7 +35,7 @@ def scrape ():
   
   # parsing 'created' datafield into datetime format, ignore errors
   acartia['created'] = pd.to_datetime(acartia['created'], errors='coerce')
-  # no timezone localization, drop all values from more than a week ago
+  # remove timezone localization, drop all values from more than a week ago
   acartia['created'] = acartia['created'].dt.tz_localize(None)
   acartia = acartia[acartia['created'] >= weekAgo]
   
