@@ -52,12 +52,29 @@ def createWhaleMap():
 whaleMapFig = createWhaleMap()
 
 # start designing the actual website
-app.layout = html.Div([
-    dcc.Graph(
-        id = 'whale-map',
-        figure = whaleMapFig  # Assign fig to dcc.Graph
-    )
-])
+app.layout = html.Div(
+    # components within the webapp as a whole
+    children = [
+        html.Div(
+            className = "map-and-intro-container",
+            children = [
+                html.Div(
+                    id = "tite-container"
+                ),
+                html.Div(
+                    id = "map-container",
+                    children = [
+                        # whale map
+                        dcc.Graph(
+                            id = 'whale-map',
+                            figure = whaleMapFig  # Assign fig to dcc.Graph
+                        )
+                    ]
+                )
+            ]
+        )
+    ]
+)
 
 
 # to run the program
