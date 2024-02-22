@@ -1,0 +1,36 @@
+.the-whole-website {
+    position: relative;
+}
+
+.map-and-intro-container {
+    display: flex;
+    /* distributing flex items evenly & centering them*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+
+    background-color: darkblue;
+
+    /* position the div in the center horizontally and size */
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1300px;
+    height: 700px;
+}
+
+.title-container {
+    background-color: plum;
+    width: 360px;
+    height: 580px;
+    
+    color: whitesmoke;
+    text-align: right;
+}
+
+.map-container, .whale-map {
+    background-color: plum;
+    width: 800px;
+    height: 600px;
+} 
