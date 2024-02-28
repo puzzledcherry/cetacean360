@@ -11,8 +11,9 @@ Pandas is a data management library in python.
 
 
 --------
-whale map next moves
-- connect sightings that are logically the same whale probably
+to do list
+- make aesthetics fit closer to the figma
+- connect sightings that are logically the same whale probably to track tavel path
 - conditions (same types of whale within the same vacinity and within a certain timeframe)
 
 
