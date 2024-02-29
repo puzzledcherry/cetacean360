@@ -35,9 +35,15 @@ def readCSV(csvFilePath):
 # creating whale map figure 
 def createWhaleMap():  
     whaleSpottings = readCSV(r"data/acartiaDataPull.csv") 
-    fig = px.scatter_mapbox(whaleSpottings, lat = "latitude", lon = "longitude", hover_name = "type", 
-                            hover_data=["data_source_id", "trusted", "created", "no_sighted", "data_source_comments"],
-                            color_discrete_sequence=["blue"], zoom = 7, center = {"lat": 48.1418, "lon":-122.4244})
+    fig = px.scatter_mapbox(whaleSpottings, 
+                            lat = "latitude", 
+                            lon = "longitude", 
+                            hover_name = "type", 
+                            hover_data = ["data_source_id", "trusted", "created", "no_sighted", "data_source_comments"],
+                            color_discrete_sequence = ["blue"], 
+                            zoom = 7, 
+                            center = {"lat": 48.1418, "lon":-122.4244})
+    
     fig.update_layout(mapbox_style="streets")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
