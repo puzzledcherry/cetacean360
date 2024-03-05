@@ -70,6 +70,7 @@ def connectSightings(acartia):
       for sightingVector in connections[whale_type]:
         # grab the last element in the independent sighting vector 
         # aka the most recent sighting of that specific independant whale
+        print(type(sightingVector))
         last_sighting = sightingVector[-1]
         
         # calculate distance and time differences
@@ -87,7 +88,7 @@ def connectSightings(acartia):
         else:
           newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'])
           newSightingVector = [newSighting]
-          connections[whale_type].append(sightingVector)
+          connections[whale_type].append(newSightingVector)
       
     # if new whale type has been spotted
     else:
@@ -95,10 +96,11 @@ def connectSightings(acartia):
       # create a new sighting, put it into a vector for connected sightings, assign that vector to the key
       newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'])
       newSightingVector = [newSighting]
-      connections[whale_type] = sightingVector
+      print(type(newSightingVector))
+      connections[whale_type] = newSightingVector
     
-    for key, value in connections.items():
-     print(key)
+  for key, value in connections.items():
+    print(key)
 
   # save acartia pull to csv
   acartia.to_csv('acartiaDataPull.csv', index = False)
