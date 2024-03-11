@@ -11,11 +11,12 @@ from hidden import TOKEN
 from datetime import datetime, timedelta
 
 class Sighting:
-  def __init__ (self, type, created, lat, lon):
-    self.type = type
+  def __init__ (self, whale_type, created, lat, lon, comment):
+    self.type = whale_type
     self.created = created
     self.lat = lat
     self.lon = lon
+    self.comment = comment
 
 # method defs
 def scrape (): 
@@ -58,13 +59,14 @@ def connectSightings(acartia):
   # dictonionary for storing connections
   connections = {}
   distance_threshold = 0.05
-  time_threshold = 1
+  time_threshold = 60
   whaleCount = 0
   
   # identify potential whale travel paths
   # for each sighting in the data pull (index of the row, conent of the row)
   for index, row in acartia.iterrows():
-    print ('whale entry: ', ++whaleCount)
+    whaleCount += 1
+    print ('whale entry: ', whaleCount)
     whale_type = row['type']
     # if we've seen the whale before
     if whale_type in connections:
@@ -78,17 +80,17 @@ def connectSightings(acartia):
         distance_lat = abs(float(row['latitude']) - float(last_sighting.lat))
         distance_lon = abs(float(row['longitude']) - float(last_sighting.lon))
         time_difference = row['created'] - last_sighting.created
-        hours_difference = time_difference.seconds // 3600
+        minutes_difference = time_difference.total_seconds() // 60
         
         # if the sighting matches all the conditions append it to the connected sightings vector
         if (distance_lat <= distance_threshold and distance_lon <= distance_threshold
-            and hours_difference <= time_threshold):
-          newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'])
+            and minutes_difference <= time_threshold):
+          newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
           sightingVector.append(newSighting)
           print ('new connected whale sighting')
         # if the sighting doesn't match all conditions, add to the independent sightings vector
         else:
-          newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'])
+          newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
           newSightingVector = [newSighting]
           connections[whale_type].append(newSightingVector)
           print ('new independent sighting')
@@ -97,7 +99,7 @@ def connectSightings(acartia):
     else:
       # add new dictionary entry for that whale type 
       # create a new sighting, put it into a vector for connected sightings, assign that vector to the key
-      newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'])
+      newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
       connectedVector = [newSighting]
       valueVector = [connectedVector]
       connections[whale_type] = valueVector
