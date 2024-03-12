@@ -1,4 +1,5 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Gray Whale,2024-03-12 17:05:00,1.0,48.08992,-122.54731,1,186816,[Orca Network] traveling north (Dan Gulden)
 Gray Whale,2024-03-11 20:30:00,1.0,48.02154,-122.35601,1,186450,[Orca Network] milling (Marilyn Armbruster)
 Gray Whale,2024-03-11 20:00:00,1.0,48.07892,-122.40544,1,186442,[Orca Network] CRC-56 southbound (Bart Rulon)
 Gray Whale,2024-03-11 19:40:00,1.0,48.12858,-122.559,1,186440,
