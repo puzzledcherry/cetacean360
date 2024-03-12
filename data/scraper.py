@@ -19,6 +19,7 @@ class Sighting:
     self.comment = comment
 
 # method defs
+# scrape and clean API pull, save to CSV and call connectSightings
 def scrape (): 
   # acartia token
   token = TOKEN
@@ -52,13 +53,18 @@ def scrape ():
   acartia = acartia.drop_duplicates()
   acartia = acartia.sort_values(by = ['created'], ascending = False)
   
+  # save acartia pull to csv
+  acartia.to_csv('acartiaDataPull.csv', index = False)
+  
   # create connections between sightings
   connectSightings(acartia)
 
+# using the pd df to connect whale sightings into data struct, call connection2CSV
+# !!! NEED TO IMRPOVE ACCURACY OF ALGORITHM (should have stats based on whale types)
 def connectSightings(acartia):
   # dictonionary for storing connections
   connections = {}
-  distance_threshold = 0.07
+  distance_threshold = 0.075
   time_threshold = 60
   whaleCount = 0
   
@@ -112,9 +118,20 @@ def connectSightings(acartia):
       valueVector = [connectedVector]
       connections[whale_type] = valueVector
       print ('new key value added: ', whale_type)
+    
+  # save data structure to CSV
+  connections2CSV(connections)
 
-  # save acartia pull to csv
-  acartia.to_csv('acartiaDataPull.csv', index = False)
+# save data struct to CSV, ID each whale
+def connections2CSV (connections):
+  print('hello')
 
-# method call
+
+
+
+
+
+
+
+# start method call chain
 scrape()

@@ -12,9 +12,23 @@ Pandas is a data management library in python.
 
 --------
 to do list
-- make aesthetics fit closer to the figma
-- connect sightings that are logically the same whale to track tavel path
-- conditions (same types of whale within the same vacinity and within a certain timeframe, estimated same amount spotted-)
+
+1. traverse the insane data structure and save each sighting, include an identifier to track
+which connections belong to the same whale
+
+2. afterwards you can traverse the csv in app.py and connect the dots following
+this structure:
+*** still brainstorming this but we will figure it out im sure
+
+while there are still rows in the csv:
+   grab the current sighting & ID number
+   grab next sighting & ID number
+
+   while next ID number matches curr ID number:
+      connect with line
+      newCurr = curr-> next
+      next = newCurr -> next
+      continue
 
 --------
 whale notes
@@ -24,9 +38,22 @@ Humpback whales swim 3 to 9 mph (5 to 15 km/h)      0.072 degrees
 Gray whales swim 6 to 8 mph (10 to 13 km/h)         0.087 degrees
 
 however, this is in large open bodies of water
-puget sound is more restricted, menaing they would be swimming as fast or far 
+puget sound is more restricted, meaning they wouldn't be swimming as fast or far 
 looking at current frequency of sightings and distance between sightings, 
-making the hazardly guess of doing up to 0.05 degrees within the past hour
+making the hazardly guess of doing up to 0.75 degrees within the past hour
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --------
 learning python
