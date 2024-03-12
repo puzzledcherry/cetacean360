@@ -58,7 +58,7 @@ def scrape ():
 def connectSightings(acartia):
   # dictonionary for storing connections
   connections = {}
-  distance_threshold = 0.05
+  distance_threshold = 0.07
   time_threshold = 60
   whaleCount = 0
   
@@ -80,7 +80,7 @@ def connectSightings(acartia):
         distance_lat = abs(float(row['latitude']) - float(last_sighting.lat))
         distance_lon = abs(float(row['longitude']) - float(last_sighting.lon))
         time_difference = row['created'] - last_sighting.created
-        minutes_difference = time_difference.total_seconds() // 60
+        minutes_difference = abs(time_difference.total_seconds() // 60)
         
         # if the sighting matches all the conditions append it to the connected sightings vector
         if (distance_lat <= distance_threshold and distance_lon <= distance_threshold
