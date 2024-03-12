@@ -71,10 +71,15 @@ def connectSightings(acartia):
     # if we've seen the whale before
     if whale_type in connections:
       # for each value vector element to the key 'type'
+      added = False
       for sightingVector in connections[whale_type]:
         # grab the last element in the independent sighting vector 
         # aka the most recent sighting of that specific independant whale
         last_sighting = sightingVector[-1]
+        
+        DEBUGLAT = row['latitude']
+        DEBUGLON = row['longitude']
+        DEBUGTIME = row['created']
         
         # calculate distance and time differences
         distance_lat = abs(float(row['latitude']) - float(last_sighting.lat))
@@ -87,13 +92,16 @@ def connectSightings(acartia):
             and minutes_difference <= time_threshold):
           newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
           sightingVector.append(newSighting)
+          added = True
           print ('new connected whale sighting')
-        # if the sighting doesn't match all conditions, add to the independent sightings vector
-        else:
-          newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
-          newSightingVector = [newSighting]
-          connections[whale_type].append(newSightingVector)
-          print ('new independent sighting')
+          break
+      
+      # if the sighting doesn't match any dependent sightings, add to the independent sightings vector
+      if (not added):
+        newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
+        newSightingVector = [newSighting]
+        connections[whale_type].append(newSightingVector)
+        print ('new independent sighting')
       
     # if new whale type has been spotted
     else:
@@ -103,7 +111,6 @@ def connectSightings(acartia):
       connectedVector = [newSighting]
       valueVector = [connectedVector]
       connections[whale_type] = valueVector
-      
       print ('new key value added: ', whale_type)
 
   # save acartia pull to csv
