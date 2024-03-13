@@ -12,11 +12,15 @@ from datetime import datetime, timedelta
 
 class Sighting:
   def __init__ (self, whale_type, created, lat, lon, comment):
+    self.id = 0
     self.type = whale_type
     self.created = created
     self.lat = lat
     self.lon = lon
     self.comment = comment
+    
+  def updateID (self, idNum):
+    self.id = idNum
 
 # method defs
 # scrape and clean API pull, save to CSV and call connectSightings
@@ -124,7 +128,25 @@ def connectSightings(acartia):
 
 # save data struct to CSV, ID each whale
 def connections2CSV (connections):
-  print('hello')
+  # create destination CSV file
+  csv_file = 'connectedSightings.csv'
+  fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'comment']
+  # begin assigning ID nums for each whale
+  idNum = -1;
+  
+  # for each key in the complex data struct
+  for key, value in connections.items():
+    # for each dependent sightings vector in independent sightings vector
+    for dependentSights in value:
+      # new ID number since we are on a new whale
+      idNum += 1
+      # each individual sighting in the dependent sightings vector
+      for sighting in dependentSights:
+        # update ID number
+        sighting.updateID(idNum)
+        print (sighting.id, ": ", sighting.type)
+        
+  print ('done')
 
 
 

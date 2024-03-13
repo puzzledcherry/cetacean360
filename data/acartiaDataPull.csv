@@ -1,8 +1,25 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Gray Whale,2024-03-13 16:41:00,1.0,48.09224,-122.41692,1,186844,"[Orca Network] Possibly CRC22, keeping presence. Possible there are others to the south out of view  (Serena Tierra)"
+Gray Whale,2024-03-13 16:33:00,1.0,48.0923,-122.41566,1,186843,"[Orca Newtork] At least one, northbound (Serena Tierra) "
+Gray Whale,2024-03-13 16:22:00,1.0,48.17304,-122.55987,2,186842,[Orca Network] two together still heading north at a decent clip about level with Onamac but still in middle of channel Aaron Gill) 
+Gray Whale,2024-03-13 16:15:00,1.0,48.15724,-122.55557,2,186841,"[Orca Network] turns out it is two whales, Northbound (Aaron Gill)"
+Gray Whale,2024-03-13 16:02:00,1.0,48.15443,-122.55334,1,186837,[Orca Network] Northbound (Aaron Gill) 
+Gray Whale,2024-03-13 15:30:00,1.0,48.08224,-122.40357,2,186840,[CWW] 2 moved on northbound (Rob Gee)
+Gray Whale,2024-03-13 15:30:00,1.0,48.08135,-122.39928,1,186839,[CWW] 1 stayed behind still feeding. (Rob Gee)
+Gray Whale,2024-03-13 15:10:00,1.0,48.08135,-122.39928,3,186838,[CWW] 3 feeding directly in front of Summerland (Rob Gee)
+Gray Whale,2024-03-12 21:59:23,1.0,38.95054,-123.73727,2,186830,This is a mother/calf pair traveling close to shore.  Both mom and calf appeared healthy!!
+Gray Whale,2024-03-12 21:05:05,1.0,38.95051,-123.73728,2,186826,
+Gray Whale,2024-03-12 20:36:21,1.0,38.95049,-123.73718,1,186825,
+Gray Whale,2024-03-12 19:46:42,1.0,38.95472,-123.74093,1,186824,
+Gray Whale,2024-03-12 19:20:22,1.0,38.95472,-123.74093,2,186822,
+Gray Whale,2024-03-12 18:27:35,1.0,38.95474,-123.74092,3,186820,
 Gray Whale,2024-03-12 17:05:00,1.0,48.08992,-122.54731,1,186816,[Orca Network] traveling north (Dan Gulden)
+Gray Whale,2024-03-11 21:07:56,1.0,38.95049,-123.7373,1,186452,
+Gray Whale,2024-03-11 20:50:02,1.0,38.95046,-123.73734,1,186451,
 Gray Whale,2024-03-11 20:30:00,1.0,48.02154,-122.35601,1,186450,[Orca Network] milling (Marilyn Armbruster)
 Gray Whale,2024-03-11 20:00:00,1.0,48.07892,-122.40544,1,186442,[Orca Network] CRC-56 southbound (Bart Rulon)
 Gray Whale,2024-03-11 19:40:00,1.0,48.12858,-122.559,1,186440,
+Gray Whale,2024-03-11 19:34:37,1.0,38.95054,-123.73725,7,186438,
 Gray Whale,2024-03-11 19:26:00,1.0,48.04968,-122.36229,2,186439,[Orca Network] Gray whale CRC- 2356 (Stalwart) is back! Traveling northbound with CRC 2441 off Camano Head on the Saratoga Passage side. (Bart Rulon) (IDs Bart Rulon) 
 Gray Whale,2024-03-11 18:26:27,1.0,38.95044,-123.73728,2,186435,
 Gray Whale,2024-03-11 17:39:00,1.0,48.1295,-122.55723,1,186431,[Orca Network] presumably CRC22 Earhart southbound directly off Hidden Beach. (Lucy Gao) 
@@ -12,17 +29,9 @@ Gray Whale,2024-03-11 16:56:00,1.0,48.14777,-122.56573,1,186428,[Orca Network] C
 Gray Whale,2024-03-11 16:45:00,1.0,48.15109,-122.5677,1,186427,[Orca Network] CRC22 Earhart now trending southbound (Aaron Gill)
 Gray Whale,2024-03-11 15:55:00,1.0,48.15314,-122.57,1,186425,[Orca Network] CRC22 Earhart still feeding (Aaron Gill) (ID Alisa Lemire Brooks)
 Gray Whale,2024-03-11 15:25:00,1.0,48.15426,-122.57005,1,186424,[Orca Network] CRC22 Earhart feeding (Aaron Gill) (ID Alisa Lemire Brooks) 
+Orca,2024-03-11 02:10:34,1.0,47.71539,-122.38157,1,186418,
 Orca,2024-03-11 02:08:26,1.0,47.71326,-122.40045,2,186417,
 Gray Whale,2024-03-10 21:00:00,1.0,48.13049,-122.54958,1,186416,[Orca Network] CRC53 northbound (Sandy Pollard)
 Gray Whale,2024-03-10 19:52:00,1.0,48.10564,-122.56411,1,186410,[Orca Network] CRC53 northbound (Bart Rulon) (ID Bart Rulon)
 Gray Whale,2024-03-10 18:41:00,1.0,48.12877,-122.55846,1,186404,
 Orca,2024-03-10 18:30:00,1.0,48.6246,-123.1282,3,186405,"[WSSJI] 2 adults and 1 juvenile, westbound (Edenonthe Salishsea)"
-Gray Whale,2024-03-09 23:32:30,1.0,38.95058,-123.73724,2,186392,
-Gray Whale,2024-03-09 23:01:21,1.0,38.95054,-123.73726,1,186390,This gray was swimming within 300 yards of shore.  
-Gray Whale,2024-03-09 22:20:10,1.0,38.95054,-123.73726,2,186386,
-Gray Whale,2024-03-09 21:39:25,1.0,38.95052,-123.73727,5,186381,
-Gray Whale,2024-03-09 21:18:00,1.0,48.11515,-122.54381,1,186379,[Orca Network] CRC 53 southbound (Bart Rulon) (ID Bart Rulon)
-Gray Whale,2024-03-09 21:00:20,1.0,38.95052,-123.73727,3,186378,
-Gray Whale,2024-03-09 20:47:29,1.0,38.95055,-123.73725,2,186377,
-Gray Whale,2024-03-09 20:15:00,1.0,48.07525,-122.42673,1,186376,[Orca Network] CRC56 moving northbound (Bart Rulon) (ID Bart Rulon)
-Orca,2024-03-09 20:00:00,1.0,48.25827,-124.28758,1,186426,"[Orca Network] per RP out from 15440 hwy 112 Sekiu, Wa. Close to shore (Jeff Moog) "
