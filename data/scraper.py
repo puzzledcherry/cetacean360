@@ -4,12 +4,15 @@
 # description:
 
 import os
+import csv
 import requests
 import pandas as pd
 
 from hidden import TOKEN
 from datetime import datetime, timedelta
 
+# classes
+# object for storing sighting info
 class Sighting:
   def __init__ (self, whale_type, created, lat, lon, comment):
     self.id = 0
@@ -126,7 +129,7 @@ def connectSightings(acartia):
   # save data structure to CSV
   connections2CSV(connections)
 
-# save data struct to CSV, ID each whale
+# save data struct to CSV, assign ID to each whale
 def connections2CSV (connections):
   # create destination CSV file
   csv_file = 'connectedSightings.csv'
@@ -134,19 +137,25 @@ def connections2CSV (connections):
   # begin assigning ID nums for each whale
   idNum = -1;
   
-  # for each key in the complex data struct
-  for key, value in connections.items():
-    # for each dependent sightings vector in independent sightings vector
-    for dependentSights in value:
-      # new ID number since we are on a new whale
-      idNum += 1
-      # each individual sighting in the dependent sightings vector
-      for sighting in dependentSights:
-        # update ID number
-        sighting.updateID(idNum)
-        print (sighting.id, ": ", sighting.type)
-        
-  print ('done')
+  # start saving sightings w ID nums to CSV
+  with open(csv_file, mode="w", newline="") as file:
+    # create writer object & write header
+    writer = csv.DictWriter(file, fieldnames = fieldNames)
+    writer.writeheader()
+    
+    # for each key in the complex data struct
+    for key, value in connections.items():
+      # for each dependent sightings vector in independent sightings vector
+      for dependentSights in value:
+        # new ID number since we are on a new whale
+        idNum += 1
+        # each individual sighting in the dependent sightings vector
+        for sighting in dependentSights:
+          # update ID number
+          sighting.updateID(idNum)
+          # convert to dictionary row, write to csv
+          row = {field: getattr(sighting, field) for field in fieldNames}
+          writer.writerow(row)
 
 
 

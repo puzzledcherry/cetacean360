@@ -1,4 +1,6 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Gray Whale,2024-03-13 17:10:00,1.0,48.09868,-122.44907,2,186847,[Orca Network] CRC22 and CRC383 northbound  (Serena Tierra)
+Gray Whale,2024-03-13 16:50:00,1.0,48.09277,-122.4168,2,186846,[Orca Network] CRC22 and CRC383 feeding off boat launch (Serena Tierra)
 Gray Whale,2024-03-13 16:41:00,1.0,48.09224,-122.41692,1,186844,"[Orca Network] Possibly CRC22, keeping presence. Possible there are others to the south out of view  (Serena Tierra)"
 Gray Whale,2024-03-13 16:33:00,1.0,48.0923,-122.41566,1,186843,"[Orca Newtork] At least one, northbound (Serena Tierra) "
 Gray Whale,2024-03-13 16:22:00,1.0,48.17304,-122.55987,2,186842,[Orca Network] two together still heading north at a decent clip about level with Onamac but still in middle of channel Aaron Gill) 
