@@ -1,17 +1,24 @@
-.the-whole-website {
+.whale-map {
+    width: 800px;
+    height: 600px;
+}
+
+
+
+
+
+/* .the-whole-website {
     position: relative;
 }
 
 .map-and-intro-container {
     display: flex;
-    /* distributing flex items evenly & centering them*/
     justify-content: space-between;
     align-items: center;
     padding: 45px;
 
     background-color: darkblue;
 
-    /* position the div in the center horizontally and size */
     position: absolute;
     top: 50px;
     left: 50%;
@@ -33,4 +40,4 @@
     background-color: plum;
     width: 800px;
     height: 600px;
-} 
+} */

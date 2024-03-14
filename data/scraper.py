@@ -157,12 +157,5 @@ def connections2CSV (connections):
           row = {field: getattr(sighting, field) for field in fieldNames}
           writer.writerow(row)
 
-
-
-
-
-
-
-
 # start method call chain
 scrape()
