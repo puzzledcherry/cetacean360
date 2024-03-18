@@ -33,11 +33,7 @@ def readCSV(csvFilePath):
         print("An error occurred while loading the CSV file:", e)
     return dataFrameObject
 
-# Define callback to update map
-@app.callback(
-    dash.dependencies.Output('map', 'figure'),
-    []
-)
+
 def createMap():
     # read CSV files into DFs
     acartiaDF = readCSV('acartiaDataPull.csv')
