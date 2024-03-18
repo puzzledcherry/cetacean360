@@ -28,22 +28,65 @@ def readCSV(csvFilePath):
         dataFrameObject = pd.read_csv(csvFilePath)
         print("CSV file loaded successfully.")
     except FileNotFoundError:
-        print("Error: CSV file not found.")
+        raise FileNotFoundError("Error: CSV file not found.")
     except Exception as e:
-        print("An error occurred while loading the CSV file:", e)
+        raise Exception("An error occurred while loading the CSV file:", e)
     return dataFrameObject
 
-
+# create map with lines connecting whale sightings
 def createMap():
     # read CSV files into DFs
-    acartiaDF = readCSV('acartiaDataPull.csv')
-    connectedDF = readCSV('connectedSightings.csv')
-    # create grouped DF, grouping sightings by unique ID
-    groupedDF = connectedDF.groupby('id')
+    acartiaDF = readCSV('data/acartiaDataPull.csv')
+    connectedDF = readCSV('data/connectedSightings.csv')
     
-    traces = []
-    for group_id, group_data in groupedDF:
-        print (group_id)
+    # DEBUG
+    fig = go.Figure()
+
+    # for the sightings stored in connected sightings
+    for sighting in range(len(connectedDF) - 1):
+        # save curr and next sighting
+        current_row = connectedDF.iloc[sighting]
+        next_row = connectedDF.iloc[sighting + 1]
+        
+        # if the ids match, connect
+        if (current_row['id'] == next_row['id']):
+            fig.add_trace(
+                go.Scattermapbox(
+                    mode = 'lines',
+                    lon = [current_row['lon'], next_row['lon']],
+                    lat = [current_row['lat'], next_row['lat']],
+                    line = dict(width = 1,color = 'red'),
+                )
+            )
+        # otherise just continue
+        else:
+            continue
+        
+        
+    fig.add_trace(
+        go.Scattermapbox(
+            mode='markers',
+            lon = connectedDF['lon'],
+            lat = connectedDF['lat'],
+            marker = dict(size=8, color='blue', opacity=0.7),
+            hoverinfo ='text',
+            text = connectedDF['comment']  # Display 'id' on hover
+        )
+    )
+    
+    fig.update_layout(
+        mapbox = dict(
+            style = "carto-positron",
+            zoom = 9,
+            center = dict(
+                lat = connectedDF['lat'].mean(),
+                lon = connectedDF['lon'].mean()
+                )
+        )
+    )
+    
+    return fig
+
 
 # display the map
 app.layout = html.Div(
@@ -53,11 +96,11 @@ app.layout = html.Div(
             className = 'map-container',
             children = [
                 dcc.Graph (
-                    id = 'map',
-                    config={'scrollZoom': True}
-                ) 
+                    id='plot',
+                    figure = createMap()
+                )
             ]
-        )
+        ) 
     ]
 )
 
