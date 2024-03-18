@@ -13,22 +13,8 @@ Pandas is a data management library in python.
 --------
 to do list
 
-1. traverse the insane data structure and save each sighting, include an identifier to track
-which connections belong to the same whale
-
-2. afterwards you can traverse the csv in app.py and connect the dots following
-this structure:
-*** still brainstorming this but we will figure it out im sure
-
-while there are still rows in the csv:
-   grab the current sighting & ID number
-   grab next sighting & ID number
-
-   while next ID number matches curr ID number:
-      connect with line
-      newCurr = curr-> next
-      next = newCurr -> next
-      continue
+- whales are their paths ARE MAPPED AND WORKING
+- AIS vessels into the whale map
 
 --------
 whale notes
@@ -41,17 +27,6 @@ however, this is in large open bodies of water
 puget sound is more restricted, meaning they wouldn't be swimming as fast or far 
 looking at current frequency of sightings and distance between sightings, 
 making the hazardly guess of doing up to 0.75 degrees within the past hour
-
-
-
-
-
-
-
-
-
-
-
 
 
 
