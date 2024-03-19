@@ -32,8 +32,8 @@ def scrape ():
   token = TOKEN
   
   # calculate a week ago, remove timezone info
-  weekAgo = datetime.now() - timedelta(days = 3)
-  weekAgo = weekAgo.replace(tzinfo = None)
+  timeFrame = datetime.now() - timedelta(days = 1)
+  timeFrame = timeFrame.replace(tzinfo = None)
   
   # acartia API call, provide token and get JSON back
   url='https://acartia.io/api/v1/sightings/'
@@ -54,7 +54,7 @@ def scrape ():
   acartia['created'] = pd.to_datetime(acartia['created'], errors='coerce')
   # remove timezone localization, drop all values from more than a week ago
   acartia['created'] = acartia['created'].dt.tz_localize(None)
-  acartia = acartia[acartia['created'] >= weekAgo]
+  acartia = acartia[acartia['created'] >= timeFrame]
   
   # drop duplicates, sort by most recent
   acartia = acartia.drop_duplicates()

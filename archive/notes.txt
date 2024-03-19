@@ -13,8 +13,11 @@ Pandas is a data management library in python.
 --------
 to do list
 
-- whales are their paths ARE MAPPED AND WORKING
-- AIS vessels into the whale map
+- add hover info to sightings
+- improve temporal-spatial identification algorithm
+- AIS vessels into the whale map to understand interactions between cetacean & humans
+   ! will probably need to be broken down into smaller tasks
+- develope UI/UX
 
 --------
 whale notes

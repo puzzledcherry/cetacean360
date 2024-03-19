@@ -1,65 +1,42 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
-Gray Whale,2024-03-14 15:50:00,1.0,48.07692,-122.46585,3,187128,[Orca Network] reported as 3 grays feeding off Bells Beach trending SE toward Langley (Kristin Carlson)
-Gray Whale,2024-03-14 15:48:26,1.0,48.08091,-122.51686,1,187126,
-Gray Whale,2024-03-14 01:45:00,1.0,48.13148,-122.56295,2,187120,[Orca Network] CRC22 and CRC383 feeding close together (Rachel Haight)
-Gray Whale,2024-03-14 01:22:00,1.0,48.14196,-122.56406,2,187119,"[Orca Network] CRC22 and CRC383 feeding, trending south (Aaron Gill, Rachel Haight)"
-Gray Whale,2024-03-14 00:40:00,1.0,48.15576,-122.56947,2,187118,[Orca Network] CRC22 and CRC383 trending south close to shore (Aaron Gill)
-Gray Whale,2024-03-14 00:35:00,1.0,48.01281,-122.64153,1,187106,"[Orca Network] One gray, direction of travel unknown (Bill Setter)"
-Gray Whale,2024-03-14 00:11:00,1.0,48.17477,-122.55308,2,187117,[Orca Network] CRC22 and CRC383 northbound (Aaron Gill)
-Gray Whale,2024-03-13 23:36:00,1.0,48.15175,-122.5323,2,187116,[Orca Network] CRC22 and CRC383 eastbound (Aaron Gill)
-Gray Whale,2024-03-13 23:20:00,1.0,48.1502,-122.55054,2,187095,[Orca Network] CRC22 and CRC383 slowly eastbound (Aaron Gill)
-Gray Whale,2024-03-13 23:15:00,1.0,47.99169,-122.35006,1,187125,[Orca Network] southbound (Dan Thorndike) 
-Gray Whale,2024-03-13 23:05:00,1.0,48.14878,-122.56458,2,187115,[Orca Network] CRC22 and CRC383 trending south (Aaron Gill)
-Gray Whale,2024-03-13 22:51:00,1.0,48.14849,-122.5605,2,187114,[Orca Network] CRC22 and CRC383 trending south (Aaron Gill)
-Gray Whale,2024-03-13 22:15:00,1.0,48.15175,-122.56608,2,187093,[Orca Network] Grays southbound close to shore (Aaron Gill)
-Gray Whale,2024-03-13 21:30:00,1.0,48.12958,-122.54385,1,187112,[Orca Network] CRC53 southbound (Sandy Pollard)
-Gray Whale,2024-03-13 21:03:00,1.0,48.08901,-122.42781,1,187113,[Orca Network] CRC2249 northbound (Bart Rulon) (ID Bart Rulon)
-Gray Whale,2024-03-13 21:01:00,1.0,48.14425,-122.54488,2,187111,[Orca Network] CRC22 and CRC383 slowly northwestbound (Serena Tierra)
-Gray Whale,2024-03-13 20:44:00,1.0,48.14035,-122.53681,2,187110,[Orca Network] CRC22 and CRC383 slowly northbound (Serena Tierra)
-Gray Whale,2024-03-13 20:15:00,1.0,48.12936,-122.53664,1,187108,"[Orca Network] 13:04-13:15: CRC53 southbound, then turned west (Bart Rulon, Serena Tierra) (ID Bart Rulon)"
-Gray Whale,2024-03-13 20:09:36,1.0,38.95058,-123.73719,3,186857,
-Gray Whale,2024-03-13 20:07:00,1.0,48.12065,-122.5205,2,187109,[Orca Network] CRC22 and CRC383 slowly northbound (Serena Tierra)
-Gray Whale,2024-03-13 19:20:00,1.0,48.10246,-122.49439,2,186854,[Orca Network] slowly  northbound together  (Serena Tierra)
-Gray Whale,2024-03-13 19:01:00,1.0,48.09352,-122.46984,2,186853,"[Orca Network] Two grays, long down times,  northbound (Serena Tierra)"
-Gray Whale,2024-03-13 18:40:00,1.0,47.99643,-122.3035,1,186856,[Orca Network] solo gray south side Hat (David Michael)
-Gray Whale,2024-03-13 18:40:00,1.0,48.01343,-122.34607,2,186855,[Orca Network] Two grays traveling NW west side Hat (David Michael)
-Gray Whale,2024-03-13 17:10:00,1.0,48.09868,-122.44907,2,186847,[Orca Network] CRC22 and CRC383 northbound  (Serena Tierra)
-Gray Whale,2024-03-13 16:50:00,1.0,48.09277,-122.4168,2,186846,[Orca Network] CRC22 and CRC383 feeding off boat launch (Serena Tierra)
-Gray Whale,2024-03-13 16:41:00,1.0,48.09224,-122.41692,1,186844,"[Orca Network] Possibly CRC22, keeping presence. Possible there are others to the south out of view  (Serena Tierra)"
-Gray Whale,2024-03-13 16:33:00,1.0,48.0923,-122.41566,1,186843,"[Orca Newtork] At least one, northbound (Serena Tierra) "
-Gray Whale,2024-03-13 16:22:00,1.0,48.17304,-122.55987,2,186842,[Orca Network] two together still heading north at a decent clip about level with Onamac but still in middle of channel Aaron Gill) 
-Gray Whale,2024-03-13 16:15:00,1.0,48.15724,-122.55557,2,186841,"[Orca Network] turns out it is two whales, Northbound (Aaron Gill)"
-Gray Whale,2024-03-13 16:02:00,1.0,48.15443,-122.55334,1,186837,[Orca Network] Northbound (Aaron Gill) 
-Gray Whale,2024-03-13 15:30:00,1.0,48.08224,-122.40357,2,186840,[CWW] 2 moved on northbound (Rob Gee)
-Gray Whale,2024-03-13 15:30:00,1.0,48.08135,-122.39928,1,186839,[CWW] 1 stayed behind still feeding. (Rob Gee)
-Gray Whale,2024-03-13 15:10:00,1.0,48.08135,-122.39928,3,186838,[CWW] 3 feeding directly in front of Summerland (Rob Gee)
-Orca,2024-03-13 02:37:00,1.0,48.36537,-123.7229,1,187105,"[SWS] Biggs, southbound, T011A Rainy (Seth Thomas)"
-Orca,2024-03-13 02:15:00,1.0,48.37712,-123.69578,1,187104,"[SWS] Biggs, T11A Rainy, reported exiting basin (Kerrie Deines Reay)"
-Orca,2024-03-13 00:45:00,1.0,48.37603,-123.66273,1,187103,"[SWS] Biggs, T11A Rainy, still in basin (Seth Thomas)"
-Orca,2024-03-12 22:36:00,1.0,48.38333,-123.67509,1,187102,"[SWS] Biggs, blow in basin, T011A Rainy (Duncan Morrison)"
-Gray Whale,2024-03-12 21:59:23,1.0,38.95054,-123.73727,2,186830,This is a mother/calf pair traveling close to shore.  Both mom and calf appeared healthy!!
-Orca,2024-03-12 21:10:00,1.0,48.37706,-123.69792,1,187101,"[SWS] Biggs, exiting, then re-entered, T011A Rainy (Kristy Lorianna, Rhoda Bradford)"
-Gray Whale,2024-03-12 21:05:05,1.0,38.95051,-123.73728,2,186826,
-Orca,2024-03-12 21:00:00,1.0,48.38373,-123.65672,1,187100,"[SWS] Biggs, T011A Rainy (Paul Pudwell)"
-Gray Whale,2024-03-12 20:36:21,1.0,38.95049,-123.73718,1,186825,
-Southern Resident Orca,2024-03-12 20:30:00,1.0,48.72454,-123.27428,25,186852,"[WSSJI] J pod, northbound, echolocation and a faint S04 heard, blows and fins seen on video (Monika, Lucy, T.L., Fred)"
-Gray Whale,2024-03-12 19:46:42,1.0,38.95472,-123.74093,1,186824,
-Orca,2024-03-12 19:45:00,1.0,48.37632,-123.69136,1,187099,"[SWS] Biggs, eastbound, T011A (Janine Houchin)"
-Gray Whale,2024-03-12 19:20:22,1.0,38.95472,-123.74093,2,186822,
-Gray Whale,2024-03-12 18:27:35,1.0,38.95474,-123.74092,3,186820,
-Gray Whale,2024-03-12 17:05:00,1.0,48.08992,-122.54731,1,186816,[Orca Network] traveling north (Dan Gulden)
-Gray Whale,2024-03-11 21:07:56,1.0,38.95049,-123.7373,1,186452,
-Gray Whale,2024-03-11 20:50:02,1.0,38.95046,-123.73734,1,186451,
-Gray Whale,2024-03-11 20:30:00,1.0,48.02154,-122.35601,1,186450,[Orca Network] milling (Marilyn Armbruster)
-Gray Whale,2024-03-11 20:00:00,1.0,48.07892,-122.40544,1,186442,[Orca Network] CRC-56 southbound (Bart Rulon)
-Gray Whale,2024-03-11 19:40:00,1.0,48.12858,-122.559,1,186440,
-Gray Whale,2024-03-11 19:34:37,1.0,38.95054,-123.73725,7,186438,
-Gray Whale,2024-03-11 19:26:00,1.0,48.04968,-122.36229,2,186439,[Orca Network] Gray whale CRC- 2356 (Stalwart) is back! Traveling northbound with CRC 2441 off Camano Head on the Saratoga Passage side. (Bart Rulon) (IDs Bart Rulon) 
-Gray Whale,2024-03-11 18:26:27,1.0,38.95044,-123.73728,2,186435,
-Gray Whale,2024-03-11 17:39:00,1.0,48.1295,-122.55723,1,186431,[Orca Network] presumably CRC22 Earhart southbound directly off Hidden Beach. (Lucy Gao) 
-Gray Whale,2024-03-11 17:05:00,1.0,48.13689,-122.56453,1,186429,[Orca Network] CRC22 Earhart  southbound now hearing Hidden Beach area (Aaron Gill)
-Gray Whale,2024-03-11 17:00:00,1.0,48.09156,-122.56217,1,186430,[Orca Network] gray northbound 300 feet offshore approx 1 mile south of Wonn Road  (Martha Sinclair) 
-Gray Whale,2024-03-11 16:56:00,1.0,48.14777,-122.56573,1,186428,[Orca Network] CRC22 Earhart still  trending southbound (Aaron Gill)
-Gray Whale,2024-03-11 16:45:00,1.0,48.15109,-122.5677,1,186427,[Orca Network] CRC22 Earhart now trending southbound (Aaron Gill)
-Gray Whale,2024-03-11 15:55:00,1.0,48.15314,-122.57,1,186425,[Orca Network] CRC22 Earhart still feeding (Aaron Gill) (ID Alisa Lemire Brooks)
-Gray Whale,2024-03-11 15:25:00,1.0,48.15426,-122.57005,1,186424,[Orca Network] CRC22 Earhart feeding (Aaron Gill) (ID Alisa Lemire Brooks) 
+Orca,2024-03-19 01:35:00,1.0,47.96558,-122.34219,7,187452," [Orca Network] Biggs T46s and T124Ds.  5 of them close to Whidbey, have not seen T46D and T46E,  guessing boys are more mid. All  Northbound.  (Rachel Haight) "
+Orca,2024-03-19 01:15:00,1.0,47.94054,-122.34921,7,187450,"[Orca Network] Biggs T46s and T124Ds. North of Glendale with T124Ds close in, others further offshore. All northbound. (Rachel Haight)"
+Orca,2024-03-19 00:44:00,1.0,47.91191,-122.37493,7,187449,"[Orca Network] Biggs T46s and T124Ds .
+T46D and T46E tight together. T124D and  T124D3 hanging out 50 feet offshore. Overall trend northbound (Rachel Haight, Ed Pearson) "
+Orca,2024-03-19 00:31:00,1.0,47.89965,-122.37379,7,187448,"[Orca Network] Biggs T46s and T124Ds traveling NE, appears back towards Posssession Sound  (Alice Thuy Talbot)"
+Orca,2024-03-19 00:22:00,1.0,47.9005,-122.39222,7,187447,[Orca Network] Biggs T46s and T124Ds eastbound after a hunt (Rachel Haight)
+Orca,2024-03-19 00:05:00,1.0,47.89037,-122.38467,7,187443,[Orca Network] Biggs T46s and T124Ds milling (Alice Thuy Talbot)
+Orca,2024-03-18 23:40:00,1.0,47.88531,-122.35377,1,187442,[Orca Network] Biggs T46s and T124Ds southbound fast (Ed Pearson)
+Gray Whale,2024-03-18 23:30:00,1.0,47.88347,-122.39119,1,187441,"[Orca Network] Possible gray, no direction of travel given (Brooke Thompson)"
+Orca,2024-03-18 23:10:00,1.0,47.93462,-122.33122,7,187440,[Orca Network] Biggs T46s and T124Ds still midchannel to east of. Spread a bit north /south. Slowly moving southbound. (Cindi Crowder Rausch) 
+Gray Whale,2024-03-18 22:39:26,1.0,38.95052,-123.73723,5,187437,
+Orca,2024-03-18 22:39:00,1.0,47.95681,-122.32024,7,187438,[Orca Network]  Biggs T46s and T124Ds southbound (Cindi Crowder Rausch)
+Gray Whale,2024-03-18 22:23:00,1.0,48.09226,-122.56053,1,187446,[Orca Network] Gray northbound 400 feet offshore (Martha Sinclair)
+Orca,2024-03-18 22:20:00,1.0,47.9712,-122.32426,7,187436,[Orca Network] Biggs T46s and T124Ds southbound (Ta Leah Van Sistine)
+Gray Whale,2024-03-18 22:16:39,1.0,38.95052,-123.73723,2,187435,There two grays are exhibiting courtship behaviors. 
+Gray Whale,2024-03-18 21:54:00,1.0,48.05384,-122.35539,2,187444,[Orca Network] Grays milling (Maia Jewell)
+Gray Whale,2024-03-18 21:50:25,1.0,38.95052,-123.73723,4,187429,
+Gray Whale,2024-03-18 21:28:00,1.0,48.05378,-122.35702,2,187428,[Orca Network] At least two grays feeding close to shore (Maxcey Sligh)
+Gray Whale,2024-03-18 21:13:16,1.0,38.95052,-123.73723,11,187427,
+Gray Whale,2024-03-18 21:00:00,1.0,48.09834,-122.49049,1,187445,[Orca Network] 13:00-14:00: CRC53 feeding close to shore (Shannon Kavanaugh) (ID Alisa Lemire Brooks)
+Gray Whale,2024-03-18 21:00:00,1.0,48.05096,-122.35608,1,187426,[Orca Network] Gray milling (Rachel Haight)
+Orca,2024-03-18 20:54:00,1.0,48.03518,-122.34228,7,187425,"[Orca Network] Biggs T46s and T124Ds southbound, possibly trending east (Marilyn Armbruster)"
+Gray Whale,2024-03-18 20:51:15,1.0,38.95052,-123.73723,7,187424,
+Orca,2024-03-18 20:35:00,1.0,48.04287,-122.36666,7,187423,"[Orca Network] Biggs T46s and T124Ds milling on a hunt, breaching (Rachel Haight)"
+Orca,2024-03-18 19:58:00,1.0,48.06544,-122.40863,7,187419,[Orca Network] Biggs T46s and T124Ds southbound (Rachel Haight)
+Gray Whale,2024-03-18 19:30:00,1.0,48.04793,-122.35529,1,187416,[Orca Network] milling (Donna George) 
+Orca,2024-03-18 19:22:00,1.0,48.09141,-122.46241,7,187415,[Orca Network] Biggs T46s and T124Ds southbound ( Charvet Drucker) 
+Gray Whale,2024-03-18 19:20:57,1.0,38.95042,-123.73727,2,187414,
+Gray Whale,2024-03-18 18:55:06,1.0,38.95132,-123.73755,1,187412,
+Orca,2024-03-18 18:51:34,1.0,48.12184,-122.49315,6,187411,
+Orca,2024-03-18 18:51:00,1.0,48.10762,-122.50406,7,187413,"[Orca Network] Biggs T46s and T124Ds, grouping back up, southbound (Serena Tierra)"
+Orca,2024-03-18 18:44:00,1.0,48.12286,-122.5202,7,187410,"[Orca Network] Biggs T46s and T124Ds traveling southbound, very fast (Holly Bailey Aprecio)"
+Gray Whale,2024-03-18 18:29:20,1.0,38.95047,-123.73707,2,187409,
+Orca,2024-03-18 18:20:00,1.0,48.18161,-122.55608,7,187408,"[Orca Network] Biggs, T46Ds and T124Ds, southbound (Holly Bailey Aprecio)"
+Gray Whale,2024-03-18 17:51:00,1.0,48.06336,-122.39935,1,187406,[Orca Network] sighting (Rachel Haight)
+Gray Whale,2024-03-18 17:30:00,1.0,48.07999,-122.33103,1,187404,[Orca Network] southbound (John C Storbeck)
+Gray Whale,2024-03-18 17:24:00,1.0,48.03639,-122.37395,1,187402,[Orca Network] milling (Rachel Haight)
+Gray Whale,2024-03-18 15:37:24,1.0,37.00992,-122.19384,3,187400,"3+ moving north, 500 meters offshore"
+Orca,2024-03-18 15:30:00,1.0,48.19574,-122.57192,7,187399,"[Orca Network] T46s and T124Ds northbound, T46D trailing (Rachel Haight)"
+Orca,2024-03-18 14:50:00,1.0,48.14079,-122.54377,7,187398,"[Orca Network] numbers approximate, headed north (Aaron Gill)"
+Orca,2024-03-18 14:05:00,1.0,48.42267,-122.73282,2,187397,"[Orca Network] at least two orcas, southwest bound ( Tyson Parker Reed)"
