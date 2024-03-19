@@ -9,17 +9,6 @@ Plotly is a data visualization library in python.
 Pandas is a data management library in python. 
     - https://pandas.pydata.org/docs/user_guide/index.html
 
-
---------
-to do list
-
-- develope UI/UX
-- add hover info to sightings
-- improve temporal-spatial identification algorithm
-
-- AIS vessels into the cetacean map to understand interactions between cetacean & humans
-   ! will probably need to be broken down into smaller tasks
-
 --------
 cetacean notes
 
