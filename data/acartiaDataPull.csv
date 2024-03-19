@@ -1,4 +1,17 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Orca,2024-03-19 19:06:00,1.0,47.86755,-122.45005,12,187476,"[Orca Network] Both groups of orcas (includes T87, T46s, T124Ds, and others) met up, possibly eastbound (Trevor Tillman) (ID Nicole Oliver)"
+Orca,2024-03-19 18:39:00,1.0,47.86327,-122.46842,7,187471,[Orca Network] This is group one.  Includes at least 5 orcas including male. They are hunting.  (Alice Thuy Talbot) (possible T46/T124D group - Alisa Lemire Brooks)
+Orca,2024-03-19 18:05:00,1.0,47.87156,-122.47219,4,187470,"[Orca Network] Group one orcas appear traveling NE. Viewing from Point No Point, location is approx.  (Jim Pasola)"
+Orca,2024-03-19 18:05:00,1.0,47.92611,-122.5285,5,187469,[Orca Network] Biggs 5-7 lead male is possibly T87 Harbeson traveling SE quickly. (Jim Pasola) 
+Orca,2024-03-19 17:06:00,1.0,47.85059,-122.48696,4,187462,[Orca Network] Includes male. Northbound (Donna Green VanRenselaar)
+Orca,2024-03-19 16:40:00,1.0,47.81579,-122.46138,4,187460,[Orca Network] Northbound (Donna Green VanRenselaar) 
+Gray Whale,2024-03-19 16:39:00,1.0,48.03378,-122.37246,1,187461,[Orca Nework] the third gray has now moved around Sandy Pt and is southbound (Luanne Seymour) 
+Unspecified,2024-03-19 16:21:00,1.0,47.92956,-122.58017,3,187459,"[Orca Network] possible orcas, too large for porpoise. Southbound (Martha Carlsbad) "
+Gray Whale,2024-03-19 15:47:00,1.0,48.03251,-122.36594,2,187457,[Orca Network] two southbound (Luanne Seymour) 
+Gray Whale,2024-03-19 15:40:00,1.0,48.03596,-122.38971,1,187456,"[Orca Network] feeding (Luanne Seymour, Christy Grant) "
+Gray Whale,2024-03-19 15:35:00,1.0,48.04287,-122.37821,2,187455,"[Orca Network] two Eastbound (Luanne Seymour, Christy Grant) "
+Orca,2024-03-19 15:26:00,1.0,47.74042,-122.43731,3,187453,[Orca Network] 2-3 orcas with one male further south. All northbound (Logan Baker) 
+Gray Whale,2024-03-19 15:18:00,1.0,48.03507,-122.38902,1,187454,[Orca Network] feeding (Luanne Seymour) 
 Orca,2024-03-19 01:35:00,1.0,47.96558,-122.34219,7,187452," [Orca Network] Biggs T46s and T124Ds.  5 of them close to Whidbey, have not seen T46D and T46E,  guessing boys are more mid. All  Northbound.  (Rachel Haight) "
 Orca,2024-03-19 01:15:00,1.0,47.94054,-122.34921,7,187450,"[Orca Network] Biggs T46s and T124Ds. North of Glendale with T124Ds close in, others further offshore. All northbound. (Rachel Haight)"
 Orca,2024-03-19 00:44:00,1.0,47.91191,-122.37493,7,187449,"[Orca Network] Biggs T46s and T124Ds .
@@ -18,8 +31,8 @@ Gray Whale,2024-03-18 21:54:00,1.0,48.05384,-122.35539,2,187444,[Orca Network] G
 Gray Whale,2024-03-18 21:50:25,1.0,38.95052,-123.73723,4,187429,
 Gray Whale,2024-03-18 21:28:00,1.0,48.05378,-122.35702,2,187428,[Orca Network] At least two grays feeding close to shore (Maxcey Sligh)
 Gray Whale,2024-03-18 21:13:16,1.0,38.95052,-123.73723,11,187427,
-Gray Whale,2024-03-18 21:00:00,1.0,48.09834,-122.49049,1,187445,[Orca Network] 13:00-14:00: CRC53 feeding close to shore (Shannon Kavanaugh) (ID Alisa Lemire Brooks)
 Gray Whale,2024-03-18 21:00:00,1.0,48.05096,-122.35608,1,187426,[Orca Network] Gray milling (Rachel Haight)
+Gray Whale,2024-03-18 21:00:00,1.0,48.09834,-122.49049,1,187445,[Orca Network] 13:00-14:00: CRC53 feeding close to shore (Shannon Kavanaugh) (ID Alisa Lemire Brooks)
 Orca,2024-03-18 20:54:00,1.0,48.03518,-122.34228,7,187425,"[Orca Network] Biggs T46s and T124Ds southbound, possibly trending east (Marilyn Armbruster)"
 Gray Whale,2024-03-18 20:51:15,1.0,38.95052,-123.73723,7,187424,
 Orca,2024-03-18 20:35:00,1.0,48.04287,-122.36666,7,187423,"[Orca Network] Biggs T46s and T124Ds milling on a hunt, breaching (Rachel Haight)"

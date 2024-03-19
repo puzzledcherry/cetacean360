@@ -59,12 +59,14 @@ def createMap():
     
     # define map visual specs, style zoom & default center
     fig.update_layout(
+        width = 850,
+        height = 850,
         mapbox = dict(
             style = "carto-positron",
             zoom = 9,
             center = dict(
-                lat = connectedDF['lat'].mean(),
-                lon = connectedDF['lon'].mean()
+                lat = 47.8125,
+                lon = -122.4979
                 )
         )
     )
