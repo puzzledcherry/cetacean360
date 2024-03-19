@@ -14,9 +14,9 @@ from datetime import datetime, timedelta
 # classes
 # object for storing sighting info
 class Sighting:
-  def __init__ (self, whale_type, created, lat, lon, comment):
+  def __init__ (self, cetacean_type, created, lat, lon, comment):
     self.id = 0
-    self.type = whale_type
+    self.type = cetacean_type
     self.created = created
     self.lat = lat
     self.lon = lon
@@ -73,19 +73,19 @@ def connectSightings(acartia):
   connections = {}
   distance_threshold = 0.075
   time_threshold = 60
-  whaleCount = 0
+  cetaceanCount = 0
   
   # identify potential whale travel paths
   # for each sighting in the data pull (index of the row, conent of the row)
   for index, row in acartia.iterrows():
-    whaleCount += 1
-    print ('whale entry: ', whaleCount)
-    whale_type = row['type']
+    cetaceanCount += 1
+    print ('whale entry: ', cetaceanCount)
+    cetacean_type = row['type']
     # if we've seen the whale before
-    if whale_type in connections:
+    if cetacean_type in connections:
       # for each value vector element to the key 'type'
       added = False
-      for sightingVector in connections[whale_type]:
+      for sightingVector in connections[cetacean_type]:
         # grab the last element in the independent sighting vector 
         # aka the most recent sighting of that specific independant whale
         last_sighting = sightingVector[-1]
@@ -113,7 +113,7 @@ def connectSightings(acartia):
       if (not added):
         newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
         newSightingVector = [newSighting]
-        connections[whale_type].append(newSightingVector)
+        connections[cetacean_type].append(newSightingVector)
         print ('new independent sighting')
       
     # if new whale type has been spotted
@@ -123,8 +123,8 @@ def connectSightings(acartia):
       newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
       connectedVector = [newSighting]
       valueVector = [connectedVector]
-      connections[whale_type] = valueVector
-      print ('new key value added: ', whale_type)
+      connections[cetacean_type] = valueVector
+      print ('new key value added: ', cetacean_type)
     
   # save data structure to CSV
   connections2CSV(connections)

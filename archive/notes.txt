@@ -13,14 +13,15 @@ Pandas is a data management library in python.
 --------
 to do list
 
+- develope UI/UX
 - add hover info to sightings
 - improve temporal-spatial identification algorithm
-- AIS vessels into the whale map to understand interactions between cetacean & humans
+
+- AIS vessels into the cetacean map to understand interactions between cetacean & humans
    ! will probably need to be broken down into smaller tasks
-- develope UI/UX
 
 --------
-whale notes
+cetacean notes
 
 Orcas (killer whales) swim 34.5 mph (55.5 km/h)     0.499 degrees
 Humpback whales swim 3 to 9 mph (5 to 15 km/h)      0.072 degrees
