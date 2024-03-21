@@ -20,6 +20,9 @@ sys.path.insert(0, 'data')
 from hidden import MAPBOX_TOKEN
 px.set_mapbox_access_token(MAPBOX_TOKEN)
 
+# run the scraper
+import scraper
+
 # create dash application 
 app = dash.Dash(__name__)
 server = app.server
@@ -59,11 +62,13 @@ def createMap():
     
     # define map visual specs, style zoom & default center
     fig.update_layout(
-        width = 850,
-        height = 850,
+        # defining size of map, might replace in css file in future
+        width = 1000,
+        height = 750,
         mapbox = dict(
             style = "carto-positron",
             zoom = 9,
+            # center on puget sound
             center = dict(
                 lat = 47.8125,
                 lon = -122.4979
