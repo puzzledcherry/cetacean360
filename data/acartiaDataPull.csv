@@ -1,55 +1,34 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
-Orca,2024-03-19 19:06:00,1.0,47.86755,-122.45005,12,187476,"[Orca Network] Both groups of orcas (includes T87, T46s, T124Ds, and others) met up, possibly eastbound (Trevor Tillman) (ID Nicole Oliver)"
-Orca,2024-03-19 18:39:00,1.0,47.86327,-122.46842,7,187471,[Orca Network] This is group one.  Includes at least 5 orcas including male. They are hunting.  (Alice Thuy Talbot) (possible T46/T124D group - Alisa Lemire Brooks)
-Orca,2024-03-19 18:05:00,1.0,47.87156,-122.47219,4,187470,"[Orca Network] Group one orcas appear traveling NE. Viewing from Point No Point, location is approx.  (Jim Pasola)"
-Orca,2024-03-19 18:05:00,1.0,47.92611,-122.5285,5,187469,[Orca Network] Biggs 5-7 lead male is possibly T87 Harbeson traveling SE quickly. (Jim Pasola) 
-Orca,2024-03-19 17:06:00,1.0,47.85059,-122.48696,4,187462,[Orca Network] Includes male. Northbound (Donna Green VanRenselaar)
-Orca,2024-03-19 16:40:00,1.0,47.81579,-122.46138,4,187460,[Orca Network] Northbound (Donna Green VanRenselaar) 
-Gray Whale,2024-03-19 16:39:00,1.0,48.03378,-122.37246,1,187461,[Orca Nework] the third gray has now moved around Sandy Pt and is southbound (Luanne Seymour) 
-Unspecified,2024-03-19 16:21:00,1.0,47.92956,-122.58017,3,187459,"[Orca Network] possible orcas, too large for porpoise. Southbound (Martha Carlsbad) "
-Gray Whale,2024-03-19 15:47:00,1.0,48.03251,-122.36594,2,187457,[Orca Network] two southbound (Luanne Seymour) 
-Gray Whale,2024-03-19 15:40:00,1.0,48.03596,-122.38971,1,187456,"[Orca Network] feeding (Luanne Seymour, Christy Grant) "
-Gray Whale,2024-03-19 15:35:00,1.0,48.04287,-122.37821,2,187455,"[Orca Network] two Eastbound (Luanne Seymour, Christy Grant) "
-Orca,2024-03-19 15:26:00,1.0,47.74042,-122.43731,3,187453,[Orca Network] 2-3 orcas with one male further south. All northbound (Logan Baker) 
-Gray Whale,2024-03-19 15:18:00,1.0,48.03507,-122.38902,1,187454,[Orca Network] feeding (Luanne Seymour) 
-Orca,2024-03-19 01:35:00,1.0,47.96558,-122.34219,7,187452," [Orca Network] Biggs T46s and T124Ds.  5 of them close to Whidbey, have not seen T46D and T46E,  guessing boys are more mid. All  Northbound.  (Rachel Haight) "
-Orca,2024-03-19 01:15:00,1.0,47.94054,-122.34921,7,187450,"[Orca Network] Biggs T46s and T124Ds. North of Glendale with T124Ds close in, others further offshore. All northbound. (Rachel Haight)"
-Orca,2024-03-19 00:44:00,1.0,47.91191,-122.37493,7,187449,"[Orca Network] Biggs T46s and T124Ds .
-T46D and T46E tight together. T124D and  T124D3 hanging out 50 feet offshore. Overall trend northbound (Rachel Haight, Ed Pearson) "
-Orca,2024-03-19 00:31:00,1.0,47.89965,-122.37379,7,187448,"[Orca Network] Biggs T46s and T124Ds traveling NE, appears back towards Posssession Sound  (Alice Thuy Talbot)"
-Orca,2024-03-19 00:22:00,1.0,47.9005,-122.39222,7,187447,[Orca Network] Biggs T46s and T124Ds eastbound after a hunt (Rachel Haight)
-Orca,2024-03-19 00:05:00,1.0,47.89037,-122.38467,7,187443,[Orca Network] Biggs T46s and T124Ds milling (Alice Thuy Talbot)
-Orca,2024-03-18 23:40:00,1.0,47.88531,-122.35377,1,187442,[Orca Network] Biggs T46s and T124Ds southbound fast (Ed Pearson)
-Gray Whale,2024-03-18 23:30:00,1.0,47.88347,-122.39119,1,187441,"[Orca Network] Possible gray, no direction of travel given (Brooke Thompson)"
-Orca,2024-03-18 23:10:00,1.0,47.93462,-122.33122,7,187440,[Orca Network] Biggs T46s and T124Ds still midchannel to east of. Spread a bit north /south. Slowly moving southbound. (Cindi Crowder Rausch) 
-Gray Whale,2024-03-18 22:39:26,1.0,38.95052,-123.73723,5,187437,
-Orca,2024-03-18 22:39:00,1.0,47.95681,-122.32024,7,187438,[Orca Network]  Biggs T46s and T124Ds southbound (Cindi Crowder Rausch)
-Gray Whale,2024-03-18 22:23:00,1.0,48.09226,-122.56053,1,187446,[Orca Network] Gray northbound 400 feet offshore (Martha Sinclair)
-Orca,2024-03-18 22:20:00,1.0,47.9712,-122.32426,7,187436,[Orca Network] Biggs T46s and T124Ds southbound (Ta Leah Van Sistine)
-Gray Whale,2024-03-18 22:16:39,1.0,38.95052,-123.73723,2,187435,There two grays are exhibiting courtship behaviors. 
-Gray Whale,2024-03-18 21:54:00,1.0,48.05384,-122.35539,2,187444,[Orca Network] Grays milling (Maia Jewell)
-Gray Whale,2024-03-18 21:50:25,1.0,38.95052,-123.73723,4,187429,
-Gray Whale,2024-03-18 21:28:00,1.0,48.05378,-122.35702,2,187428,[Orca Network] At least two grays feeding close to shore (Maxcey Sligh)
-Gray Whale,2024-03-18 21:13:16,1.0,38.95052,-123.73723,11,187427,
-Gray Whale,2024-03-18 21:00:00,1.0,48.05096,-122.35608,1,187426,[Orca Network] Gray milling (Rachel Haight)
-Gray Whale,2024-03-18 21:00:00,1.0,48.09834,-122.49049,1,187445,[Orca Network] 13:00-14:00: CRC53 feeding close to shore (Shannon Kavanaugh) (ID Alisa Lemire Brooks)
-Orca,2024-03-18 20:54:00,1.0,48.03518,-122.34228,7,187425,"[Orca Network] Biggs T46s and T124Ds southbound, possibly trending east (Marilyn Armbruster)"
-Gray Whale,2024-03-18 20:51:15,1.0,38.95052,-123.73723,7,187424,
-Orca,2024-03-18 20:35:00,1.0,48.04287,-122.36666,7,187423,"[Orca Network] Biggs T46s and T124Ds milling on a hunt, breaching (Rachel Haight)"
-Orca,2024-03-18 19:58:00,1.0,48.06544,-122.40863,7,187419,[Orca Network] Biggs T46s and T124Ds southbound (Rachel Haight)
-Gray Whale,2024-03-18 19:30:00,1.0,48.04793,-122.35529,1,187416,[Orca Network] milling (Donna George) 
-Orca,2024-03-18 19:22:00,1.0,48.09141,-122.46241,7,187415,[Orca Network] Biggs T46s and T124Ds southbound ( Charvet Drucker) 
-Gray Whale,2024-03-18 19:20:57,1.0,38.95042,-123.73727,2,187414,
-Gray Whale,2024-03-18 18:55:06,1.0,38.95132,-123.73755,1,187412,
-Orca,2024-03-18 18:51:34,1.0,48.12184,-122.49315,6,187411,
-Orca,2024-03-18 18:51:00,1.0,48.10762,-122.50406,7,187413,"[Orca Network] Biggs T46s and T124Ds, grouping back up, southbound (Serena Tierra)"
-Orca,2024-03-18 18:44:00,1.0,48.12286,-122.5202,7,187410,"[Orca Network] Biggs T46s and T124Ds traveling southbound, very fast (Holly Bailey Aprecio)"
-Gray Whale,2024-03-18 18:29:20,1.0,38.95047,-123.73707,2,187409,
-Orca,2024-03-18 18:20:00,1.0,48.18161,-122.55608,7,187408,"[Orca Network] Biggs, T46Ds and T124Ds, southbound (Holly Bailey Aprecio)"
-Gray Whale,2024-03-18 17:51:00,1.0,48.06336,-122.39935,1,187406,[Orca Network] sighting (Rachel Haight)
-Gray Whale,2024-03-18 17:30:00,1.0,48.07999,-122.33103,1,187404,[Orca Network] southbound (John C Storbeck)
-Gray Whale,2024-03-18 17:24:00,1.0,48.03639,-122.37395,1,187402,[Orca Network] milling (Rachel Haight)
-Gray Whale,2024-03-18 15:37:24,1.0,37.00992,-122.19384,3,187400,"3+ moving north, 500 meters offshore"
-Orca,2024-03-18 15:30:00,1.0,48.19574,-122.57192,7,187399,"[Orca Network] T46s and T124Ds northbound, T46D trailing (Rachel Haight)"
-Orca,2024-03-18 14:50:00,1.0,48.14079,-122.54377,7,187398,"[Orca Network] numbers approximate, headed north (Aaron Gill)"
-Orca,2024-03-18 14:05:00,1.0,48.42267,-122.73282,2,187397,"[Orca Network] at least two orcas, southwest bound ( Tyson Parker Reed)"
+Orca,2024-03-21 15:42:00,1.0,47.68352,-122.45129,7,187589,"[Orca Network] Biggs, includes male, females, juveniles. Northbound (Sandra Prow, Rachel Haight)"
+Orca,2024-03-21 15:37:00,1.0,47.67797,-122.45506,3,187588,[Orca Network] At least 3 female and juveniles  northbound (Sandra Prow) 
+Orca,2024-03-21 14:30:00,1.0,47.5853,-122.4239,7,187586,"[Orca Network]  numbers unknown, direction appeared south or SW bound (Amy Carey, Sound Action) "
+Orca,2024-03-21 01:43:00,1.0,47.20703,-122.62595,12,187580,"[Orca Network] Biggs, numbers approx, on a hunt (Laura Kozar Batanian)"
+Orca,2024-03-21 01:32:00,1.0,47.35562,-122.35576,7,187581,"[Orca Network] Biggs, numbers approx, hunting and trending northbound (Keri Simons)"
+Orca,2024-03-21 01:18:00,1.0,47.1977,-122.60604,12,187579,"[Orca Network] Biggs, numbers approx, southbound (Laura Kozar Batanian)"
+Orca,2024-03-21 00:45:00,1.0,48.13361,-122.7365,3,187578,"[Orca Network] at least three, circling (Jennifer Fulton Carpenter)"
+Gray Whale,2024-03-21 00:35:00,1.0,47.22463,-122.58269,1,187576,"[Orca Network] reported as a Gray whale breaching (Laura Kozar Batanian, Lily TucSar)"
+Orca,2024-03-21 00:35:00,1.0,47.223,-122.5851,12,187575,"[Orca Network] Biggs, southbound (Laura Kozar Batanian)"
+Orca,2024-03-21 00:35:00,1.0,47.31968,-122.44845,7,187574,"[Orca Network] Biggs, numbers approx. with at least T46D and T46E plus others, milling (Melissa Bird)"
+Orca,2024-03-21 00:07:00,1.0,47.23828,-122.57547,12,187573,"[Orca Network] Biggs, numbers approx, headed southwest (Cheri StOurs)"
+Orca,2024-03-20 23:55:00,1.0,47.31351,-122.50115,7,187569,"[Orca Network] Biggs, spread in groups, this group eastbound (Marla Smith)"
+Orca,2024-03-20 23:43:00,1.0,47.32026,-122.51111,7,187568,"[Orca Network] Biggs spread, moving east (Marla Smith)"
+Orca,2024-03-20 23:33:00,1.0,47.32852,-122.55248,7,187566,[Orca Network] Biggs group of 4-7 eastbound (Marla Smith)
+Orca,2024-03-20 23:20:00,1.0,47.30036,-122.54699,12,187567,"[Orca Network] Biggs, split in two groups, lead group milling and trending towards narrows (Kristen Vacura)"
+Orca,2024-03-20 23:00:00,1.0,47.31651,-122.52266,4,187564,"[Orca Network] Biggs, spread in groups, this trailing group heading west towards tip of point defiance ( Marla Smith) "
+Orca,2024-03-20 22:54:00,1.0,47.31232,-122.55373,15,187565,"[Orca Network] Biggs, spread in groups, this lead group heading south towards the narrows (Marla Smith)"
+Orca,2024-03-20 22:51:00,1.0,47.31139,-122.5012,4,187561,"[ Orca Network] Biggs, westbound towards ferry lanes (Marla Smith)"
+Orca,2024-03-20 22:37:00,1.0,47.32186,-122.53107,19,187560,"[Orca Network] Biggs, spread out, moving westbound ( Marla Smith)"
+Orca,2024-03-20 22:00:00,1.0,47.33396,-122.4418,19,187557,"[Orca Network] Biggs spread in groups, westbound (Cheri St Ours)"
+Orca,2024-03-20 21:21:00,1.0,47.36969,-122.37237,19,187555,"[Orca Network] Biggs, spread in two groups half mile apart, southbound (Marla Smith)"
+Orca,2024-03-20 21:00:00,1.0,47.38619,-122.35314,19,187554,"[Orca Network] Biggs, spread in two groups half mile apart, southbound (Marla Smith)"
+Gray Whale,2024-03-20 20:50:00,1.0,48.3463114,-123.3991999,1,187587,"[Orca Network]  Facing Northbound. Surfaced for air then submerged again, was not travelling quickly. Viewed from helicopter, location approx.  (Patrick Meehan) "
+Orca,2024-03-20 20:39:00,1.0,47.42456,-122.39003,19,187550,"[Orca Network] Biggs spread out, seeing leaders, continuing southbound (Marla Smith) "
+Orca,2024-03-20 20:19:00,1.0,47.44035,-122.40582,19,187548,"[Orca Network] Biggs, seeing leaders, southbound (Ellen Weir)"
+Orca,2024-03-20 20:00:00,1.0,47.4696,-122.40582,19,187547,"[Orca Network] Biggs, spread out on each side of mid channel, southbound (Marla Smith)"
+Orca,2024-03-20 19:40:00,1.0,47.49747,-122.433,19,187543,"[Orca Network] Biggs  looking good for all of yesterdays group T46s, T46B1s, T46C2, T87
+T124As, T124Ds. Southbound quickly. (Candace Gavin) (ID Rachel Haight) "
+Orca,2024-03-20 19:20:00,1.0,47.523,-122.44394,7,187538,"[Orca Network] Biggs southbound (Steve Rice, Candace Gavin) "
+Orca,2024-03-20 18:40:00,1.0,47.56814,-122.44937,7,187536,[Orca Network] Biggs southbound quickly. (Candace Gavin) 
+Orca,2024-03-20 17:20:00,1.0,47.71003,-122.43874,7,187530,"[Orca Network] pod stalled, probably hunting. Directional changes, surface activity (Alisa Lemire Brooks"
+Orca,2024-03-20 17:04:00,1.0,47.7094,-122.44101,7,187528,"[Orca Network] undetermined number, includes male, southbound grouped up. (Alisa Lemire Brooks) "
+Orca,2024-03-20 16:07:00,1.0,47.79636,-122.43744,7,187527,[Orca Network] 5-7 southbound quickly (Casey Bizelli) 

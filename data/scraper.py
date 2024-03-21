@@ -61,7 +61,7 @@ def scrape ():
   acartia = acartia.sort_values(by = ['created'], ascending = False)
   
   # save acartia pull to csv
-  acartia.to_csv('acartiaDataPull.csv', index = False)
+  acartia.to_csv('data/acartiaDataPull.csv', index = False)
   
   # create connections between sightings
   connectSightings(acartia)
@@ -132,7 +132,7 @@ def connectSightings(acartia):
 # save data struct to CSV, assign ID to each whale
 def connections2CSV (connections):
   # create destination CSV file
-  csv_file = 'connectedSightings.csv'
+  csv_file = 'data/connectedSightings.csv'
   fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'comment']
   # begin assigning ID nums for each whale
   idNum = -1;
