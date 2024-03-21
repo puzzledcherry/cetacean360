@@ -85,14 +85,15 @@ def connectSightings(acartia):
     if cetacean_type in connections:
       # for each value vector element to the key 'type'
       added = False
+      
+      # assign thresholds based on whale type here
+      # probably use a switch case or something, the case being
+      # whale type and then assign thresholds for lon lat and time
+      
       for sightingVector in connections[cetacean_type]:
         # grab the last element in the independent sighting vector 
         # aka the most recent sighting of that specific independant whale
         last_sighting = sightingVector[-1]
-        
-        DEBUGLAT = row['latitude']
-        DEBUGLON = row['longitude']
-        DEBUGTIME = row['created']
         
         # calculate distance and time differences
         distance_lat = abs(float(row['latitude']) - float(last_sighting.lat))

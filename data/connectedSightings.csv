@@ -1,4 +1,7 @@
 id,type,created,lat,lon,comment
+0,Orca,2024-03-21 17:26:00,47.80685,-122.40606,[Orca Network] Biggs T46s at least northbound. T46D close inshore here others slightly north and offshore from him. 
+0,Orca,2024-03-21 16:46:00,47.78079,-122.41595,[Orca Network] Biggs northbound (Alisa Lemire Brooks) 
+0,Orca,2024-03-21 16:30:00,47.74825,-122.41561,[Orca Network] Biggs northbound slow steady pace. (Alisa Lemire Brooks) 
 0,Orca,2024-03-21 15:42:00,47.68352,-122.45129,"[Orca Network] Biggs, includes male, females, juveniles. Northbound (Sandra Prow, Rachel Haight)"
 0,Orca,2024-03-21 15:37:00,47.67797,-122.45506,[Orca Network] At least 3 female and juveniles  northbound (Sandra Prow) 
 1,Orca,2024-03-21 14:30:00,47.5853,-122.4239,"[Orca Network]  numbers unknown, direction appeared south or SW bound (Amy Carey, Sound Action) "
@@ -31,4 +34,10 @@ T124As, T124Ds. Southbound quickly. (Candace Gavin) (ID Rachel Haight) "
 7,Orca,2024-03-20 17:04:00,47.7094,-122.44101,"[Orca Network] undetermined number, includes male, southbound grouped up. (Alisa Lemire Brooks) "
 8,Orca,2024-03-20 16:07:00,47.79636,-122.43744,[Orca Network] 5-7 southbound quickly (Casey Bizelli) 
 9,Gray Whale,2024-03-21 00:35:00,47.22463,-122.58269,"[Orca Network] reported as a Gray whale breaching (Laura Kozar Batanian, Lily TucSar)"
-10,Gray Whale,2024-03-20 20:50:00,48.3463114,-123.3991999,"[Orca Network]  Facing Northbound. Surfaced for air then submerged again, was not travelling quickly. Viewed from helicopter, location approx.  (Patrick Meehan) "
+10,Gray Whale,2024-03-20 20:52:09,38.95045,-123.73731,
+10,Gray Whale,2024-03-20 20:08:14,38.9505,-123.73723,
+10,Gray Whale,2024-03-20 19:23:18,38.95471,-123.74092,
+10,Gray Whale,2024-03-20 18:52:15,38.95471,-123.74092,These two grays are foraging  close to shore. 
+10,Gray Whale,2024-03-20 18:12:14,38.95477,-123.74087,These three whales are traveling north together. 
+10,Gray Whale,2024-03-20 18:03:55,38.95052,-123.73724,
+11,Gray Whale,2024-03-20 20:50:00,48.3463114,-123.3991999,"[Orca Network]  Facing Northbound. Surfaced for air then submerged again, was not travelling quickly. Viewed from helicopter, location approx.  (Patrick Meehan) "
