@@ -67,11 +67,11 @@ def createMap():
         height = 750,
         mapbox = dict(
             style = "carto-positron",
-            zoom = 9,
+            zoom = 8,
             # center on puget sound
             center = dict(
-                lat = 47.8125,
-                lon = -122.4979
+                lat = 47.58675,
+                lon = -122.4825
                 )
         )
     )
