@@ -67,7 +67,6 @@ def whaleScrape ():
   connectSightings(acartia)
 
 # using the pd df to connect whale sightings into data struct, call connection2CSV
-# !!! NEED TO IMRPOVE ACCURACY OF ALGORITHM (should have stats based on whale types)
 def connectSightings(acartia):
   # dictonionary for storing connections
   connections = {}
