@@ -9,19 +9,6 @@ Plotly is a data visualization library in python.
 Pandas is a data management library in python. 
     - https://pandas.pydata.org/docs/user_guide/index.html
 
---------
-cetacean notes
-
-Orcas (killer whales) swim 34.5 mph (55.5 km/h)     0.499 degrees
-Humpback whales swim 3 to 9 mph (5 to 15 km/h)      0.072 degrees
-Gray whales swim 6 to 8 mph (10 to 13 km/h)         0.087 degrees
-
-however, this is in large open bodies of water
-puget sound is more restricted, meaning they wouldn't be swimming as fast or far 
-looking at current frequency of sightings and distance between sightings, 
-making the hazardly guess of doing up to 0.75 degrees within the past hour
-
-
 
 --------
 learning python

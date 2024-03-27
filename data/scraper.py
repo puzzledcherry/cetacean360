@@ -26,8 +26,8 @@ class Sighting:
     self.id = idNum
 
 # method defs
-# scrape and clean API pull, save to CSV and call connectSightings
-def scrape (): 
+# scrape and clean acartia API pull, save to CSV and call connectSightings
+def whaleScrape (): 
   # acartia token
   token = TOKEN
   
@@ -71,8 +71,10 @@ def scrape ():
 def connectSightings(acartia):
   # dictonionary for storing connections
   connections = {}
-  distance_threshold = 0.075
-  time_threshold = 60
+  lat_threshold = 0.075
+  lon_threshold = 0.075
+  # adding an extra 5 minutes in case the whales dilly dally
+  time_threshold = 65
   cetaceanCount = 0
   
   # identify potential whale travel paths
@@ -87,8 +89,16 @@ def connectSightings(acartia):
       added = False
       
       # assign thresholds based on whale type here
-      # probably use a switch case or something, the case being
-      # whale type and then assign thresholds for lon lat and time
+      # calculations can be found in figjam diagram
+      if (cetacean_type == 'Gray Whale'):
+        lat_threshold = 0.045
+        lon_threshold = 0.072
+      elif (cetacean_type == 'Orca'):
+        lat_threshold = 0.065
+        lon_threshold = 0.097
+      else:
+        lat_threshold = 0.075
+        lon_threshold = 0.075
       
       for sightingVector in connections[cetacean_type]:
         # grab the last element in the independent sighting vector 
@@ -102,7 +112,7 @@ def connectSightings(acartia):
         minutes_difference = abs(time_difference.total_seconds() // 60)
         
         # if the sighting matches all the conditions append it to the connected sightings vector
-        if (distance_lat <= distance_threshold and distance_lon <= distance_threshold
+        if (distance_lat <= lat_threshold and distance_lon <= lon_threshold
             and minutes_difference <= time_threshold):
           newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
           sightingVector.append(newSighting)
@@ -159,4 +169,4 @@ def connections2CSV (connections):
           writer.writerow(row)
 
 # start method call chain
-scrape()
+whaleScrape()
