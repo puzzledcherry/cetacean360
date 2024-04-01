@@ -13,6 +13,8 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
+import plotly.colors as plc
+from datetime import datetime, timedelta
 
 # include data subfolder to path, API tokens
 import sys
@@ -53,6 +55,17 @@ def limitLineWidth(line, max_width = 50):
     else:
         return line
 
+# calculate colour gradients based on time since sighting
+def calculateColour(sighting_time):
+    max_time = 1440
+    current_datetime = pd.Timestamp.now()
+    time_difference = current_datetime - sighting_time
+    minutes_difference = abs(time_difference.total_seconds() // 60)
+    # convert difference onto a scale [0-1]
+    normalized_time = minutes_difference / max_time
+    # returning corresponding colour
+    return normalized_time
+
 # create map with lines connecting whale sightings
 def createMap():
     # read CSV files into DFs
@@ -76,6 +89,7 @@ def createMap():
         )
     )
 
+    # creating lines
     # for the sightings stored in connected sightings
     for sighting in range(len(connectedDF) - 1):
         # save curr and next sighting
@@ -89,12 +103,12 @@ def createMap():
                     mode = 'lines',
                     lon = [current_row['lon'], next_row['lon']],
                     lat = [current_row['lat'], next_row['lat']],
-                    line = dict(width = 1,color = 'purple'),
+                    line = dict(width = 1,color = 'white'),
                 )
             )
     
+    # creating hover text
     # create text for each row of the acartia data frame
-    # used as hover text
     hover_text = acartiaDF.apply(lambda row: 
         f"{limitLineWidth(row['type'])}<br>"
         f"{limitLineWidth('Count: ' + str(row['no_sighted']))}<br>"
@@ -102,15 +116,24 @@ def createMap():
         f"<br>"
         f"{limitLineWidth('Comments: ' + str(row['data_source_comments']))}",
         axis=1)
-    
-    # add dots for each sighting on the map
-    # include hover info
+
+    # assigning colours based on time since sighting
+    connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
+    connectedDF['created'] = connectedDF['created'].dt.tz_localize(None)
+    connectedDF['time_diff'] = [calculateColour(df) for df in connectedDF['created']]
+
+    # creating dots
+    # add dots for each sighting on the map, include hover info
     fig.add_trace(
         go.Scattermapbox(
             mode='markers',
             lon = acartiaDF['longitude'],
             lat = acartiaDF['latitude'],
-            marker = dict(size = 8, color = 'blue', opacity = 0.7),
+            marker = dict(
+                size = 8, 
+                color = connectedDF['time_diff'], 
+                colorscale = 'Bluered', 
+                opacity = 0.7),
             
             hoverinfo = 'text',
             text = hover_text,
@@ -122,6 +145,7 @@ def createMap():
         )
     )
     
+    # return the created map with lines and hovers and dots
     return fig
 
 # HTML, display the map

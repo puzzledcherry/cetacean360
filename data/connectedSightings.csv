@@ -1,54 +1,66 @@
 id,type,created,lat,lon,comment
-0,Orca,2024-04-01 18:30:00,48.01685,-122.62288,"[Orca Network] Biggs, two large groups split by a mile or more, First group closer to Shore Meadows closer to Whidbey side. 2nd group mid channel (Marilyn Armbruster, Rachel Haight)"
-0,Orca,2024-04-01 17:50:00,48.01995,-122.63272,"[Orca Network] Biggs, surface active, possibly in a kill (Cindi Crowder Rausch) "
-0,Orca,2024-04-01 17:21:00,48.02351,-122.62357,[Orca Network] traveling southbound with two young ones close to adults (Jan Bell)
-1,Orca,2024-04-01 16:55:00,48.15492,-122.69189,"[Orca Network] splashing, blowing, traveling, headed north around the bend (Lola Stepanski)"
-2,Orca,2024-04-01 15:09:00,48.03197,-122.63373,[Orca Network] slowly southbound (Rachel Haight)
-2,Orca,2024-04-01 14:32:00,48.03691,-122.63304,[Orca Network] two smaller orcas spotted (Julie Page) 
-3,Orca,2024-04-01 15:00:00,48.21397,-122.80519,[Orca Network] at least 6+ headed southbound in three groupings (Athena Martin)
-4,Orca,2024-04-01 02:10:00,47.40581,-122.53733,[Orca Network] Biggs T65As and T99s northbound spread out (Kathryn McMillan)
-4,Orca,2024-04-01 01:47:00,47.36258,-122.54351,[Orca Network] Biggs T65As and T99s northbound close to shore (Melissa Bird) 
-4,Orca,2024-04-01 01:30:00,47.33501,-122.54523,[Orca Network] Biggs T65As and T99s milling (Paul Davis)
-4,Orca,2024-04-01 01:07:00,47.32803,-122.51159,[Orca Network] Biggs T65As and T99s westbound (David Michael)
-4,Orca,2024-04-01 00:47:00,47.32722,-122.4788,[Orca Network] Biggs T65As and T99s westbound (Mollie Segall)
-4,Orca,2024-04-01 00:32:00,47.34094,-122.43382,[Orca Network] Biggs T65As and T99s southbound (Alisa Lemire Brooks)
-4,Orca,2024-04-01 00:05:00,47.36351,-122.40636,[Orca Network] Biggs T65As and T99s southbound (Alisa Lemire Brooks)
-4,Orca,2024-03-31 23:38:00,47.38606,-122.35726,[Orca Network] Biggs T65As and T99s southbound (Tray N Jen)
-4,Orca,2024-03-31 23:23:00,47.3921,-122.35383,[Orca Network] Biggs T65As and T99s slowly heading northeast (Kyle Anderson)
-4,Orca,2024-03-31 23:06:00,47.41116,-122.3964,[Orca Network] Biggs T65As and T99s southbound (Scott Hill)
-4,Orca,2024-03-31 22:36:00,47.44019,-122.41357,[Orca Network] Biggs T65As and T99s southbound (Sandhya Ballal)
-4,Orca,2024-03-31 22:21:00,47.45087,-122.40704,[Orca Network] Biggs T65As and T99s southbound (Jamie Smugeresky)
-4,Orca,2024-03-31 21:45:00,47.47234,-122.40962,[Orca Network] Biggs T65As and T99s very slowly trending south (Jeffrey Stander)
-4,Orca,2024-03-31 21:19:00,47.47443,-122.40876,[Orca Network] Biggs T65As and T99s southbound (Steve Fogard)
-4,Orca,2024-03-31 20:52:00,47.49856,-122.42627,[Orca Network] Biggs T65As and T99s southbound (Alisa Lemire Brooks)
-4,Orca,2024-03-31 20:36:00,47.50981,-122.42781,[Orca Network] Biggs T65As and T99s southbound with lots of surface activity (Alisa Lemire Brooks)
-4,Orca,2024-03-31 20:19:00,47.51749,-122.42672,"[Orca Network] Biggs T65As and T99s southbound, surface active, tail lob, headstands (Alisa Lemire Brooks) "
-4,Orca,2024-03-31 20:12:00,47.51663,-122.45907,[Orca Network] Biggs T65As and T99s southbound (Mandy Michelle)
-4,Orca,2024-03-31 19:27:00,47.53311,-122.45642,[Orca Network] Biggs T65As and T99s southbound (Zach Ward)
-4,Orca,2024-03-31 19:07:00,47.54706,-122.45698,"[Orca Network] Biggs T65As and T99s southbound, surface active (Taylor Seyl)"
-4,Orca,2024-03-31 18:50:00,47.56585,-122.46598,"[Orca Network] Biggs T65A3, T65A4, and T99s southbound (Michelle Kuhns) (ID Alli Montgomery)"
-4,Orca,2024-03-31 18:25:00,47.58322,-122.46774,"[Orca Network] Orcas surface active, leisurely southbound (David Scott)"
-5,Orca,2024-03-31 15:00:00,47.48031,-122.50944,"[Orca Network] Lone orca northbound, presume Biggs T65A5 (Tim Ferris)"
-6,Gray Whale,2024-04-01 18:00:00,48.2757,-122.5295,"[Orca Network] grazing, headed towards Mariners Cove (Marianne Parry)"
-7,Gray Whale,2024-04-01 17:55:00,48.11355,-122.49041,[Orca Network] headed northwest ( Serena Tierra)
-8,Gray Whale,2024-04-01 16:36:00,48.09992,-122.45019,"[Orca Network] trending northwest towards Elger Bay (Serena Tierra, Thomas McKane)"
-8,Gray Whale,2024-04-01 16:00:00,48.0935,-122.43474,[Orca Network] feeding (Serena Tierra)
-9,Gray Whale,2024-04-01 14:24:00,48.06376,-122.39649,[Orca Network] headed north (Catherine Lee)
-10,Gray Whale,2024-04-01 02:14:00,48.09873,-122.49072,[Orca Network] Grays southbound (Stephanie Geissler Reid)
-11,Gray Whale,2024-03-31 23:11:00,48.10136,-122.54874,[Orca Network] Grays southbound (Rose Caitlin)
-11,Gray Whale,2024-03-31 22:37:00,48.10652,-122.53638,[Orca Network] 15:26-15:37: Grays drifting slowly south (Amy Smith Norris)
-12,Gray Whale,2024-03-31 23:00:00,48.23577,-122.55836,"[Orca Network] 15:00-16:00: Grays spread out. CRC56 and CRC2249 midchannel, CRC2441 close to Camano side (Sam Wallace)"
-13,Gray Whale,2024-03-31 21:13:00,48.10033,-122.49106,"[Orca Network] Grays, direction of travel unknown (Rose Caitlin)"
-13,Gray Whale,2024-03-31 20:53:00,48.1134,-122.55458,[Orca Network] Gray milling (Rose Caitlin)
-13,Gray Whale,2024-03-31 20:40:00,48.10136,-122.51836,"[Orca Network] At least one gray southbound, possibly another feeding north of Fox Spit (Emily Wandres)"
-14,Gray Whale,2024-03-31 19:08:24,48.12112,-122.49084,
-15,Gray Whale,2024-03-31 17:19:00,48.05498,-122.41112,"[Orca Network] one or two gray whales, no direction, possible northbound (Amanda Nehring)"
-15,Gray Whale,2024-03-31 16:32:00,48.03924,-122.39906,[Orca Network] Gray whale northbound (Marilyn Armbruster)
-16,Gray Whale,2024-03-31 16:23:00,48.12603,-122.55971,[Orca Network] Two grays feeding (Rachel Haight)
-16,Gray Whale,2024-03-31 15:40:00,48.13253,-122.56535,"[Orca Network] Two grays feeding, trend south (Rachel Haight)"
-17,Humpback,2024-04-01 02:49:00,48.52259,-123.15916,[WSSJI] westbound (Fred Horn)
-17,Humpback,2024-04-01 02:30:00,48.5158,-123.15289,[WSSJI] breach about 3 meters from shore (Allison Herkey)
-18,Humpback,2024-03-31 21:58:00,48.51569,-123.15315,"[WSSJI] northbound, fast, surfaced ~5-10 m offshore with barely any fluke action (Katie Onthesalishsea)"
-18,Humpback,2024-03-31 21:25:00,48.50102,-123.14187,"[WSSJI] northbound (Katie Onthesalishsea, Amy Nesler)"
-18,Humpback,2024-03-31 20:45:00,48.49533,-123.13569,[WSSJI] trending northbound (Michelline Halliday)
-18,Humpback,2024-03-31 20:15:00,48.50352,-123.14616,[WSSJI] milling (Monika Wieland Shields)
+0,Orca,2024-04-01 23:10:00,47.80534,-122.45641,"[Orca Network] Biggs. Members of T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87). Some now tightly grouped Kitsap side southbound quickly. (Sara Frey) "
+0,Orca,2024-04-01 22:55:00,47.81019,-122.44439,"[Orca Network] Biggs. Male leading group of at least members of the T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87), in loose groups mostly mid channel traveling southbound. (Candace Gavin, Ariel Yseth) "
+1,Orca,2024-04-01 21:58:00,47.88357,-122.47718,"[Orca Network] Biggs. Lead male of group who consists of at least  members of the T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87) southbound. (Alice Thuy Talbot"
+1,Orca,2024-04-01 21:08:00,47.93282,-122.52181,"[Orca Network] Biggs includes at least members of the T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87) southbound  (David Michael) "
+1,Orca,2024-04-01 20:32:00,47.94064,-122.53923,"[Orca Network] Biggs includes at least members of the T65As, T99s, T36As, T100s, T124A1, and T87) southbound (Julie Page)"
+1,Orca,2024-04-01 20:10:00,47.95627,-122.53717,"[Orca Network] Biggs southbound, includes at least members of the T65As, T99s, T36As, T100s, T124A1, and T87 (Bart Rulon) (ID Bart Rulon)"
+1,Orca,2024-04-01 19:30:00,47.96593,-122.5715,"[Orca Network] Large group of Biggs southbound, includes T100s in lead group, T65As in trailing group (Rachel Haight) (ID Rachel Haight)"
+1,Orca,2024-04-01 18:45:00,48.01028,-122.61785,"[Orca Network] Biggs southbound, trailing group here (Marilyn Armbruster)"
+1,Orca,2024-04-01 18:30:00,48.01685,-122.62288,"[Orca Network] Biggs, two large groups split by a mile or more, First group closer to Shore Meadows closer to Whidbey side. 2nd group mid channel (Marilyn Armbruster, Rachel Haight)"
+1,Orca,2024-04-01 17:50:00,48.01995,-122.63272,"[Orca Network] Biggs, surface active, possibly in a kill (Cindi Crowder Rausch) "
+1,Orca,2024-04-01 17:21:00,48.02351,-122.62357,[Orca Network] traveling southbound with two young ones close to adults (Jan Bell)
+2,Orca,2024-04-01 21:00:00,48.10414,-122.67287,[Orca Network] southbound (Christopher Lewman) 
+3,Orca,2024-04-01 16:55:00,48.15492,-122.69189,"[Orca Network] splashing, blowing, traveling, headed north around the bend (Lola Stepanski)"
+4,Orca,2024-04-01 15:09:00,48.03197,-122.63373,[Orca Network] slowly southbound (Rachel Haight)
+4,Orca,2024-04-01 14:32:00,48.03691,-122.63304,[Orca Network] two smaller orcas spotted (Julie Page) 
+5,Orca,2024-04-01 15:00:00,48.21397,-122.80519,[Orca Network] at least 6+ headed southbound in three groupings (Athena Martin)
+6,Orca,2024-04-01 02:10:00,47.40581,-122.53733,[Orca Network] Biggs T65As and T99s northbound spread out (Kathryn McMillan)
+6,Orca,2024-04-01 01:47:00,47.36258,-122.54351,[Orca Network] Biggs T65As and T99s northbound close to shore (Melissa Bird) 
+6,Orca,2024-04-01 01:30:00,47.33501,-122.54523,[Orca Network] Biggs T65As and T99s milling (Paul Davis)
+6,Orca,2024-04-01 01:07:00,47.32803,-122.51159,[Orca Network] Biggs T65As and T99s westbound (David Michael)
+6,Orca,2024-04-01 00:47:00,47.32722,-122.4788,[Orca Network] Biggs T65As and T99s westbound (Mollie Segall)
+6,Orca,2024-04-01 00:32:00,47.34094,-122.43382,[Orca Network] Biggs T65As and T99s southbound (Alisa Lemire Brooks)
+6,Orca,2024-04-01 00:05:00,47.36351,-122.40636,[Orca Network] Biggs T65As and T99s southbound (Alisa Lemire Brooks)
+6,Orca,2024-03-31 23:38:00,47.38606,-122.35726,[Orca Network] Biggs T65As and T99s southbound (Tray N Jen)
+6,Orca,2024-03-31 23:23:00,47.3921,-122.35383,[Orca Network] Biggs T65As and T99s slowly heading northeast (Kyle Anderson)
+6,Orca,2024-03-31 23:06:00,47.41116,-122.3964,[Orca Network] Biggs T65As and T99s southbound (Scott Hill)
+6,Orca,2024-03-31 22:36:00,47.44019,-122.41357,[Orca Network] Biggs T65As and T99s southbound (Sandhya Ballal)
+6,Orca,2024-03-31 22:21:00,47.45087,-122.40704,[Orca Network] Biggs T65As and T99s southbound (Jamie Smugeresky)
+6,Orca,2024-03-31 21:45:00,47.47234,-122.40962,[Orca Network] Biggs T65As and T99s very slowly trending south (Jeffrey Stander)
+6,Orca,2024-03-31 21:19:00,47.47443,-122.40876,[Orca Network] Biggs T65As and T99s southbound (Steve Fogard)
+6,Orca,2024-03-31 20:52:00,47.49856,-122.42627,[Orca Network] Biggs T65As and T99s southbound (Alisa Lemire Brooks)
+6,Orca,2024-03-31 20:36:00,47.50981,-122.42781,[Orca Network] Biggs T65As and T99s southbound with lots of surface activity (Alisa Lemire Brooks)
+6,Orca,2024-03-31 20:19:00,47.51749,-122.42672,"[Orca Network] Biggs T65As and T99s southbound, surface active, tail lob, headstands (Alisa Lemire Brooks) "
+6,Orca,2024-03-31 20:12:00,47.51663,-122.45907,[Orca Network] Biggs T65As and T99s southbound (Mandy Michelle)
+6,Orca,2024-03-31 19:27:00,47.53311,-122.45642,[Orca Network] Biggs T65As and T99s southbound (Zach Ward)
+6,Orca,2024-03-31 19:07:00,47.54706,-122.45698,"[Orca Network] Biggs T65As and T99s southbound, surface active (Taylor Seyl)"
+6,Orca,2024-03-31 18:50:00,47.56585,-122.46598,"[Orca Network] Biggs T65A3, T65A4, and T99s southbound (Michelle Kuhns) (ID Alli Montgomery)"
+6,Orca,2024-03-31 18:25:00,47.58322,-122.46774,"[Orca Network] Orcas surface active, leisurely southbound (David Scott)"
+7,Gray Whale,2024-04-01 20:59:00,48.05425,-122.42551,[Orca Network] slow northbound travel (Andrew Wright)
+7,Gray Whale,2024-04-01 20:05:00,48.03732,-122.39068,[Orca Network] Gray slowly northbound close to shore (Luanne Seymour)
+7,Gray Whale,2024-04-01 19:45:00,48.03491,-122.38125,[Orca Network] Gray milling about and feeding just west of Sandy Point. It goes out into the deeper channel and then comes back near the bluff but has been here for at least an hour (Luanne Seymour)
+7,Gray Whale,2024-04-01 19:01:00,48.03548,-122.37748,[Orca Network] Gray feeding (Luanne Seymour)
+8,Gray Whale,2024-04-01 18:54:00,48.11164,-122.52167,"[Orca Network] Grays northbound slowly with long downtimes, includes CRC383 (Serena Tierra)"
+8,Gray Whale,2024-04-01 18:39:00,48.10614,-122.50828,"[Orca Network] Grays northbound slowly, includes CRC383 (Serena Tierra)"
+8,Gray Whale,2024-04-01 17:55:00,48.11355,-122.49041,[Orca Network] headed northwest ( Serena Tierra)
+9,Gray Whale,2024-04-01 18:00:00,48.2757,-122.5295,"[Orca Network] grazing, headed towards Mariners Cove (Marianne Parry)"
+10,Gray Whale,2024-04-01 16:36:00,48.09992,-122.45019,"[Orca Network] trending northwest towards Elger Bay (Serena Tierra, Thomas McKane)"
+10,Gray Whale,2024-04-01 16:00:00,48.0935,-122.43474,[Orca Network] feeding (Serena Tierra)
+11,Gray Whale,2024-04-01 14:24:00,48.06376,-122.39649,[Orca Network] headed north (Catherine Lee)
+12,Gray Whale,2024-04-01 02:14:00,48.09873,-122.49072,[Orca Network] Grays southbound (Stephanie Geissler Reid)
+13,Gray Whale,2024-03-31 23:11:00,48.10136,-122.54874,[Orca Network] Grays southbound (Rose Caitlin)
+13,Gray Whale,2024-03-31 22:37:00,48.10652,-122.53638,[Orca Network] 15:26-15:37: Grays drifting slowly south (Amy Smith Norris)
+14,Gray Whale,2024-03-31 23:00:00,48.23577,-122.55836,"[Orca Network] 15:00-16:00: Grays spread out. CRC56 and CRC2249 midchannel, CRC2441 close to Camano side (Sam Wallace)"
+15,Gray Whale,2024-03-31 21:13:00,48.10033,-122.49106,"[Orca Network] Grays, direction of travel unknown (Rose Caitlin)"
+15,Gray Whale,2024-03-31 20:53:00,48.1134,-122.55458,[Orca Network] Gray milling (Rose Caitlin)
+15,Gray Whale,2024-03-31 20:40:00,48.10136,-122.51836,"[Orca Network] At least one gray southbound, possibly another feeding north of Fox Spit (Emily Wandres)"
+16,Gray Whale,2024-03-31 19:08:24,48.12112,-122.49084,
+17,Gray Whale,2024-03-31 17:19:00,48.05498,-122.41112,"[Orca Network] one or two gray whales, no direction, possible northbound (Amanda Nehring)"
+17,Gray Whale,2024-03-31 16:32:00,48.03924,-122.39906,[Orca Network] Gray whale northbound (Marilyn Armbruster)
+18,Humpback,2024-04-01 02:49:00,48.52259,-123.15916,[WSSJI] westbound (Fred Horn)
+18,Humpback,2024-04-01 02:30:00,48.5158,-123.15289,[WSSJI] breach about 3 meters from shore (Allison Herkey)
+19,Humpback,2024-03-31 21:58:00,48.51569,-123.15315,"[WSSJI] northbound, fast, surfaced ~5-10 m offshore with barely any fluke action (Katie Onthesalishsea)"
+19,Humpback,2024-03-31 21:25:00,48.50102,-123.14187,"[WSSJI] northbound (Katie Onthesalishsea, Amy Nesler)"
+19,Humpback,2024-03-31 20:45:00,48.49533,-123.13569,[WSSJI] trending northbound (Michelline Halliday)
+19,Humpback,2024-03-31 20:15:00,48.50352,-123.14616,[WSSJI] milling (Monika Wieland Shields)

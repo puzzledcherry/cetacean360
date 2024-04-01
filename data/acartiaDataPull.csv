@@ -1,4 +1,19 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Orca,2024-04-01 23:10:00,1.0,47.80534,-122.45641,24,188176,"[Orca Network] Biggs. Members of T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87). Some now tightly grouped Kitsap side southbound quickly. (Sara Frey) "
+Orca,2024-04-01 22:55:00,1.0,47.81019,-122.44439,24,188175,"[Orca Network] Biggs. Male leading group of at least members of the T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87), in loose groups mostly mid channel traveling southbound. (Candace Gavin, Ariel Yseth) "
+Orca,2024-04-01 21:58:00,1.0,47.88357,-122.47718,24,188172,"[Orca Network] Biggs. Lead male of group who consists of at least  members of the T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87) southbound. (Alice Thuy Talbot"
+Orca,2024-04-01 21:08:00,1.0,47.93282,-122.52181,24,188165,"[Orca Network] Biggs includes at least members of the T65As (T65A5 present), T99s, T36As, T100s, T124A1, and T87) southbound  (David Michael) "
+Orca,2024-04-01 21:00:00,1.0,48.10414,-122.67287,4,188166,[Orca Network] southbound (Christopher Lewman) 
+Gray Whale,2024-04-01 20:59:00,1.0,48.05425,-122.42551,1,188173,[Orca Network] slow northbound travel (Andrew Wright)
+Orca,2024-04-01 20:32:00,1.0,47.94064,-122.53923,24,188161,"[Orca Network] Biggs includes at least members of the T65As, T99s, T36As, T100s, T124A1, and T87) southbound (Julie Page)"
+Orca,2024-04-01 20:10:00,1.0,47.95627,-122.53717,24,188157,"[Orca Network] Biggs southbound, includes at least members of the T65As, T99s, T36As, T100s, T124A1, and T87 (Bart Rulon) (ID Bart Rulon)"
+Gray Whale,2024-04-01 20:05:00,1.0,48.03732,-122.39068,1,188156,[Orca Network] Gray slowly northbound close to shore (Luanne Seymour)
+Gray Whale,2024-04-01 19:45:00,1.0,48.03491,-122.38125,1,188151,[Orca Network] Gray milling about and feeding just west of Sandy Point. It goes out into the deeper channel and then comes back near the bluff but has been here for at least an hour (Luanne Seymour)
+Orca,2024-04-01 19:30:00,1.0,47.96593,-122.5715,15,188147,"[Orca Network] Large group of Biggs southbound, includes T100s in lead group, T65As in trailing group (Rachel Haight) (ID Rachel Haight)"
+Gray Whale,2024-04-01 19:01:00,1.0,48.03548,-122.37748,1,188152,[Orca Network] Gray feeding (Luanne Seymour)
+Gray Whale,2024-04-01 18:54:00,1.0,48.11164,-122.52167,2,188154,"[Orca Network] Grays northbound slowly with long downtimes, includes CRC383 (Serena Tierra)"
+Orca,2024-04-01 18:45:00,1.0,48.01028,-122.61785,24,188159,"[Orca Network] Biggs southbound, trailing group here (Marilyn Armbruster)"
+Gray Whale,2024-04-01 18:39:00,1.0,48.10614,-122.50828,2,188153,"[Orca Network] Grays northbound slowly, includes CRC383 (Serena Tierra)"
 Orca,2024-04-01 18:30:00,1.0,48.01685,-122.62288,10,188139,"[Orca Network] Biggs, two large groups split by a mile or more, First group closer to Shore Meadows closer to Whidbey side. 2nd group mid channel (Marilyn Armbruster, Rachel Haight)"
 Gray Whale,2024-04-01 18:00:00,1.0,48.2757,-122.5295,1,188140,"[Orca Network] grazing, headed towards Mariners Cove (Marianne Parry)"
 Gray Whale,2024-04-01 17:55:00,1.0,48.11355,-122.49041,2,188134,[Orca Network] headed northwest ( Serena Tierra)
@@ -49,6 +64,3 @@ Orca,2024-03-31 18:50:00,1.0,47.56585,-122.46598,8,188068,"[Orca Network] Biggs 
 Orca,2024-03-31 18:25:00,1.0,47.58322,-122.46774,8,188066,"[Orca Network] Orcas surface active, leisurely southbound (David Scott)"
 Gray Whale,2024-03-31 17:19:00,1.0,48.05498,-122.41112,2,188064,"[Orca Network] one or two gray whales, no direction, possible northbound (Amanda Nehring)"
 Gray Whale,2024-03-31 16:32:00,1.0,48.03924,-122.39906,1,188063,[Orca Network] Gray whale northbound (Marilyn Armbruster)
-Gray Whale,2024-03-31 16:23:00,1.0,48.12603,-122.55971,2,188062,[Orca Network] Two grays feeding (Rachel Haight)
-Gray Whale,2024-03-31 15:40:00,1.0,48.13253,-122.56535,2,188061,"[Orca Network] Two grays feeding, trend south (Rachel Haight)"
-Orca,2024-03-31 15:00:00,1.0,47.48031,-122.50944,1,188056,"[Orca Network] Lone orca northbound, presume Biggs T65A5 (Tim Ferris)"
