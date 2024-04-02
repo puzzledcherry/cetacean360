@@ -61,9 +61,21 @@ def calculateColour(sighting_time):
     current_datetime = pd.Timestamp.now()
     time_difference = current_datetime - sighting_time
     minutes_difference = abs(time_difference.total_seconds() // 60)
+    
+    # DEBUG
+    print("Current time:", current_datetime)
+    print("Sighting time:", sighting_time)
+    print("Minutes difference:", minutes_difference)
+    
     # convert difference onto a scale [0-1]
     normalized_time = minutes_difference / max_time
-    # returning corresponding colour
+    
+    # DEBUG
+    print("normalized time:", normalized_time)
+    print()
+    
+    # returning corresponding colour decimal
+    # 0 is most recent, 1 is oldest
     return normalized_time
 
 # create map with lines connecting whale sightings
@@ -103,7 +115,7 @@ def createMap():
                     mode = 'lines',
                     lon = [current_row['lon'], next_row['lon']],
                     lat = [current_row['lat'], next_row['lat']],
-                    line = dict(width = 1,color = 'white'),
+                    line = dict(width = 1, color = 'white'),
                 )
             )
     
@@ -121,6 +133,10 @@ def createMap():
     connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
     connectedDF['created'] = connectedDF['created'].dt.tz_localize(None)
     connectedDF['time_diff'] = [calculateColour(df) for df in connectedDF['created']]
+    
+    # DEBUG
+    for index, row in connectedDF.iterrows():
+        print(row['id'], ': ', row['time_diff'])
 
     # creating dots
     # add dots for each sighting on the map, include hover info
@@ -132,7 +148,7 @@ def createMap():
             marker = dict(
                 size = 8, 
                 color = connectedDF['time_diff'], 
-                colorscale = 'Bluered', 
+                colorscale = 'Bluered_r', 
                 opacity = 0.7),
             
             hoverinfo = 'text',
