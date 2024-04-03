@@ -59,6 +59,7 @@ def limitLineWidth(line, max_width = 50):
 def calculateColour(sighting_time):
     max_time = 1440
     current_datetime = pd.Timestamp.now()
+    current_datetime = current_datetime.tz_localize('America/Los_Angeles')
     time_difference = current_datetime - sighting_time
     minutes_difference = abs(time_difference.total_seconds() // 60)
     
@@ -131,7 +132,8 @@ def createMap():
 
     # assigning colours based on time since sighting
     connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
-    connectedDF['created'] = connectedDF['created'].dt.tz_localize(None)
+    # connectedDF['created'] = connectedDF['created'].dt.tz_localize('UTC')
+    connectedDF['created'] = connectedDF['created'].dt.tz_convert('America/Los_Angeles')
     connectedDF['time_diff'] = [calculateColour(df) for df in connectedDF['created']]
     
     # DEBUG
