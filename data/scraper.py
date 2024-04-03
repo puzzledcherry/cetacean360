@@ -93,11 +93,11 @@ def connectSightings(acartia):
       # assign thresholds based on whale type here
       # calculations can be found in figjam diagram
       if (cetacean_type == 'Gray Whale'):
-        lat_threshold = 0.045
-        lon_threshold = 0.072
+        lat_threshold = 0.046
+        lon_threshold = 0.073
       elif (cetacean_type == 'Orca'):
-        lat_threshold = 0.065
-        lon_threshold = 0.097
+        lat_threshold = 0.067
+        lon_threshold = 0.098
       else:
         lat_threshold = 0.075
         lon_threshold = 0.075

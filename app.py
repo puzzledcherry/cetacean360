@@ -62,18 +62,9 @@ def calculateColour(sighting_time):
     current_datetime = current_datetime.tz_localize('America/Los_Angeles')
     time_difference = current_datetime - sighting_time
     minutes_difference = abs(time_difference.total_seconds() // 60)
-    
-    # DEBUG
-    print("Current time:", current_datetime)
-    print("Sighting time:", sighting_time)
-    print("Minutes difference:", minutes_difference)
-    
+
     # convert difference onto a scale [0-1]
     normalized_time = minutes_difference / max_time
-    
-    # DEBUG
-    print("normalized time:", normalized_time)
-    print()
     
     # returning corresponding colour decimal
     # 0 is most recent, 1 is oldest
@@ -132,15 +123,10 @@ def createMap():
 
     # assigning colours based on time since sighting
     connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
-    # connectedDF['created'] = connectedDF['created'].dt.tz_localize('UTC')
     connectedDF['created'] = connectedDF['created'].dt.tz_convert('America/Los_Angeles')
     connectedDF['time_diff'] = [calculateColour(df) for df in connectedDF['created']]
     
-    # DEBUG
-    for index, row in connectedDF.iterrows():
-        print(row['id'], ': ', row['time_diff'])
-
-    # creating dots
+    # creating dots (coloured)  
     # add dots for each sighting on the map, include hover info
     fig.add_trace(
         go.Scattermapbox(
