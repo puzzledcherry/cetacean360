@@ -1,4 +1,7 @@
 id,type,created,lat,lon,comment
+0,Orca,2024-04-03 12:15:00-07:00,47.24599,-122.57348,"[Orca Network] Biggs T87 plus females, juveniles southbound. (James Rempt, Melissa Bird)"
+0,Orca,2024-04-03 12:00:00-07:00,47.25108,-122.57489,"[Orca Network] Biggs T87 plus females, juveniles southbound. (Jill Clogston, Brittany Hood, GK Silv, Melissa Bird)"
+0,Orca,2024-04-03 11:44:00-07:00,47.27182,-122.54405,"[Orca Network] Biggs T87 plus females, juveniles southbound.  (Melissa Bird) "
 0,Orca,2024-04-03 11:15:00-07:00,47.31376,-122.55821,"[Orca Network] Biggs T87 plus females, juveniles now southbound Narrows (David Michael) "
 0,Orca,2024-04-03 10:49:00-07:00,47.32726,-122.54465,"[Orca Network] Biggs T87 plus females, juveniles.  possibly angling towards Narrows, but too soon. (Brooke Casanova)"
 0,Orca,2024-04-03 10:28:00-07:00,47.30235,-122.49144,[Orca Network] Biggs T87 plus 6 others westbound (April Basham) 
@@ -17,14 +20,16 @@ id,type,created,lat,lon,comment
 1,Orca,2024-04-02 12:14:00-07:00,47.8847,-122.50346,[Orca Network] Biggs quickly northbound (Trevor Tillman)
 1,Orca,2024-04-02 12:04:00-07:00,47.87028,-122.49722,"[Orca Network] Biggs northbound (Eric Russell, Alisa Lemire Brooks)"
 1,Orca,2024-04-02 11:35:00-07:00,47.84773,-122.47202,"[Orca Network] Biggs breaching, woke up, northbound (Alisa Lemire Brooks)"
+1,Orca,2024-04-02 11:18:00-07:00,47.81485,-122.4773,Some babies with them moving slow NB
 1,Orca,2024-04-02 11:10:00-07:00,47.80639,-122.45565,"[Orca Network] Biggs slow trend northbound, youngsters and lots of surface activity (Sara Frey)"
 1,Orca,2024-04-02 11:00:00-07:00,47.79768,-122.4537,"[Orca Network] Biggs northbound, Including a baby (Sara Frey, Alex Alecci Goninan)"
 1,Orca,2024-04-02 10:26:00-07:00,47.78585,-122.43413,[Orca Network] Biggs northbound mid channel at least 15-20 orcas . (Alisa Lemire Brooks) 
 1,Orca,2024-04-02 09:45:00-07:00,47.74834,-122.45137,"[orca Network] Still in same general area. Number is estimate, reported gain as quite a few,  Direction uncertain. (Trevor Tillman) "
 1,Orca,2024-04-02 09:08:00-07:00,47.74244,-122.46285,"[Orca Network] Estimate number. Quite a few, including male.  Possibly hunting with possible trend southbound (Corrie Beamer Urquhart) "
-2,Gray Whale,2024-04-02 14:48:00-07:00,48.21226,-122.60357,"[Orca Network] spy hopping and displaying tail, dorsal fins and rolling (Randy Zimmerman Furnas)"
-3,Gray Whale,2024-04-02 13:50:00-07:00,47.99078,-122.29304,[Orca Network] CRC383 and CRC2356 moving east (Trevor Tillman)
-4,Gray Whale,2024-04-02 10:00:00-07:00,48.0415,-122.36066,[Orca Network] steady southbound. (Catherine Lee)
-4,Gray Whale,2024-04-02 09:45:00-07:00,48.04804,-122.35918,[Orca Network] gray present South of Camano Head (Catherine Lee) 
-5,Gray Whale,2024-04-02 08:27:00-07:00,48.09963,-122.50428,"[Orca Network] Long down times, possibly heading south east along Fox Spit now. (Catherine Lee)"
-5,Gray Whale,2024-04-02 08:13:00-07:00,48.09046,-122.529,[Orca Network] northbound (Catherine Lee) 
+2,Gray Whale,2024-04-03 10:35:00-07:00,48.00921,-122.30098,[HIWS] eastbound (Roy Short) 
+3,Gray Whale,2024-04-02 14:48:00-07:00,48.21226,-122.60357,"[Orca Network] spy hopping and displaying tail, dorsal fins and rolling (Randy Zimmerman Furnas)"
+4,Gray Whale,2024-04-02 13:50:00-07:00,47.99078,-122.29304,[Orca Network] CRC383 and CRC2356 moving east (Trevor Tillman)
+5,Gray Whale,2024-04-02 10:00:00-07:00,48.0415,-122.36066,[Orca Network] steady southbound. (Catherine Lee)
+5,Gray Whale,2024-04-02 09:45:00-07:00,48.04804,-122.35918,[Orca Network] gray present South of Camano Head (Catherine Lee) 
+6,Gray Whale,2024-04-02 08:27:00-07:00,48.09963,-122.50428,"[Orca Network] Long down times, possibly heading south east along Fox Spit now. (Catherine Lee)"
+6,Gray Whale,2024-04-02 08:13:00-07:00,48.09046,-122.529,[Orca Network] northbound (Catherine Lee) 
