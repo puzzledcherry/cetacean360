@@ -1,43 +1,56 @@
 id,type,created,lat,lon,comment
-0,Orca,2024-04-04 10:28:00-07:00,47.26837,-122.5554,[Orca Network] Biggs southbound (Jessica Huie)
-1,Orca,2024-04-04 09:21:00-07:00,47.32225,-122.54759,"[Orca Network] Biggs. WSF reported  6+. Logan reports 3 off Pt Defiance, surface active while traveling SW (Logan Baker) "
-1,Orca,2024-04-04 09:08:00-07:00,47.32563,-122.51205,"[Orca Network] At least 5 including male, Westbound, angling SW (Joe Smith) "
-1,Orca,2024-04-04 08:37:00-07:00,47.33005,-122.44923,"[Orca Network] At least 4, probable male in group. Southbound. (Dianne Brueckner, Sean Rourke) "
-2,Orca,2024-04-04 07:15:00-07:00,47.39226,-122.33404,"[Orca Network] At least 3 orcas,  female, young southbound  from marina close to shore. (David Valleau)"
-3,Orca,2024-04-03 19:04:00-07:00,47.39169,-122.35885,"[Orca Network] Biggs, steady northbound (Marla Smith)
+0,Orca,2024-04-05 14:23:00-07:00,48.13682,-122.74104,[Orca Network] Orcas northbound (Trevor Tilman)
+0,Orca,2024-04-05 13:45:00-07:00,48.0802,-122.66242,[Orca Network] Orcas northbound (Cindi Crowder Rausch)
+0,Orca,2024-04-05 12:41:00-07:00,48.05519,-122.62763,"[Orca Network] at least 3-4, includes poss. male. Traveling northbound now angling toward Whidbey (Julie Page) "
+0,Orca,2024-04-05 12:25:00-07:00,48.03579,-122.63107,[Orca Network] at least 3-4 includes poss. male. Traveling northbound (Julie Page) 
+1,Orca,2024-04-04 18:39:00-07:00,47.39103,-122.36791,"[Orca Network] Biggs T65A2 heading southeast close to shore, likely ahead of the other T65As and T99s (Marla Smith)"
+2,Orca,2024-04-04 18:08:00-07:00,48.05666,-122.3288,[Orca Network] Biggs northbound (Jack Callaghan)
+3,Orca,2024-04-04 18:05:00-07:00,47.67063,-122.46504,"[Orca Network] Biggs T87 and T124As northbound (Katie Chevalier, Jane Rein)"
+3,Orca,2024-04-04 17:24:00-07:00,47.60516,-122.46745,[Orca Network] Biggs T87 and T124As northbound (Mary Hartmann)
+3,Orca,2024-04-04 17:03:00-07:00,47.57483,-122.46607,[Orca Network] Biggs T87 and T124As hunting (Noelle Morris)
+3,Orca,2024-04-04 16:42:00-07:00,47.54494,-122.50899,"[Orca Network] Biggs T87 and T124As northbound  (Noelle Morris, April Janice Basham)"
+3,Orca,2024-04-04 16:32:00-07:00,47.53772,-122.45219,[Orca Network] Biggs T65As and T99s southbound (Mary Hartmann)
+3,Orca,2024-04-04 16:20:00-07:00,47.52825,-122.50212,[Orca Network] Biggs T87 and T124As northbound (Magdalena Phillips)
+3,Orca,2024-04-04 16:01:00-07:00,47.50692,-122.48702,[Orca Network] Biggs T87 and T124As northbound (Roxane Jackson Johnson) (ID Rachel Haight)
+4,Orca,2024-04-04 17:22:00-07:00,47.4621,-122.41941,"[Orca Network] Biggs T65As and T99s southbound, only one male seen (Steve Burch)"
+5,Orca,2024-04-04 16:30:00-07:00,47.98202,-122.32915,[Orca Network] Orcas northbound (Cindi Crowder Rausch)
+5,Orca,2024-04-04 15:57:00-07:00,47.95605,-122.32743,[Orca Network] 2-3 orcas northbound (Kevin Doar)
+6,Orca,2024-04-04 15:20:00-07:00,47.68143,-122.44615,[Orca Network] Biggs T65As and T99s hunting (Lauren Ryan Booth)
+7,Orca,2024-04-04 14:55:00-07:00,47.40338,-122.53989,"[Orca Network] Biggs, includes T87 presumably with T124As, northbound. T87 trailing by about 5 minutes (Stacey Olson, Marla Smith)"
+7,Orca,2024-04-04 14:36:00-07:00,47.37503,-122.53302,"[Orca Network] Biggs, includes T87 presumably with T124As, northbound (Shelby Middling)"
+7,Orca,2024-04-04 14:08:00-07:00,47.3349,-122.5344,"[Orca Network] Biggs, includes T87 presumably with T124As. At least one northbound into Colvos (Mollie Segall)"
+7,Orca,2024-04-04 13:52:00-07:00,47.32001,-122.54813,"[Orca Network] Biggs, includes T87 presumably with T124As, northbound rounding Pt Defiance (David Bennett)"
+7,Orca,2024-04-04 13:33:00-07:00,47.29638,-122.53783,"[Orca Network] Biggs, includes T87 presumably with T124As, milling. One breach seen (David Bennett)"
+7,Orca,2024-04-04 13:06:00-07:00,47.2711,-122.55315,"[Orca Network] Biggs, includes T87 presumably with T124As. Grouped traveling Northbound (Cherie StOurs, Susan White) "
+7,Orca,2024-04-04 12:44:00-07:00,47.24788,-122.59808,"[Orca Network] Biggs, includes T87 presumably with T124As. Surface active, lots of breaching (Cherie StOurs)"
+7,Orca,2024-04-04 12:20:00-07:00,47.27127,-122.63074,"[Orca Network] Biggs, includes T87 presumably with T124As.  Surface active while eastbound (Brianna Aratin, Anika Blake, David Bennett)"
+7,Orca,2024-04-04 11:59:00-07:00,47.27378,-122.63936,"[Orca Network] Biggs, includes T87 presumably with T124As.  Milling but no appear eastbound (Anika Blake, Brianna Aratin)"
+7,Orca,2024-04-04 11:44:00-07:00,47.27526,-122.64469,"[Orca Network] Biggs, includes T87 presumably with T124As. Were westbound, but have stalled and making directional changes. (David Bennett) "
+7,Orca,2024-04-04 11:30:00-07:00,47.2636,-122.61342,"[Orca Network] Biggs, includes T87 presumably with T124As. Westbound (Jenna Iams) "
+7,Orca,2024-04-04 10:56:00-07:00,47.24477,-122.59084,"[Orca Network] Biggs, includes T87 presumably with T124As. Westbound Hale Passage (Lily TucSar) "
+7,Orca,2024-04-04 10:44:00-07:00,47.23882,-122.58037,"[Orca Network] Biggs, includes T87. Probably T124As. Southbound swiftly (Karen Caldwell) (ID Alisa Lemire Brooks) "
+7,Orca,2024-04-04 10:28:00-07:00,47.26837,-122.5554,[Orca Network] Biggs southbound (Jessica Huie)
+8,Orca,2024-04-04 14:07:00-07:00,47.75026,-122.43207,"[Orca Network] Biggs T65As and T99s southbound fast, possibly spread out N-S (Ashley Alecci Goninan, Rubie H Baker)"
+8,Orca,2024-04-04 13:44:00-07:00,47.76942,-122.45851,[Orca Network] Biggs T65As and T99s southbound (Ashley Alecci Goninan)
+8,Orca,2024-04-04 13:15:00-07:00,47.81489,-122.4729,"[Orca Network] Biggs. Adult male leading ahead of group, southbound  (Sara Frey "
+8,Orca,2024-04-04 13:02:00-07:00,47.87352,-122.48255,[Orca Network] Biggs T65As and T99s southbound (Tony Tilt) 
+8,Orca,2024-04-04 12:22:00-07:00,47.91389,-122.47706,[Orca Network] Orcas seen here. Travel has been southeast bound.  (Ariel Yseth) 
+9,Orca,2024-04-04 11:32:10-07:00,48.52924,-123.20242,"[Orcasound] Biggs calls heard by listeners on Orcasound Lab hydrophone 10:16-10:45. Number of individuals estimated. <br><br>Submitted by a Cascadia Trusted Observer Via App
 "
-3,Orca,2024-04-03 18:15:00-07:00,47.34016,-122.41343,"[Orca Network] Biggs, breaching and heading north (Matthew Lau)"
-3,Orca,2024-04-03 17:58:00-07:00,47.32487,-122.4434,"[Orca Network] Biggs, northbound, spread out (Tiffany Russell)"
-3,Orca,2024-04-03 17:39:00-07:00,47.30695,-122.45782,"[Orca Network] Biggs, northbound, spread out a couple closer in with more out mid channel (Jami Cantrell)"
-3,Orca,2024-04-03 17:19:00-07:00,47.29904,-122.4513,"[Orca Network] Biggs, spread out, one mid bay, one group headed towards Browns Point  (Melissa Bird, David Bennett)"
-3,Orca,2024-04-03 17:15:00-07:00,47.29228,-122.42692,"[Orca Network] Biggs, spread in groups, one northbound, one westbound headeing out of commencement (Melissa Bird)"
-3,Orca,2024-04-03 17:07:00-07:00,47.29904,-122.46675,"[Orca Network] Biggs, spread out, headed north and east (Melissa Bird)"
-3,Orca,2024-04-03 16:48:00-07:00,47.31952,-122.49318,"[Orca Network] Biggs, eastbound spread out (Melissa Bird)"
-3,Orca,2024-04-03 16:37:00-07:00,47.31813,-122.51172,"[Orca Network] Biggs, may be spread, milling and eastbound (Holly Fischer)"
-3,Orca,2024-04-03 16:33:00-07:00,47.31975,-122.52133,"[Orca Network] Biggs, eastbound (Steve Blum)"
-3,Orca,2024-04-03 16:26:00-07:00,47.32138,-122.53816,"[Orca Network] Biggs, headed eastbound (Jami Cantrell)"
-3,Orca,2024-04-03 16:13:00-07:00,47.31231,-122.55464,"[Orca Network] Biggs, northbound (Steve Blum)"
-3,Orca,2024-04-03 15:49:00-07:00,47.26596,-122.55532,"[Orca Network] Biggs, northbound (Karen Caldwell)"
-3,Orca,2024-04-03 15:35:00-07:00,47.23007,-122.57627,"[Orca Network] Biggs, moving north towards Titlow beach (Pattie LaRue Warr)"
-4,Orca,2024-04-03 16:15:00-07:00,48.76126,-123.05054,[WSSJI] Biggs KW calls on SIMRES hydrophone (Fred Horn)
-5,Orca,2024-04-03 15:00:00-07:00,47.25362,-122.68682,"[Orca Network] Biggs, drifting in the direction towards Steilacoom (Paul Davis)"
-5,Orca,2024-04-03 14:25:00-07:00,47.25897,-122.69643,"[Orca Network] Biggs, milling (Laura Kozar Batanian)"
-5,Orca,2024-04-03 13:41:00-07:00,47.22121,-122.62982,"[Orca Network] Biggs, headed northwest into Carr Inlet (Laura Kozar Batanian)"
-5,Orca,2024-04-03 12:39:00-07:00,47.23765,-122.57596,"[Orca Network] Biggs.  T87 was close inshore off Day Island while others continued southbound offshore. (Melissa Bird, Kirsten Vacura)"
-5,Orca,2024-04-03 12:15:00-07:00,47.24599,-122.57348,"[Orca Network] Biggs T87 plus females, juveniles southbound. (James Rempt, Melissa Bird)"
-5,Orca,2024-04-03 12:00:00-07:00,47.25108,-122.57489,"[Orca Network] Biggs T87 plus females, juveniles southbound. (Jill Clogston, Brittany Hood, GK Silv, Melissa Bird)"
-5,Orca,2024-04-03 11:44:00-07:00,47.27182,-122.54405,"[Orca Network] Biggs T87 plus females, juveniles southbound.  (Melissa Bird) "
-5,Orca,2024-04-03 11:15:00-07:00,47.31376,-122.55821,"[Orca Network] Biggs T87 plus females, juveniles now southbound Narrows (David Michael) "
-5,Orca,2024-04-03 10:49:00-07:00,47.32726,-122.54465,"[Orca Network] Biggs T87 plus females, juveniles.  possibly angling towards Narrows, but too soon. (Brooke Casanova)"
-5,Orca,2024-04-03 10:28:00-07:00,47.30235,-122.49144,[Orca Network] Biggs T87 plus 6 others westbound (April Basham) 
-5,Orca,2024-04-03 10:18:00-07:00,47.29176,-122.48251,"[Orca Network] At least 3, including male, spread out exiting Commencement Bay (April Basham) "
-5,Orca,2024-04-03 09:49:18-07:00,47.26704,-122.44198,
-6,Orca,2024-04-03 13:30:00-07:00,48.54908,-123.18375,"[Orcasound] Biggs calls, intense through ship noise (3 Orcasound detections) 
-
-https://live.orcasound.net/reports/cand_02wBITGcKzGrLgBFGciIC6"
-7,Gray Whale,2024-04-03 19:16:00-07:00,47.39603,-122.33378,[Orca Network] headed back northbound (Jason Cook)
-7,Gray Whale,2024-04-03 18:30:00-07:00,47.40149,-122.33824,[Orca Network] headed southbound to Redondo (Jason Cook)
-8,Gray Whale,2024-04-03 12:38:00-07:00,48.010507,-122.264394,"[Orca Network] milling or feeding, no direction (Marilyn Armbruster) "
-9,Gray Whale,2024-04-03 11:53:00-07:00,47.34664,-122.33202,[Orca Network] Gray whale in Redondo Bay southbound  close to Redondo shore (Ali Saccone)
-10,Gray Whale,2024-04-03 10:35:00-07:00,48.00921,-122.30098,[HIWS] eastbound (Roy Short) 
-11,Gray Whale,2024-04-03 10:15:00-07:00,48.26551,-122.48876,"[Orca Network] unsure numbers. Reported as grays off Utsalady Bay (Laura Jo Aseltine, SSWW)"
+10,Orca,2024-04-04 11:10:00-07:00,47.97634,-122.61496,"[Orca Network] Ecotype still unknown. In travel mode, southbound. (Cindi Crowder Rausch) "
+10,Orca,2024-04-04 11:01:00-07:00,48.00049,-122.63991,[Orca Network] Ecotype still unknown. Southbound. (Heidi Bruns Shank) 
+11,Orca,2024-04-04 09:21:00-07:00,47.32225,-122.54759,"[Orca Network] Biggs. WSF reported  6+. Logan reports 3 off Pt Defiance, surface active while traveling SW (Logan Baker) "
+11,Orca,2024-04-04 09:08:00-07:00,47.32563,-122.51205,"[Orca Network] At least 5 including male, Westbound, angling SW (Joe Smith) "
+11,Orca,2024-04-04 08:37:00-07:00,47.33005,-122.44923,"[Orca Network] At least 4, probable male in group. Southbound. (Dianne Brueckner, Sean Rourke) "
+12,Orca,2024-04-04 09:15:00-07:00,48.06911,-122.63213,"[Orca Network] Approximately 14 orcas, ecotype unknown, southbound.  (Tony Tilt] "
+13,Gray Whale,2024-04-05 13:42:00-07:00,48.07974,-122.6171,[Orca Network] CRC2249 southbound (Rachel Haight)
+13,Gray Whale,2024-04-05 13:27:00-07:00,48.0844,-122.61727,"[Orca Network] CRC2249 milling (Rachel Haight, Elsarape Rodriguez) (ID Serena Tierra)"
+14,Gray Whale,2024-04-05 12:46:00-07:00,47.54646,-122.65407,[Orca Network] Direction unknown  Long down times. (Montlake Mutt) 
+15,Gray Whale,2024-04-05 10:21:00-07:00,48.0361,-122.36529,"[Orca Network] milling, slowly trending north (Marilyn Armbruster)"
+16,Gray Whale,2024-04-04 17:20:00-07:00,48.13045,-122.55755,"[Orca Network] Grays trending south, spyhop seen (Janet Moody)"
+16,Gray Whale,2024-04-04 17:05:00-07:00,48.13045,-122.55172,"[Orca Network] Grays, no direction of travel given (Janet Moody)"
+16,Gray Whale,2024-04-04 16:50:00-07:00,48.12873,-122.55961,[Orca Network] Grays feeding (Aaron Gill)
+16,Gray Whale,2024-04-04 16:35:00-07:00,48.14642,-122.56348,"[Orca Network] Grays trending south (Aaron Gill)
+"
+16,Gray Whale,2024-04-04 16:16:00-07:00,48.15448,-122.56796,[Orca Network] Grays feeding (Aaron Gill)
+17,Humpback,2024-04-04 09:33:00-07:00,48.51859,-123.1577,Gone as quick as he showed up.  Not sure what direction he is headed.
