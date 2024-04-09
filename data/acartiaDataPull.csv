@@ -1,4 +1,5 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Orca,2024-04-09 11:35:00-07:00,1.0,48.14792,-122.73465,7,188560,[Orca Network] Orcas heading north/northwest (Rachel Haight)
 Gray Whale,2024-04-09 10:30:00-07:00,1.0,47.96759,-122.31812,1,188555,[Orca Network] sighting from ferry (Kaitlyn Bradley)
 Orca,2024-04-09 10:30:00-07:00,1.0,48.07368,-122.65046,7,188554,"[Orca Network] Biggs, drifting (Lewann Babler)"
 Orca,2024-04-09 09:11:00-07:00,1.0,47.9558,-122.56081,7,188552,"[Orca Network] at least seven, traveling northbound (Lisa Kollmansberger)"
