@@ -107,7 +107,7 @@ def createMap():
                     mode = 'lines',
                     lon = [current_row['lon'], next_row['lon']],
                     lat = [current_row['lat'], next_row['lat']],
-                    line = dict(width = 1, color = 'white'),
+                    line = dict(width = 1, color = 'limegreen'),
                 )
             )
     
@@ -118,7 +118,9 @@ def createMap():
         f"{limitLineWidth('Count: ' + str(row['no_sighted']))}<br>"
         f"{limitLineWidth('Created: ' + row['created'])}<br>"
         f"<br>"
-        f"{limitLineWidth('Comments: ' + str(row['data_source_comments']))}",
+        f"{limitLineWidth('Comments: ' + str(row['data_source_comments']))}"
+        f"<br>"
+        f"Data aggregated by Acartia",
         axis=1)
 
     # assigning colours based on time since sighting
@@ -135,8 +137,9 @@ def createMap():
             lat = acartiaDF['latitude'],
             marker = dict(
                 size = 8, 
-                color = connectedDF['time_diff'], 
-                colorscale = 'Bluered_r', 
+                color = 'blue',
+                # color = connectedDF['time_diff'], 
+                # colorscale = 'Bluered_r', 
                 opacity = 0.7),
             
             hoverinfo = 'text',
@@ -149,9 +152,10 @@ def createMap():
         )
     )
     
+    fig.update_layout(showlegend = False)
     # return the created map with lines and hovers and dots
     return fig
-
+    
 # HTML, display the map
 app.layout = html.Div(
     className = 'whole-website',
@@ -162,7 +166,8 @@ app.layout = html.Div(
                 dcc.Graph (
                     id = 'plot',
                     figure = createMap()
-                )
+                ),
+                
             ]
         ) 
     ]
