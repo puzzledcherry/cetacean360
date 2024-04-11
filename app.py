@@ -33,8 +33,8 @@ chart_studio.tools.set_config_file(world_readable=True, sharing='public')
 import scraper
 
 # create dash application 
-# app = dash.Dash(__name__)
-# server = app.server
+app = dash.Dash(__name__)
+server = app.server
 
 # loading csv file into a pandas dataframe object
 def readCSV(csvFilePath):
@@ -163,25 +163,25 @@ def createMap():
     py.plot(fig, filename = 'whale-connections', auto_open = True)
     
     # return the created map with lines and hovers and dots
-    # return fig
+    return fig
     
 # HTML, display the map
-# app.layout = html.Div(
-#     className = 'whole-website',
-#     children = [
-#         html.Div(
-#             className = 'map-container',
-#             children = [
-#                 dcc.Graph (
-#                     id = 'plot',
-#                     figure = createMap()
-#                 ),
+app.layout = html.Div(
+    className = 'whole-website',
+    children = [
+        html.Div(
+            className = 'map-container',
+            children = [
+                dcc.Graph (
+                    id = 'plot',
+                    figure = createMap()
+                ),
                 
-#             ]
-#         ) 
-#     ]
-# )
+            ]
+        ) 
+    ]
+)
 
 # to run the program
 if __name__ == '__main__':
-    createMap()
+    app.run_server(debug = False, port = 8050)
