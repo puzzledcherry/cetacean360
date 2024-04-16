@@ -22,10 +22,11 @@ sys.path.insert(0, 'data')
 from hidden import MAPBOX_TOKEN
 px.set_mapbox_access_token(MAPBOX_TOKEN)
 
-# 
+# chart studio imports for pushing to cloud
 import chart_studio
 import chart_studio.plotly as py
 from hidden import PLOTLY_TOKEN
+# chart studio login
 chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = PLOTLY_TOKEN)
 chart_studio.tools.set_config_file(world_readable=True, sharing='public')
 
@@ -62,8 +63,8 @@ def limitLineWidth(line, max_width = 50):
     else:
         return line
 
-# calculate colour gradients based on time since sighting
-def calculateColour(sighting_time):
+# normalize time difference between sighting and now
+def normalizeTimeDiff(sighting_time):
     max_time = 1440
     current_datetime = pd.Timestamp.now()
     current_datetime = current_datetime.tz_localize('America/Los_Angeles')
@@ -133,7 +134,10 @@ def createMap():
     # assigning colours based on time since sighting
     connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
     connectedDF['created'] = connectedDF['created'].dt.tz_convert('America/Los_Angeles')
-    connectedDF['time_diff'] = [calculateColour(df) for df in connectedDF['created']]
+    connectedDF['time_diff'] = [normalizeTimeDiff(df) for df in connectedDF['created']]
+    
+    print("Max normalized time difference:", connectedDF['time_diff'].max())
+    print("Min normalized time difference:", connectedDF['time_diff'].min())
     
     # creating dots (coloured)  
     # add dots for each sighting on the map, include hover info
@@ -145,9 +149,7 @@ def createMap():
             marker = dict(
                 size = 8, 
                 color = 'blue',
-                # color = connectedDF['time_diff'], 
-                # colorscale = 'Bluered_r', 
-                opacity = 0.7),
+                opacity = connectedDF['time_diff']),
             
             hoverinfo = 'text',
             text = hover_text,

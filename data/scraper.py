@@ -32,7 +32,7 @@ def whaleScrape ():
   token = TOKEN
   
   # calculate a week ago, remove timezone info
-  timeFrame = datetime.now() - timedelta(days = 1)
+  timeFrame = datetime.now() - timedelta(hours = 23)
   timeFrame = pd.Timestamp(timeFrame)
   timeFrame = timeFrame.tz_localize('UTC')
   timeFrame = timeFrame.tz_convert('America/Los_Angeles')
@@ -55,6 +55,7 @@ def whaleScrape ():
   # parsing 'created' datafield into datetime format, ignore errors
   acartia['created'] = pd.to_datetime(acartia['created'], errors='coerce')
   # remove timezone localization, drop all values from more than a week ago
+  acartia['created'] = pd.to_datetime(acartia['created'])
   acartia['created'] = acartia['created'].dt.tz_localize('UTC')
   acartia['created'] = acartia['created'].dt.tz_convert('America/Los_Angeles')
   acartia = acartia[acartia['created'] >= timeFrame]
