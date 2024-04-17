@@ -1,29 +1,18 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Gray Whale,2024-04-17 07:34:00-07:00,1.0,48.1637,-122.41982,2,193639,"[CWW] from 06:46-07:34 seeing multiple whales, number uncertain. By 07:34 slowly moving southbound (Thomas McKane) "
+Gray Whale,2024-04-16 18:30:00-07:00,1.0,48.73082,-122.58821,1,193809,[Orca Network] southbound (Hazel Cooper) 
+Orca,2024-04-16 16:05:00-07:00,1.0,48.22686,-122.78717,1,193646,[Orca Network] Biggs T65A5 Indy  may now be angling NW direction  (Rachel Haight)
+Orca,2024-04-16 15:20:00-07:00,1.0,48.18882,-122.70933,1,191640,[Orca Network] Biggs T65A5 Indy hugging shore continuing northbound (Rachel Haight) 
+Orca,2024-04-16 15:10:00-07:00,1.0,48.1417,-122.80603,1,191622,
+Orca,2024-04-16 14:53:00-07:00,1.0,48.1543,-122.63385,1,191625,[Orca Network] Biggs T65A5 Indy. NW hugging shore (Jennifer Fulton Carpenter)
+Orca,2024-04-16 14:24:00-07:00,1.0,48.12796,-122.60913,1,191619,[Orca Network] Biggs T65A5 Indy now on his own. Northbound hugging shore (Rachel Haight) 
+Unspecified,2024-04-16 14:17:00-07:00,1.0,48.11088,-122.6105,2,191498,"[Orca Network] Probably Biggs members of the T65As, but only saw spouts, two of them. (Kit Turner) "
+Gray Whale,2024-04-16 14:04:00-07:00,1.0,48.04631,-122.37412,2,191478,[Orca Network] at least 2 grays headed east in Saratoga passage nearing Camano Head. They are mid-channel. (Luanne Seymour) 
+Orca,2024-04-16 13:54:00-07:00,1.0,48.06572,-122.62291,2,191453,"[Orca Network] Biggs, at least two members of T65As continue northbound close to Whidbey. Others likely across. 
+(Sandra Pollard) "
+Orca,2024-04-16 13:16:00-07:00,1.0,48.03102,-122.61876,2,191393,"[Orca network] Biggs, T65As spread with T65A3 and T65A4 or A5 northbound (Rachel Haight)"
+Orca,2024-04-16 13:06:00-07:00,1.0,48.01632,-122.61533,2,191360,"[Orca Network] Biggs, T65As, T65A3 and A4 or 5 approaching bush point northbound (Rachel Haight)"
 Orca,2024-04-16 12:43:00-07:00,1.0,47.96968,-122.56623,2,191304,"[Orca Network] T65As, spread out, T65A3 and T65A5 pushing offshore, northbound, others likely on kitsap side (Rachel Haight)"
 Orca,2024-04-16 12:23:00-07:00,1.0,47.94301,-122.51268,6,191262,"[Orca Network] Biggs, likely T65As, spread out, moving west fast (Rachel Haight)"
 Orca,2024-04-16 11:30:00-07:00,1.0,47.92599,-122.46873,4,191157,"[Orca Network] Biggs, spread out across channel. Some off Maxwelton (Rachel Haight)"
-Orca,2024-04-16 10:58:00-07:00,1.0,47.87489,-122.5065,4,191124,"[Orca Network] Biggs, at least 4, one male close in, northbound (Kim P.)"
-Orca,2024-04-16 10:32:00-07:00,1.0,47.89009,-122.44126,4,191035,"[Orca Network] Biggs, at least four includes one male, headed towards Useless Bay (Stephanie Brenaman)"
-Orca,2024-04-16 09:50:00-07:00,1.0,47.83917,-122.45763,4,190953,"[Orca Network] Biggs, hunting behavior with directional changes (Donna Green Van Renselaar)"
-Orca,2024-04-16 09:34:00-07:00,1.0,47.82626,-122.44939,4,190922,"[Orca Network] Biggs, male and female at least, northbound(Donna Green Van Renselaar)"
-Orca,2024-04-16 09:13:00-07:00,1.0,47.81243,-122.42536,4,190859,"[Orca Network] Biggs, northbound (Donna Green Van Renselaar)"
-Orca,2024-04-16 08:54:00-07:00,1.0,47.78475,-122.4178,4,190816,"[Orca Network] Biggs, at least 4, may be spread out, northbound (Kristin Pederson)"
-Gray Whale,2024-04-16 08:00:00-07:00,1.0,48.1184,-122.37729,2,190715,"[Orca Network] at least two, northbound (Linda Aitkins)"
-Orca,2024-04-15 18:06:00-07:00,1.0,47.72483,-122.52339,6,189049,"[Orca Network] Biggs T65As eastbound (Candace Gavin, Sophy Johnston)"
-Orca,2024-04-15 16:32:00-07:00,1.0,47.68782,-122.48077,6,188865,"[Orca Network] Biggs T65As Northbound. 1 lead male (probably T65A2) passing north of tip of Bainbridge, family is about  here (Candace Gavin, Deb Cronheim)"
-Orca,2024-04-15 16:03:00-07:00,1.0,47.6634,-122.46713,6,188830,[Orca Network] Biggs T65As Northbound. (Sue Larkin0
-Orca,2024-04-15 15:37:00-07:00,1.0,47.62986,-122.47709,6,188829,[Orca Network] Biggs T65As Northbound. (Mary Hartman) 
-Orca,2024-04-15 15:22:00-07:00,1.0,47.59723,-122.46816,6,188827,[Orca Network] Biggs T65As Northbound. (Mandy Michelle)
-Orca,2024-04-15 15:04:00-07:00,1.0,47.5743,-122.46541,6,188825,"[Orca Network] Biggs T65As Northbound. T65A3 Amir has been ahead of the family, uncertain if still ahead.  (Mary Hartman) "
-Orca,2024-04-15 14:41:00-07:00,1.0,47.52773,-122.47091,6,188824,[Orca Network] Biggs T65As. T65A3 Amir  ahead of the family (April Basham) 
-Orca,2024-04-15 14:20:00-07:00,1.0,47.51695,-122.49228,6,188821,[Orca Network] Trailers of T65As northbound here (Candace Gavin)
-Unspecified,2024-04-15 14:04:06-07:00,1.0,42.63191,-124.99224,1,188820,
-Orca,2024-04-15 13:57:00-07:00,1.0,47.51323,-122.4885,6,188818,"[Orca Network] T65A3 here, others likely trailing (April Janice Basham)"
-Humpback,2024-04-15 13:35:40-07:00,1.0,42.62068,-124.99036,1,188819,Jumping
-Orca,2024-04-15 13:13:00-07:00,1.0,47.43015,-122.52575,6,188815,"[Orca Network] Biggs T65As northbound (Marla Smith, Lyndsey Carter, Jami Cantrell)"
-Gray Whale,2024-04-15 13:04:00-07:00,1.0,48.00289,-122.2814,5,188814,"[Orca Network] CRC-2362, 2356, 56, 356, and 383. No direction of travel given (Bart Rulon) (ID Bart Rulon)"
-Orca,2024-04-15 12:49:00-07:00,1.0,47.41436,-122.53262,6,188808,[Orca Network] Biggs T65As northbound with some directional changes and headstands (Marla Smith) (ID Marla Smith)
-Orca,2024-04-15 12:47:05-07:00,1.0,47.40623,-122.52163,2,188811,
-Orca,2024-04-15 12:23:00-07:00,1.0,47.39722,-122.53923,5,188806,"[Orca Network] Biggs, likely T65As, northbound (Amalia Moore)"
-Orca,2024-04-15 12:07:00-07:00,1.0,47.38188,-122.53168,5,188805,[Orca Network] Orcas northbound (Amy Carey)
-Orca,2024-04-15 10:30:00-07:00,1.0,47.27292,-122.4449,5,188807,"[Orca Network] 10:00-10:30: Biggs, likely T65As, eastbound (Jennifer Bradbury)"
+Orca,2024-04-16 11:20:00-07:00,1.0,47.91317,-122.52633,4,193666,"[Orca Network] Biggs, 4 members of the T65As (T65A, T65A2, T65A4, T65A6) Northbound... standing on shore and there were 4 of them about 20-30 feet out straight in front of the lighthouse! (Julia Nelson) "

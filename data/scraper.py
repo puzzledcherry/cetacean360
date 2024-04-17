@@ -31,12 +31,6 @@ def whaleScrape ():
   # acartia token
   token = TOKEN
   
-  # calculate a week ago, remove timezone info
-  timeFrame = datetime.now() - timedelta(hours = 23)
-  timeFrame = pd.Timestamp(timeFrame)
-  timeFrame = timeFrame.tz_localize('UTC')
-  timeFrame = timeFrame.tz_convert('America/Los_Angeles')
-  
   # acartia API call, provide token and get JSON back
   url='https://acartia.io/api/v1/sightings/'
   response = requests.get(url, headers={'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'})
@@ -52,15 +46,19 @@ def whaleScrape ():
   acartia = acartia[['type','created','trusted','latitude','longitude','no_sighted','data_source_id','data_source_comments']]
   acartia = acartia[(acartia['trusted'] == 1)]
   
+  # calculate a day ago, convert timezone to PST
+  timeFrame = datetime.now() - timedelta(hours = 24)
+  timeFrame = pd.Timestamp(timeFrame)
+  timeFrame = timeFrame.tz_localize('America/Los_Angeles')
+  
   # parsing 'created' datafield into datetime format, ignore errors
+  # convert to PST, drop values from more than a day ago
   acartia['created'] = pd.to_datetime(acartia['created'], errors='coerce')
-  # remove timezone localization, drop all values from more than a week ago
-  acartia['created'] = pd.to_datetime(acartia['created'])
   acartia['created'] = acartia['created'].dt.tz_localize('UTC')
   acartia['created'] = acartia['created'].dt.tz_convert('America/Los_Angeles')
   acartia = acartia[acartia['created'] >= timeFrame]
   
-  # drop duplicates, sort by most recent
+  # drop duplicates, sort by most recent, convert to PST
   acartia = acartia.drop_duplicates()
   acartia = acartia.sort_values(by = ['created'], ascending = False)
   

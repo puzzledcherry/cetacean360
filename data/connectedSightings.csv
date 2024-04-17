@@ -1,29 +1,18 @@
 id,type,created,lat,lon,comment
-0,Orca,2024-04-16 12:43:00-07:00,47.96968,-122.56623,"[Orca Network] T65As, spread out, T65A3 and T65A5 pushing offshore, northbound, others likely on kitsap side (Rachel Haight)"
-0,Orca,2024-04-16 12:23:00-07:00,47.94301,-122.51268,"[Orca Network] Biggs, likely T65As, spread out, moving west fast (Rachel Haight)"
-0,Orca,2024-04-16 11:30:00-07:00,47.92599,-122.46873,"[Orca Network] Biggs, spread out across channel. Some off Maxwelton (Rachel Haight)"
-0,Orca,2024-04-16 10:58:00-07:00,47.87489,-122.5065,"[Orca Network] Biggs, at least 4, one male close in, northbound (Kim P.)"
-0,Orca,2024-04-16 10:32:00-07:00,47.89009,-122.44126,"[Orca Network] Biggs, at least four includes one male, headed towards Useless Bay (Stephanie Brenaman)"
-0,Orca,2024-04-16 09:50:00-07:00,47.83917,-122.45763,"[Orca Network] Biggs, hunting behavior with directional changes (Donna Green Van Renselaar)"
-0,Orca,2024-04-16 09:34:00-07:00,47.82626,-122.44939,"[Orca Network] Biggs, male and female at least, northbound(Donna Green Van Renselaar)"
-0,Orca,2024-04-16 09:13:00-07:00,47.81243,-122.42536,"[Orca Network] Biggs, northbound (Donna Green Van Renselaar)"
-0,Orca,2024-04-16 08:54:00-07:00,47.78475,-122.4178,"[Orca Network] Biggs, at least 4, may be spread out, northbound (Kristin Pederson)"
-1,Orca,2024-04-15 18:06:00-07:00,47.72483,-122.52339,"[Orca Network] Biggs T65As eastbound (Candace Gavin, Sophy Johnston)"
-2,Orca,2024-04-15 16:32:00-07:00,47.68782,-122.48077,"[Orca Network] Biggs T65As Northbound. 1 lead male (probably T65A2) passing north of tip of Bainbridge, family is about  here (Candace Gavin, Deb Cronheim)"
-2,Orca,2024-04-15 16:03:00-07:00,47.6634,-122.46713,[Orca Network] Biggs T65As Northbound. (Sue Larkin0
-2,Orca,2024-04-15 15:37:00-07:00,47.62986,-122.47709,[Orca Network] Biggs T65As Northbound. (Mary Hartman) 
-2,Orca,2024-04-15 15:22:00-07:00,47.59723,-122.46816,[Orca Network] Biggs T65As Northbound. (Mandy Michelle)
-2,Orca,2024-04-15 15:04:00-07:00,47.5743,-122.46541,"[Orca Network] Biggs T65As Northbound. T65A3 Amir has been ahead of the family, uncertain if still ahead.  (Mary Hartman) "
-2,Orca,2024-04-15 14:41:00-07:00,47.52773,-122.47091,[Orca Network] Biggs T65As. T65A3 Amir  ahead of the family (April Basham) 
-2,Orca,2024-04-15 14:20:00-07:00,47.51695,-122.49228,[Orca Network] Trailers of T65As northbound here (Candace Gavin)
-2,Orca,2024-04-15 13:57:00-07:00,47.51323,-122.4885,"[Orca Network] T65A3 here, others likely trailing (April Janice Basham)"
-3,Orca,2024-04-15 13:13:00-07:00,47.43015,-122.52575,"[Orca Network] Biggs T65As northbound (Marla Smith, Lyndsey Carter, Jami Cantrell)"
-3,Orca,2024-04-15 12:49:00-07:00,47.41436,-122.53262,[Orca Network] Biggs T65As northbound with some directional changes and headstands (Marla Smith) (ID Marla Smith)
-3,Orca,2024-04-15 12:47:05-07:00,47.40623,-122.52163,
-3,Orca,2024-04-15 12:23:00-07:00,47.39722,-122.53923,"[Orca Network] Biggs, likely T65As, northbound (Amalia Moore)"
-3,Orca,2024-04-15 12:07:00-07:00,47.38188,-122.53168,[Orca Network] Orcas northbound (Amy Carey)
-4,Orca,2024-04-15 10:30:00-07:00,47.27292,-122.4449,"[Orca Network] 10:00-10:30: Biggs, likely T65As, eastbound (Jennifer Bradbury)"
-5,Gray Whale,2024-04-16 08:00:00-07:00,48.1184,-122.37729,"[Orca Network] at least two, northbound (Linda Aitkins)"
-6,Gray Whale,2024-04-15 13:04:00-07:00,48.00289,-122.2814,"[Orca Network] CRC-2362, 2356, 56, 356, and 383. No direction of travel given (Bart Rulon) (ID Bart Rulon)"
-7,Unspecified,2024-04-15 14:04:06-07:00,42.63191,-124.99224,
-8,Humpback,2024-04-15 13:35:40-07:00,42.62068,-124.99036,Jumping
+0,Gray Whale,2024-04-17 07:34:00-07:00,48.1637,-122.41982,"[CWW] from 06:46-07:34 seeing multiple whales, number uncertain. By 07:34 slowly moving southbound (Thomas McKane) "
+1,Gray Whale,2024-04-16 18:30:00-07:00,48.73082,-122.58821,[Orca Network] southbound (Hazel Cooper) 
+2,Gray Whale,2024-04-16 14:04:00-07:00,48.04631,-122.37412,[Orca Network] at least 2 grays headed east in Saratoga passage nearing Camano Head. They are mid-channel. (Luanne Seymour) 
+3,Orca,2024-04-16 16:05:00-07:00,48.22686,-122.78717,[Orca Network] Biggs T65A5 Indy  may now be angling NW direction  (Rachel Haight)
+3,Orca,2024-04-16 15:20:00-07:00,48.18882,-122.70933,[Orca Network] Biggs T65A5 Indy hugging shore continuing northbound (Rachel Haight) 
+3,Orca,2024-04-16 15:10:00-07:00,48.1417,-122.80603,
+4,Orca,2024-04-16 14:53:00-07:00,48.1543,-122.63385,[Orca Network] Biggs T65A5 Indy. NW hugging shore (Jennifer Fulton Carpenter)
+4,Orca,2024-04-16 14:24:00-07:00,48.12796,-122.60913,[Orca Network] Biggs T65A5 Indy now on his own. Northbound hugging shore (Rachel Haight) 
+4,Orca,2024-04-16 13:54:00-07:00,48.06572,-122.62291,"[Orca Network] Biggs, at least two members of T65As continue northbound close to Whidbey. Others likely across. 
+(Sandra Pollard) "
+4,Orca,2024-04-16 13:16:00-07:00,48.03102,-122.61876,"[Orca network] Biggs, T65As spread with T65A3 and T65A4 or A5 northbound (Rachel Haight)"
+4,Orca,2024-04-16 13:06:00-07:00,48.01632,-122.61533,"[Orca Network] Biggs, T65As, T65A3 and A4 or 5 approaching bush point northbound (Rachel Haight)"
+4,Orca,2024-04-16 12:43:00-07:00,47.96968,-122.56623,"[Orca Network] T65As, spread out, T65A3 and T65A5 pushing offshore, northbound, others likely on kitsap side (Rachel Haight)"
+4,Orca,2024-04-16 12:23:00-07:00,47.94301,-122.51268,"[Orca Network] Biggs, likely T65As, spread out, moving west fast (Rachel Haight)"
+4,Orca,2024-04-16 11:30:00-07:00,47.92599,-122.46873,"[Orca Network] Biggs, spread out across channel. Some off Maxwelton (Rachel Haight)"
+4,Orca,2024-04-16 11:20:00-07:00,47.91317,-122.52633,"[Orca Network] Biggs, 4 members of the T65As (T65A, T65A2, T65A4, T65A6) Northbound... standing on shore and there were 4 of them about 20-30 feet out straight in front of the lighthouse! (Julia Nelson) "
+5,Unspecified,2024-04-16 14:17:00-07:00,48.11088,-122.6105,"[Orca Network] Probably Biggs members of the T65As, but only saw spouts, two of them. (Kit Turner) "

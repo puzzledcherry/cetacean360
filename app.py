@@ -133,7 +133,7 @@ def createMap():
 
     # assigning colours based on time since sighting
     connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
-    connectedDF['created'] = connectedDF['created'].dt.tz_convert('America/Los_Angeles')
+    # connectedDF['created'] = connectedDF['created'].dt.tz_convert('America/Los_Angeles')
     connectedDF['time_diff'] = [normalizeTimeDiff(df) for df in connectedDF['created']]
     
     print("Max normalized time difference:", connectedDF['time_diff'].max())
