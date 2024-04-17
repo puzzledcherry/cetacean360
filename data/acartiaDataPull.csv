@@ -1,4 +1,5 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Orca,2024-04-17 10:30:00-07:00,1.0,47.66022,-122.83559,1,193960,[Orca Network] At least one male seen heading northbound (Candace Gavin per friend Jasmine) 
 Gray Whale,2024-04-17 07:34:00-07:00,1.0,48.1637,-122.41982,2,193639,"[CWW] from 06:46-07:34 seeing multiple whales, number uncertain. By 07:34 slowly moving southbound (Thomas McKane) "
 Gray Whale,2024-04-16 18:30:00-07:00,1.0,48.73082,-122.58821,1,193809,[Orca Network] southbound (Hazel Cooper) 
 Orca,2024-04-16 16:05:00-07:00,1.0,48.22686,-122.78717,1,193646,[Orca Network] Biggs T65A5 Indy  may now be angling NW direction  (Rachel Haight)
@@ -14,5 +15,3 @@ Orca,2024-04-16 13:16:00-07:00,1.0,48.03102,-122.61876,2,191393,"[Orca network] 
 Orca,2024-04-16 13:06:00-07:00,1.0,48.01632,-122.61533,2,191360,"[Orca Network] Biggs, T65As, T65A3 and A4 or 5 approaching bush point northbound (Rachel Haight)"
 Orca,2024-04-16 12:43:00-07:00,1.0,47.96968,-122.56623,2,191304,"[Orca Network] T65As, spread out, T65A3 and T65A5 pushing offshore, northbound, others likely on kitsap side (Rachel Haight)"
 Orca,2024-04-16 12:23:00-07:00,1.0,47.94301,-122.51268,6,191262,"[Orca Network] Biggs, likely T65As, spread out, moving west fast (Rachel Haight)"
-Orca,2024-04-16 11:30:00-07:00,1.0,47.92599,-122.46873,4,191157,"[Orca Network] Biggs, spread out across channel. Some off Maxwelton (Rachel Haight)"
-Orca,2024-04-16 11:20:00-07:00,1.0,47.91317,-122.52633,4,193666,"[Orca Network] Biggs, 4 members of the T65As (T65A, T65A2, T65A4, T65A6) Northbound... standing on shore and there were 4 of them about 20-30 feet out straight in front of the lighthouse! (Julia Nelson) "

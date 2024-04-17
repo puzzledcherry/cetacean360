@@ -82,6 +82,7 @@ def connectSightings(acartia):
   # for each sighting in the data pull (index of the row, conent of the row)
   for index, row in acartia.iterrows():
     cetaceanCount += 1
+    # ! DEBUG
     print ('whale entry: ', cetaceanCount)
     cetacean_type = row['type']
     # if we've seen the whale before
@@ -118,6 +119,7 @@ def connectSightings(acartia):
           newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
           sightingVector.append(newSighting)
           added = True
+          # ! DEBUG
           print ('new connected whale sighting')
           break
       
@@ -126,6 +128,7 @@ def connectSightings(acartia):
         newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
         newSightingVector = [newSighting]
         connections[cetacean_type].append(newSightingVector)
+        # ! DEBUG
         print ('new independent sighting')
       
     # if new whale type has been spotted
@@ -136,6 +139,7 @@ def connectSightings(acartia):
       connectedVector = [newSighting]
       valueVector = [connectedVector]
       connections[cetacean_type] = valueVector
+      # ! DEBUG
       print ('new key value added: ', cetacean_type)
     
   # save data structure to CSV

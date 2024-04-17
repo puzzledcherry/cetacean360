@@ -128,16 +128,20 @@ def createMap():
         f"<br>"
         f"{limitLineWidth('Comments: ' + str(row['data_source_comments']))}"
         f"<br>"
+        f"<br>"
         f"Data aggregated by Acartia",
         axis=1)
-
-    # assigning colours based on time since sighting
-    connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
-    # connectedDF['created'] = connectedDF['created'].dt.tz_convert('America/Los_Angeles')
-    connectedDF['time_diff'] = [normalizeTimeDiff(df) for df in connectedDF['created']]
     
+    # calculate normalized values of times, invert for opacity
+    # now, new sightings will be closer to 1 and old sightings closer to 0
+    connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
+    connectedDF['time_diff'] = [normalizeTimeDiff(df) for df in connectedDF['created']]
+    connectedDF['time_diff'] = (1 - connectedDF['time_diff'])
+    
+    # ! DEBUG
     print("Max normalized time difference:", connectedDF['time_diff'].max())
     print("Min normalized time difference:", connectedDF['time_diff'].min())
+    
     
     # creating dots (coloured)  
     # add dots for each sighting on the map, include hover info
