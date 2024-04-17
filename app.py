@@ -91,7 +91,7 @@ def createMap():
         width = 1000,
         height = 750,
         mapbox = dict(
-            style = "carto-positron",
+            style = "mapbox://styles/mapbox/streets-v12",
             zoom = 8,
             # center on puget sound
             center = dict(
