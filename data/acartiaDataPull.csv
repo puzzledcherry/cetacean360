@@ -1,4 +1,5 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Gray Whale,2024-04-17 13:36:00-07:00,1.0,47.95532,-122.34627,2,193965,[Orca Network] northbound (Tony Tilt)
 Orca,2024-04-17 10:30:00-07:00,1.0,47.66022,-122.83559,1,193960,[Orca Network] At least one male seen heading northbound (Candace Gavin per friend Jasmine) 
 Gray Whale,2024-04-17 07:34:00-07:00,1.0,48.1637,-122.41982,2,193639,"[CWW] from 06:46-07:34 seeing multiple whales, number uncertain. By 07:34 slowly moving southbound (Thomas McKane) "
 Gray Whale,2024-04-16 18:30:00-07:00,1.0,48.73082,-122.58821,1,193809,[Orca Network] southbound (Hazel Cooper) 
@@ -9,8 +10,3 @@ Orca,2024-04-16 14:53:00-07:00,1.0,48.1543,-122.63385,1,191625,[Orca Network] Bi
 Orca,2024-04-16 14:24:00-07:00,1.0,48.12796,-122.60913,1,191619,[Orca Network] Biggs T65A5 Indy now on his own. Northbound hugging shore (Rachel Haight) 
 Unspecified,2024-04-16 14:17:00-07:00,1.0,48.11088,-122.6105,2,191498,"[Orca Network] Probably Biggs members of the T65As, but only saw spouts, two of them. (Kit Turner) "
 Gray Whale,2024-04-16 14:04:00-07:00,1.0,48.04631,-122.37412,2,191478,[Orca Network] at least 2 grays headed east in Saratoga passage nearing Camano Head. They are mid-channel. (Luanne Seymour) 
-Orca,2024-04-16 13:54:00-07:00,1.0,48.06572,-122.62291,2,191453,"[Orca Network] Biggs, at least two members of T65As continue northbound close to Whidbey. Others likely across. 
-(Sandra Pollard) "
-Orca,2024-04-16 13:16:00-07:00,1.0,48.03102,-122.61876,2,191393,"[Orca network] Biggs, T65As spread with T65A3 and T65A4 or A5 northbound (Rachel Haight)"
-Orca,2024-04-16 13:06:00-07:00,1.0,48.01632,-122.61533,2,191360,"[Orca Network] Biggs, T65As, T65A3 and A4 or 5 approaching bush point northbound (Rachel Haight)"
-Orca,2024-04-16 12:43:00-07:00,1.0,47.96968,-122.56623,2,191304,"[Orca Network] T65As, spread out, T65A3 and T65A5 pushing offshore, northbound, others likely on kitsap side (Rachel Haight)"

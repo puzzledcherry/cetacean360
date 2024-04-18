@@ -190,4 +190,5 @@ app.layout = html.Div(
 
 # to run the program
 if __name__ == '__main__':
-    app.run_server(debug = False, port = 8050)
+    # app.run_server(debug = False, port = 8050)
+    createMap()
