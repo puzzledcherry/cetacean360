@@ -1,12 +1,12 @@
-id,type,created,lat,lon,comment
-0,Gray Whale,2024-04-17 13:36:00-07:00,47.95532,-122.34627,[Orca Network] northbound (Tony Tilt)
-1,Gray Whale,2024-04-17 07:34:00-07:00,48.1637,-122.41982,"[CWW] from 06:46-07:34 seeing multiple whales, number uncertain. By 07:34 slowly moving southbound (Thomas McKane) "
-2,Gray Whale,2024-04-16 18:30:00-07:00,48.73082,-122.58821,[Orca Network] southbound (Hazel Cooper) 
-3,Gray Whale,2024-04-16 14:04:00-07:00,48.04631,-122.37412,[Orca Network] at least 2 grays headed east in Saratoga passage nearing Camano Head. They are mid-channel. (Luanne Seymour) 
-4,Orca,2024-04-17 10:30:00-07:00,47.66022,-122.83559,[Orca Network] At least one male seen heading northbound (Candace Gavin per friend Jasmine) 
-5,Orca,2024-04-16 16:05:00-07:00,48.22686,-122.78717,[Orca Network] Biggs T65A5 Indy  may now be angling NW direction  (Rachel Haight)
-5,Orca,2024-04-16 15:20:00-07:00,48.18882,-122.70933,[Orca Network] Biggs T65A5 Indy hugging shore continuing northbound (Rachel Haight) 
-5,Orca,2024-04-16 15:10:00-07:00,48.1417,-122.80603,
-6,Orca,2024-04-16 14:53:00-07:00,48.1543,-122.63385,[Orca Network] Biggs T65A5 Indy. NW hugging shore (Jennifer Fulton Carpenter)
-6,Orca,2024-04-16 14:24:00-07:00,48.12796,-122.60913,[Orca Network] Biggs T65A5 Indy now on his own. Northbound hugging shore (Rachel Haight) 
-7,Unspecified,2024-04-16 14:17:00-07:00,48.11088,-122.6105,"[Orca Network] Probably Biggs members of the T65As, but only saw spouts, two of them. (Kit Turner) "
+id,type,created,lat,lon,no_sighted,comment
+0,Orca,2024-04-18 08:56:00-07:00,47.57458,-122.97264,4,[Orca Network] Northbound (Ashley Gould) 
+1,Orca,2024-04-17 18:30:00-07:00,48.15316,-122.76404,1,[Orca Network] Secondhand report of T65A3 northbound (Alissa Gubelman)
+1,Orca,2024-04-17 17:56:00-07:00,48.13162,-122.72078,1,[Orca Network] T65A3 northbound (Jennifer Fulton Carpenter)
+2,Orca,2024-04-17 16:33:00-07:00,48.13529,-122.72558,1,[Orca Network] T65A3 southbound (Jennifer Fulton Carpenter)
+2,Orca,2024-04-17 15:40:00-07:00,48.14692,-122.75219,1,[Orca Network] At least one orca southbound (Christopher Lewman)
+3,Orca,2024-04-17 15:17:00-07:00,47.33579,-122.8204,3,"[Orca Network] Biggs, at least 2-3 feeding on a pinniped and drifting towards stretch island (Claudia Putnam)"
+4,Unspecified,2024-04-17 18:54:00-07:00,47.20544,-122.59157,1,[Orca Network] Baleen whale northbound (Jacob Rain)
+4,Unspecified,2024-04-17 18:12:00-07:00,47.19566,-122.59526,1,"[Orca Network] Baleen whale, no direction of travel given (Rietta Rain)"
+5,Gray Whale,2024-04-17 14:29:00-07:00,47.9767,-122.34043,2,[Orca Network] presumably CRC 383 & 356 traveling side by side northbound (Alisa Lemire Brooks)
+5,Gray Whale,2024-04-17 14:15:00-07:00,47.97118,-122.34558,2,[Orca Network] CRC 383 and CRC 356 northbound (Alisa Lemire Brooks)
+5,Gray Whale,2024-04-17 13:36:00-07:00,47.95532,-122.34627,2,[Orca Network] northbound (Tony Tilt)

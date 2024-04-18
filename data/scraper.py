@@ -14,12 +14,13 @@ from datetime import datetime, timedelta
 # classes
 # object for storing sighting info
 class Sighting:
-  def __init__ (self, cetacean_type, created, lat, lon, comment):
+  def __init__ (self, cetacean_type, created, lat, lon, no_sighted, comment):
     self.id = 0
     self.type = cetacean_type
     self.created = created
     self.lat = lat
     self.lon = lon
+    self.no_sighted = no_sighted
     self.comment = comment
     
   def updateID (self, idNum):
@@ -116,7 +117,7 @@ def connectSightings(acartia):
         # if the sighting matches all the conditions append it to the connected sightings vector
         if (distance_lat <= lat_threshold and distance_lon <= lon_threshold
             and minutes_difference <= time_threshold):
-          newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
+          newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['no_sighted'], row['data_source_comments'])
           sightingVector.append(newSighting)
           added = True
           # ! DEBUG
@@ -125,7 +126,7 @@ def connectSightings(acartia):
       
       # if the sighting doesn't match any dependent sightings, add to the independent sightings vector
       if (not added):
-        newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
+        newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['no_sighted'], row['data_source_comments'])
         newSightingVector = [newSighting]
         connections[cetacean_type].append(newSightingVector)
         # ! DEBUG
@@ -135,7 +136,7 @@ def connectSightings(acartia):
     else:
       # add new dictionary entry for that whale type 
       # create a new sighting, put it into a vector for connected sightings, assign that vector to the key
-      newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['data_source_comments'])
+      newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['no_sighted'], row['data_source_comments'])
       connectedVector = [newSighting]
       valueVector = [connectedVector]
       connections[cetacean_type] = valueVector
@@ -149,7 +150,7 @@ def connectSightings(acartia):
 def connections2CSV (connections):
   # create destination CSV file
   csv_file = 'data/connectedSightings.csv'
-  fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'comment']
+  fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'no_sighted', 'comment'] 
   # begin assigning ID nums for each whale
   idNum = -1;
   

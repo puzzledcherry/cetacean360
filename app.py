@@ -34,8 +34,8 @@ chart_studio.tools.set_config_file(world_readable=True, sharing='public')
 import scraper
 
 # create dash application 
-app = dash.Dash(__name__)
-server = app.server
+# app = dash.Dash(__name__)
+# server = app.server
 
 # loading csv file into a pandas dataframe object
 def readCSV(csvFilePath):
@@ -78,10 +78,18 @@ def normalizeTimeDiff(sighting_time):
     # 0 is most recent, 1 is oldest
     return normalized_time
 
+# quantizing normalized times differences onto transparency scale 
+def applyTransScale(normalized_time):
+    if (normalized_time <= 0.30):
+        return 0.30
+    elif (normalized_time <= 0.60):
+        return 0.60
+    else:
+        return 1.00
+
 # create map with lines connecting whale sightings
 def createMap():
     # read CSV files into DFs
-    acartiaDF = readCSV('data/acartiaDataPull.csv')
     connectedDF = readCSV('data/connectedSightings.csv')
     fig = go.Figure()
     
@@ -119,39 +127,41 @@ def createMap():
                 )
             )
     
-    # creating hover text
-    # create text for each row of the acartia data frame
-    hover_text = acartiaDF.apply(lambda row: 
-        f"{limitLineWidth(row['type'])}<br>"
-        f"{limitLineWidth('Count: ' + str(row['no_sighted']))}<br>"
-        f"{limitLineWidth('Created: ' + row['created'])}<br>"
-        f"<br>"
-        f"{limitLineWidth('Comments: ' + str(row['data_source_comments']))}"
-        f"<br>"
-        f"<br>"
-        f"Data aggregated by Acartia",
-        axis=1)
-    
     # calculate normalized values of times, invert for opacity
     # now, new sightings will be closer to 1 and old sightings closer to 0
     connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
     connectedDF['time_diff'] = [normalizeTimeDiff(df) for df in connectedDF['created']]
     connectedDF['time_diff'] = (1 - connectedDF['time_diff'])
+    connectedDF['time_diff'] = [applyTransScale(df) for df in connectedDF['time_diff']]
     
     # ! DEBUG
     print("Max normalized time difference:", connectedDF['time_diff'].max())
     print("Min normalized time difference:", connectedDF['time_diff'].min())
     
+    # creating hover text
+    # create text for each row of the acartia data frame
+    hover_text = connectedDF.apply(lambda row: 
+        f"{limitLineWidth(row['type'])}<br>"
+        f"{limitLineWidth('Count: ' + str(row['no_sighted']))}<br>"
+        f"{limitLineWidth('Created: ' + str(row['created']))}<br>"
+        f"<br>"
+        f"{limitLineWidth('Comments: ' + str(row['comment']))}"
+        f"<br>"
+        f"<br>"
+        f"Data aggregated by Acartia"
+        f"{limitLineWidth('Opacity: ' + str(row['time_diff']))}",
+        axis=1)
+
     
     # creating dots (coloured)  
     # add dots for each sighting on the map, include hover info
     fig.add_trace(
         go.Scattermapbox(
             mode='markers',
-            lon = acartiaDF['longitude'],
-            lat = acartiaDF['latitude'],
+            lon = connectedDF['lon'],
+            lat = connectedDF['lat'],
             marker = dict(
-                size = 8, 
+                size = 10, 
                 color = 'blue',
                 opacity = connectedDF['time_diff']),
             
@@ -172,21 +182,21 @@ def createMap():
     return fig
     
 # HTML, display the map
-app.layout = html.Div(
-    className = 'whole-website',
-    children = [
-        html.Div(
-            className = 'map-container',
-            children = [
-                dcc.Graph (
-                    id = 'plot',
-                    figure = createMap()
-                ),
+# app.layout = html.Div(
+#     className = 'whole-website',
+#     children = [
+#         html.Div(
+#             className = 'map-container',
+#             children = [
+#                 dcc.Graph (
+#                     id = 'plot',
+#                     figure = createMap()
+#                 ),
                 
-            ]
-        ) 
-    ]
-)
+#             ]
+#         ) 
+#     ]
+# )
 
 # to run the program
 if __name__ == '__main__':
