@@ -22,6 +22,8 @@ class Sighting:
     self.lon = lon
     self.no_sighted = no_sighted
     self.comment = comment
+    # most recent sighting of this pod = 1; not most recent = 0
+    self.recent = 0
     
   def updateID (self, idNum):
     self.id = idNum
@@ -150,7 +152,7 @@ def connectSightings(acartia):
 def connections2CSV (connections):
   # create destination CSV file
   csv_file = 'data/connectedSightings.csv'
-  fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'no_sighted', 'comment'] 
+  fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'no_sighted', 'comment', 'recent'] 
   # begin assigning ID nums for each whale
   idNum = -1;
   
@@ -167,9 +169,14 @@ def connections2CSV (connections):
         # new ID number since we are on a new whale
         idNum += 1
         # each individual sighting in the dependent sightings vector
-        for sighting in dependentSights:
+        for index, sighting in enumerate(dependentSights):
           # update ID number
           sighting.updateID(idNum)
+          
+          # check if this is the most recent/last sighting in list
+          if (index == 0):
+            sighting.recent = 1
+          
           # convert to dictionary row, write to csv
           row = {field: getattr(sighting, field) for field in fieldNames}
           writer.writerow(row)

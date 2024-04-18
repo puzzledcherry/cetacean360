@@ -91,6 +91,7 @@ def applyTransScale(normalized_time):
 def createMap():
     # read CSV files into DFs
     connectedDF = readCSV('data/connectedSightings.csv')
+    mostRecentDF = connectedDF[connectedDF['recent'] == 1]
     fig = go.Figure()
     
     # define map visual specs, style zoom & default center
@@ -134,10 +135,6 @@ def createMap():
     connectedDF['time_diff'] = (1 - connectedDF['time_diff'])
     connectedDF['time_diff'] = [applyTransScale(df) for df in connectedDF['time_diff']]
     
-    # ! DEBUG
-    print("Max normalized time difference:", connectedDF['time_diff'].max())
-    print("Min normalized time difference:", connectedDF['time_diff'].min())
-    
     # creating hover text
     # create text for each row of the acartia data frame
     hover_text = connectedDF.apply(lambda row: 
@@ -148,12 +145,24 @@ def createMap():
         f"{limitLineWidth('Comments: ' + str(row['comment']))}"
         f"<br>"
         f"<br>"
-        f"Data aggregated by Acartia"
-        f"{limitLineWidth('Opacity: ' + str(row['time_diff']))}",
-        axis=1)
+        f"Data aggregated by Acartia",
+        axis = 1)
 
+    # creating buffer bubbles (around most recent sightings of each pod)
+    fig.add_trace(
+        go.Scattermapbox(
+            mode = 'markers',
+            lon = mostRecentDF['lon'],
+            lat = mostRecentDF['lat'],
+            marker = dict(
+                size = 30,
+                color = 'red',
+                opacity = 0.25,
+            )
+        )
+    )
     
-    # creating dots (coloured)  
+    # creating dots (every sighting)  
     # add dots for each sighting on the map, include hover info
     fig.add_trace(
         go.Scattermapbox(
@@ -161,7 +170,7 @@ def createMap():
             lon = connectedDF['lon'],
             lat = connectedDF['lat'],
             marker = dict(
-                size = 10, 
+                size = 15, 
                 color = 'blue',
                 opacity = connectedDF['time_diff']),
             
