@@ -95,7 +95,7 @@ def createMap():
     
     # define map visual specs, style zoom & default center
     fig.update_layout(
-        # defining size of map, might replace in css file in future
+        # defining size of map
         width = 1000,
         height = 750,
         mapbox = dict(
