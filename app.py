@@ -1,6 +1,6 @@
 # author: skyla tran
 # project name: cetacean 360
-# program name: app.py
+# program name: app.py 
 
 # dash framework imports
 import dash
