@@ -1,9 +1,8 @@
 # author: skyla tran
 # project name: cetacean 360
-# program name: app.py 
+# program name: app.py
 
 # dash framework imports
-import dash
 from dash import html
 from dash import dcc
 import dash_bootstrap_components as dbc
@@ -16,21 +15,19 @@ import plotly.colors as plc
 from datetime import datetime, timedelta
 
 # include data subfolder to path, API tokens
-import sys
-sys.path.insert(0, 'data')
-from hidden import MAPBOX_TOKEN
+from data.hidden import MAPBOX_TOKEN
 px.set_mapbox_access_token(MAPBOX_TOKEN)
 
 # chart studio imports for pushing to cloud
 import chart_studio
 import chart_studio.plotly as py
-from hidden import PLOTLY_TOKEN
+from data.hidden import PLOTLY_TOKEN
 # chart studio login
 chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = PLOTLY_TOKEN)
 chart_studio.tools.set_config_file(world_readable=True, sharing='public')
 
 # run the scraper
-import scraper
+import data.scraper
 
 # create dash application 
 # app = dash.Dash(__name__)

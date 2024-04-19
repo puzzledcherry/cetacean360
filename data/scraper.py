@@ -7,7 +7,7 @@ import csv
 import requests
 import pandas as pd
 
-from hidden import TOKEN
+from data.hidden import TOKEN
 from datetime import datetime, timedelta
 
 # classes
