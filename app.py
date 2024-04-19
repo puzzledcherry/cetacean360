@@ -1,7 +1,6 @@
 # author: skyla tran
-# project name: TBD
+# project name: cetacean 360
 # program name: app.py
-# description:
 
 # dash framework imports
 import dash
@@ -65,7 +64,7 @@ def limitLineWidth(line, max_width = 50):
 
 # normalize time difference between sighting and now
 def normalizeTimeDiff(sighting_time):
-    max_time = 1440
+    max_time = 2880
     current_datetime = pd.Timestamp.now()
     current_datetime = current_datetime.tz_localize('America/Los_Angeles')
     time_difference = current_datetime - sighting_time
@@ -91,7 +90,7 @@ def applyTransScale(normalized_time):
 def createMap():
     # read CSV files into DFs
     connectedDF = readCSV('data/connectedSightings.csv')
-    mostRecentDF = connectedDF[connectedDF['recent'] == 1]
+    # mostRecentDF = connectedDF[connectedDF['recent'] == 1]
     fig = go.Figure()
     
     # define map visual specs, style zoom & default center
@@ -149,18 +148,18 @@ def createMap():
         axis = 1)
 
     # creating buffer bubbles (around most recent sightings of each pod)
-    fig.add_trace(
-        go.Scattermapbox(
-            mode = 'markers',
-            lon = mostRecentDF['lon'],
-            lat = mostRecentDF['lat'],
-            marker = dict(
-                size = 30,
-                color = 'red',
-                opacity = 0.25,
-            )
-        )
-    )
+    # fig.add_trace(
+    #     go.Scattermapbox(
+    #         mode = 'markers',
+    #         lon = mostRecentDF['lon'],
+    #         lat = mostRecentDF['lat'],
+    #         marker = dict(
+    #             size = 30,
+    #             color = 'red',
+    #             opacity = 0.25,
+    #         )
+    #     )
+    # )
     
     # creating dots (every sighting)  
     # add dots for each sighting on the map, include hover info

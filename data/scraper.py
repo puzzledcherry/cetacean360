@@ -1,7 +1,6 @@
 # author: skyla tran
-# project name: TBD
+# project name: cetacean 360
 # program name: scraper.py
-# description:
 
 import os
 import csv
@@ -24,9 +23,6 @@ class Sighting:
     self.comment = comment
     # most recent sighting of this pod = 1; not most recent = 0
     self.recent = 0
-    
-  def updateID (self, idNum):
-    self.id = idNum
 
 # method defs
 # scrape and clean acartia API pull, save to CSV and call connectSightings
@@ -49,19 +45,19 @@ def whaleScrape ():
   acartia = acartia[['type','created','trusted','latitude','longitude','no_sighted','data_source_id','data_source_comments']]
   acartia = acartia[(acartia['trusted'] == 1)]
   
-  # calculate a day ago, convert timezone to PST
-  timeFrame = datetime.now() - timedelta(hours = 24)
+  # calculate 2 days ago, convert timezone to PST
+  timeFrame = datetime.now() - timedelta(hours = 48)
   timeFrame = pd.Timestamp(timeFrame)
   timeFrame = timeFrame.tz_localize('America/Los_Angeles')
   
   # parsing 'created' datafield into datetime format, ignore errors
-  # convert to PST, drop values from more than a day ago
+  # convert to PST, drop values from more than 2 days ago
   acartia['created'] = pd.to_datetime(acartia['created'], errors='coerce')
   acartia['created'] = acartia['created'].dt.tz_localize('UTC')
   acartia['created'] = acartia['created'].dt.tz_convert('America/Los_Angeles')
   acartia = acartia[acartia['created'] >= timeFrame]
   
-  # drop duplicates, sort by most recent, convert to PST
+  # drop duplicates, sort by most recent
   acartia = acartia.drop_duplicates()
   acartia = acartia.sort_values(by = ['created'], ascending = False)
   
@@ -81,13 +77,12 @@ def connectSightings(acartia):
   time_threshold = 65
   cetaceanCount = 0
   
-  # identify potential whale travel paths
+  # identify whale travel paths
   # for each sighting in the data pull (index of the row, conent of the row)
   for index, row in acartia.iterrows():
     cetaceanCount += 1
-    # ! DEBUG
-    print ('whale entry: ', cetaceanCount)
     cetacean_type = row['type']
+    
     # if we've seen the whale before
     if cetacean_type in connections:
       # for each value vector element to the key 'type'
@@ -116,14 +111,12 @@ def connectSightings(acartia):
         time_difference = row['created'] - last_sighting.created
         minutes_difference = abs(time_difference.total_seconds() // 60)
         
-        # if the sighting matches all the conditions append it to the connected sightings vector
+        # if the sighting matches all the conditions, append it to the connected sightings vector
         if (distance_lat <= lat_threshold and distance_lon <= lon_threshold
             and minutes_difference <= time_threshold):
           newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['no_sighted'], row['data_source_comments'])
           sightingVector.append(newSighting)
           added = True
-          # ! DEBUG
-          print ('new connected whale sighting')
           break
       
       # if the sighting doesn't match any dependent sightings, add to the independent sightings vector
@@ -131,8 +124,6 @@ def connectSightings(acartia):
         newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['no_sighted'], row['data_source_comments'])
         newSightingVector = [newSighting]
         connections[cetacean_type].append(newSightingVector)
-        # ! DEBUG
-        print ('new independent sighting')
       
     # if new whale type has been spotted
     else:
@@ -142,8 +133,6 @@ def connectSightings(acartia):
       connectedVector = [newSighting]
       valueVector = [connectedVector]
       connections[cetacean_type] = valueVector
-      # ! DEBUG
-      print ('new key value added: ', cetacean_type)
     
   # save data structure to CSV
   connections2CSV(connections)
@@ -153,7 +142,7 @@ def connections2CSV (connections):
   # create destination CSV file
   csv_file = 'data/connectedSightings.csv'
   fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'no_sighted', 'comment', 'recent'] 
-  # begin assigning ID nums for each whale
+  # begin assigning ID nums for each unique pod
   idNum = -1;
   
   # start saving sightings w ID nums to CSV
@@ -171,10 +160,11 @@ def connections2CSV (connections):
         # each individual sighting in the dependent sightings vector
         for index, sighting in enumerate(dependentSights):
           # update ID number
-          sighting.updateID(idNum)
+          sighting.id = idNum
           
           # check if this is the most recent/last sighting in list
           if (index == 0):
+            # 1: most recent of the path, 0: not most recent of the path
             sighting.recent = 1
           
           # convert to dictionary row, write to csv
