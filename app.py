@@ -40,7 +40,6 @@ import scraper
 def readCSV(csvFilePath):
     try:
         dataFrameObject = pd.read_csv(csvFilePath)
-        print("CSV file loaded successfully.")
     except FileNotFoundError:
         raise FileNotFoundError("Error: CSV file not found.")
     except Exception as e:
