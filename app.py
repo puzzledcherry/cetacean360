@@ -156,6 +156,7 @@ def createMap():
             lon = connectedDF['lon'],
             lat = connectedDF['lat'],
             marker = dict(
+                symbol = 'circle',
                 size = 15, 
                 color = 'blue',
                 opacity = connectedDF['time_diff']),
