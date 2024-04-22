@@ -3,16 +3,14 @@
 # program name: app.py
 
 # dash framework imports
-from dash import html
-from dash import dcc
-import dash_bootstrap_components as dbc
+# from dash import html
+# from dash import dcc
+# import dash_bootstrap_components as dbc
 
 # panda data frame imports
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
-import plotly.colors as plc
-from datetime import datetime, timedelta
 
 # include data subfolder to path, API tokens
 from data.hidden import MAPBOX_TOKEN
@@ -24,7 +22,7 @@ import chart_studio.plotly as py
 from data.hidden import PLOTLY_TOKEN
 # chart studio login
 chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = PLOTLY_TOKEN)
-chart_studio.tools.set_config_file(world_readable=True, sharing='public')
+chart_studio.tools.set_config_file(world_readable = True, sharing = 'public')
 
 # run the scraper
 import data.scraper
@@ -59,8 +57,9 @@ def limitLineWidth(line, max_width = 50):
         return line
 
 # normalize time difference between sighting and now
+# 1 day timeframe
 def normalizeTimeDiff(sighting_time):
-    max_time = 2880
+    max_time = 1440
     current_datetime = pd.Timestamp.now()
     current_datetime = current_datetime.tz_localize('America/Los_Angeles')
     time_difference = current_datetime - sighting_time

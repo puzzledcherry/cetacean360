@@ -2,7 +2,6 @@
 # project name: cetacean 360
 # program name: scraper.py
 
-import os
 import csv
 import requests
 import pandas as pd
@@ -45,8 +44,8 @@ def whaleScrape ():
   acartia = acartia[['type','created','trusted','latitude','longitude','no_sighted','data_source_id','data_source_comments']]
   acartia = acartia[(acartia['trusted'] == 1)]
   
-  # calculate 2 days ago, convert timezone to PST
-  timeFrame = datetime.now() - timedelta(hours = 48)
+  # calculate 1 day ago, convert timezone to PST
+  timeFrame = datetime.now() - timedelta(hours = 24)
   timeFrame = pd.Timestamp(timeFrame)
   timeFrame = timeFrame.tz_localize('America/Los_Angeles')
   
