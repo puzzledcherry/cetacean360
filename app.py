@@ -12,6 +12,10 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
 
+# other imports
+import numpy as np
+from math import radians, degrees
+
 # include data subfolder to path, API tokens
 from data.hidden import MAPBOX_TOKEN
 px.set_mapbox_access_token(MAPBOX_TOKEN)
@@ -74,10 +78,12 @@ def normalizeTimeDiff(sighting_time):
 
 # quantizing normalized times differences onto transparency scale 
 def applyTransScale(normalized_time):
-    if (normalized_time <= 0.30):
-        return 0.30
-    elif (normalized_time <= 0.60):
-        return 0.60
+    if (normalized_time <= 0.25):
+        return 0.25
+    elif (normalized_time <= 0.50):
+        return 0.50
+    elif (normalized_time <= 0.75):
+        return 0.75
     else:
         return 1.00
 
@@ -85,7 +91,7 @@ def applyTransScale(normalized_time):
 def createMap():
     # read CSV files into DFs
     connectedDF = readCSV('data/connectedSightings.csv')
-    # mostRecentDF = connectedDF[connectedDF['recent'] == 1]
+    mostRecentDF = connectedDF[connectedDF['recent'] == 1]
     fig = go.Figure()
     
     # define map visual specs, style zoom & default center
@@ -141,20 +147,6 @@ def createMap():
         f"<br>"
         f"Data aggregated by Acartia",
         axis = 1)
-
-    # creating buffer bubbles (around most recent sightings of each pod)
-    # fig.add_trace(
-    #     go.Scattermapbox(
-    #         mode = 'markers',
-    #         lon = mostRecentDF['lon'],
-    #         lat = mostRecentDF['lat'],
-    #         marker = dict(
-    #             size = 30,
-    #             color = 'red',
-    #             opacity = 0.25,
-    #         )
-    #     )
-    # )
     
     # creating dots (every sighting)  
     # add dots for each sighting on the map, include hover info

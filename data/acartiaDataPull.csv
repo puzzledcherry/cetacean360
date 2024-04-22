@@ -1,4 +1,7 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Gray Whale,2024-04-22 11:45:00-07:00,1.0,48.07934,-122.40303,1,194136,[Orca Network] Saw a gray whale blow (Serena Tierra)
+Gray Whale,2024-04-22 10:55:00-07:00,1.0,48.06065,-122.39743,2,194135,[Orca Network] Two gray whales northbound (Teena Robinett)
+Orca,2024-04-22 09:32:00-07:00,1.0,47.36341,-122.42398,1,194130,[Orca Network] One orca headed southbound (Amy Carey)
 Gray Whale,2024-04-21 17:38:00-07:00,1.0,47.61032,-122.48607,1,194123,[Orca Network] Gray heading southwest (WSF)
 Orca,2024-04-21 16:30:00-07:00,1.0,47.36365,-123.08888,4,194122,[Orca Network] Biggs T65As westbound (Stephanie Burton)
 Orca,2024-04-21 16:05:00-07:00,1.0,47.35935,-123.02193,4,194121,"[Orca Network] Biggs T65As westbound (Mike Maddox, Tori Dulemba)"
@@ -7,7 +10,3 @@ Gray Whale,2024-04-21 15:30:00-07:00,1.0,48.02549,-122.2723,2,194118,[Orca Netwo
 Orca,2024-04-21 15:05:00-07:00,1.0,47.38529,-122.97815,3,194115,"[Orca Network] Biggs, likely T65As, westbound (Mike Maddox)"
 Orca,2024-04-21 13:37:00-07:00,1.0,47.41392,-122.89499,3,194111,"[Orca Network] Biggs, likely T65As, eastbound (Stephanie Burton)"
 Gray Whale,2024-04-21 13:20:00-07:00,1.0,48.02537,-122.3096,5,194110,"[Orca Network] Five gray whales spread between southeast Hat Island and Camano Head, including CRC53 spyhopping (Alli Montgomery)"
-Orca,2024-04-21 13:13:00-07:00,1.0,47.40705,-122.91599,3,194109,[Orca Network] Orcas slowly cruising eastbound (Stephanie Burton)
-Orca,2024-04-21 11:50:00-07:00,1.0,47.35707,-123.022,3,194108,"[Orca Network] Orcas eastbound, moving quick (Tori Dulemba)"
-Gray Whale,2024-04-21 11:45:00-07:00,1.0,48.12992,-122.38882,2,194106,[Orca Network] Two gray whales milling (Katie Milici Davis)
-Gray Whale,2024-04-21 10:30:00-07:00,1.0,47.99951,-122.29919,2,194107,"[Orca Network] Two grays, one was breaching, no apparent direction (Lori Christopher)"
