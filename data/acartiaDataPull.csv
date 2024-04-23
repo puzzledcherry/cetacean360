@@ -1,4 +1,8 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Orca,2024-04-23 15:55:00-07:00,1.0,47.56007,-122.61453,1,194221,[Orca Network] lone bull traveling  SW (Ashley Thomsen)
+Orca,2024-04-23 14:08:00-07:00,1.0,47.58519,-122.53498,1,194214,[Orca Network] Orca following Bainbridge coast from Restoration Point to Fort Ward (Mariah Vicary)
+Unspecified,2024-04-23 12:10:00-07:00,1.0,47.31006,-122.55356,1,194207,"[Orca Network] Gray or humpback. Reported as just floating, possibly logging (Deshea Hanson)"
+Orca,2024-04-23 12:10:00-07:00,1.0,48.047,-122.39728,1,194208,[Orca Network] At least one orca northbound slowly (Katie Davis Watkins)
 Orca,2024-04-23 11:21:00-07:00,1.0,48.05298,-122.62838,6,194196,"[Orca Network] Biggs, southbound moving towards Whidbey side (Rebecca Berger)"
 Orca,2024-04-23 10:51:00-07:00,1.0,48.03446,-122.65258,6,194193,"[Orca Network] Biggs, southbound towards south end of Marrowstone (Rebecca Berger)"
 Orca,2024-04-23 10:40:00-07:00,1.0,48.06384,-122.66151,6,194191,"[Orca Network] Biggs, southbound (Rebecca Berger)"
@@ -9,7 +13,3 @@ Gray Whale,2024-04-23 09:48:00-07:00,1.0,47.97558,-122.33003,1,194199,[Orca Netw
 Orca,2024-04-23 09:23:00-07:00,1.0,47.73561,-122.51319,1,194185,"[Orca Network] at least one, possibly two, milling, circling, maybe feeding (Gregory)"
 Orca,2024-04-23 09:00:00-07:00,1.0,48.13515,-122.72845,2,194183,"[Orca Network] heading north, then east/southeast (Christopher Lewman)"
 Orca,2024-04-23 08:17:00-07:00,1.0,48.09339,-122.74189,2,194178,[Orca Network] relayed sighting of at least two orcas (Trevor Tillman) 
-Gray Whale,2024-04-22 16:37:00-07:00,1.0,47.5837,-122.40594,1,194167,"[Orca Network] Baleen whale, probable gray, eastbound close to shore (Mary Hartmann) "
-Gray Whale,2024-04-22 16:35:00-07:00,1.0,47.58126,-122.40559,1,194166,close to alki shore off 55th and alki
-Gray Whale,2024-04-22 12:21:00-07:00,1.0,48.00278,-122.31455,1,194137,
-Gray Whale,2024-04-22 11:45:00-07:00,1.0,48.07934,-122.40303,1,194136,[Orca Network] Saw a gray whale blow (Serena Tierra)

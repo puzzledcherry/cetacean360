@@ -2,30 +2,34 @@
 # project name: cetacean 360
 # program name: app.py
 
-# dash framework imports
-# from dash import html
-# from dash import dcc
-# import dash_bootstrap_components as dbc
-
 # panda data frame imports
+import os
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
 
-# other imports
-import numpy as np
-from math import radians, degrees
-
-# include data subfolder to path, API tokens
-from data.hidden import MAPBOX_TOKEN
-px.set_mapbox_access_token(MAPBOX_TOKEN)
-
 # chart studio imports for pushing to cloud
 import chart_studio
 import chart_studio.plotly as py
-from data.hidden import PLOTLY_TOKEN
-# chart studio login
-chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = PLOTLY_TOKEN)
+
+# PLOTLY TOKENS
+#* DIRECT SECRETS IMPORT
+# from data.hidden import PLOTLY_TOKEN
+# plotly_token = PLOTLY_TOKEN
+#* ENV SECRETS IMPORT
+plotly_token = str(os.environ.get('PLOTLY_TOKEN'))
+
+# MAPBOX TOKENS
+#* DIRECT SECRETS IMPORT
+# from data.hidden import MAPBOX_TOKEN
+# mapbox_token = MAPBOX_TOKEN
+#* ENV SECRETS IMPORT
+mapbox_token = str(os.environ.get('MAPBOX_TOKEN'))
+
+# using tokens, mapbox
+px.set_mapbox_access_token(mapbox_token)
+# using tokens, chart studio login
+chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = plotly_token)
 chart_studio.tools.set_config_file(world_readable = True, sharing = 'public')
 
 # run the scraper
@@ -175,7 +179,7 @@ def createMap():
     )
     
     fig.update_layout(showlegend = False)
-    py.plot(fig, filename = 'whale-connections', auto_open = True)
+    py.plot(fig, filename = 'whale-connections', auto_open = False)
     
     # return the created map with lines and hovers and dots
     return fig

@@ -2,12 +2,17 @@
 # project name: cetacean 360
 # program name: scraper.py
 
+import os
 import csv
 import requests
 import pandas as pd
-
-from data.hidden import TOKEN
 from datetime import datetime, timedelta
+
+#* DIRECT SECRETS IMPORT
+# from data.hidden import TOKEN
+# token = TOKEN
+#* ENV SECRETS IMPORT
+token = str(os.environ.get('TOKEN'))
 
 # classes
 # object for storing sighting info
@@ -26,8 +31,6 @@ class Sighting:
 # method defs
 # scrape and clean acartia API pull, save to CSV and call connectSightings
 def whaleScrape (): 
-  # acartia token
-  token = TOKEN
   
   # acartia API call, provide token and get JSON back
   url='https://acartia.io/api/v1/sightings/'

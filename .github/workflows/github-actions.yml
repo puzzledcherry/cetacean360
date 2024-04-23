@@ -16,11 +16,7 @@ jobs:
           uses: actions/setup-python@v2
           with:
             python-version: '3.x'
-        
-        - name: Print PYTHONPATH
-          run: echo $PYTHONPATH
-          
-        
+
         - name: install dependencies
           run: |
             pip install pandas
@@ -30,6 +26,10 @@ jobs:
             pip install datetime
         
         - name: run c360
+          env: 
+            TOKEN: ${{ secrets.TOKEN }} 
+            MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+            PLOTLY_TOKEN: ${{ secrets.PLOTLY_TOKEN }}
           run: python app.py
 
 
