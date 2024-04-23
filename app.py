@@ -78,17 +78,23 @@ def normalizeTimeDiff(sighting_time):
 
 # quantizing normalized times differences onto transparency scale 
 def applyTransScale(normalized_time):
-    if (normalized_time <= 0.25):
-        return 0.25
-    elif (normalized_time <= 0.50):
-        return 0.50
-    elif (normalized_time <= 0.75):
-        return 0.75
+    if (normalized_time <= 0.20):
+        return 0.20
+    elif (normalized_time <= 0.40):
+        return 0.40
+    elif (normalized_time <= 0.60):
+        return 0.60
+    elif (normalized_time <= 0.80):
+        return 0.80
     else:
         return 1.00
 
 # create map with lines connecting whale sightings
 def createMap():
+    
+    import sys
+    print(sys.path)
+
     # read CSV files into DFs
     connectedDF = readCSV('data/connectedSightings.csv')
     mostRecentDF = connectedDF[connectedDF['recent'] == 1]

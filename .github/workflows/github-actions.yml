@@ -24,6 +24,7 @@ jobs:
             pip install chart_studio
             pip install requests
             pip install datetime
+            echo "::add-path::data"
         
         - name: run c360
           run: python app.py

@@ -1,6 +1,11 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Orca,2024-04-23 11:21:00-07:00,1.0,48.05298,-122.62838,6,194196,"[Orca Network] Biggs, southbound moving towards Whidbey side (Rebecca Berger)"
+Orca,2024-04-23 10:51:00-07:00,1.0,48.03446,-122.65258,6,194193,"[Orca Network] Biggs, southbound towards south end of Marrowstone (Rebecca Berger)"
+Orca,2024-04-23 10:40:00-07:00,1.0,48.06384,-122.66151,6,194191,"[Orca Network] Biggs, southbound (Rebecca Berger)"
 Orca,2024-04-23 10:27:00-07:00,1.0,48.10833,-122.66288,6,194189,"[Orca Network] Biggs, numbers approx, at least one male in there, headed slowly south. May be spread out (Rebecca Berger)"
+Orca,2024-04-23 10:20:00-07:00,1.0,47.96984,-122.34274,3,194198,[Orca Network] appear to be circling gray whale (WSF)
 Orca,2024-04-23 10:00:00-07:00,1.0,48.11063,-122.67318,6,194186,"[Orca Network] facing north, numbers approximate (Rebecca Berger)"
+Gray Whale,2024-04-23 09:48:00-07:00,1.0,47.97558,-122.33003,1,194199,[Orca Network] heading towards Gedney Island (WSF)
 Orca,2024-04-23 09:23:00-07:00,1.0,47.73561,-122.51319,1,194185,"[Orca Network] at least one, possibly two, milling, circling, maybe feeding (Gregory)"
 Orca,2024-04-23 09:00:00-07:00,1.0,48.13515,-122.72845,2,194183,"[Orca Network] heading north, then east/southeast (Christopher Lewman)"
 Orca,2024-04-23 08:17:00-07:00,1.0,48.09339,-122.74189,2,194178,[Orca Network] relayed sighting of at least two orcas (Trevor Tillman) 
@@ -8,4 +13,3 @@ Gray Whale,2024-04-22 16:37:00-07:00,1.0,47.5837,-122.40594,1,194167,"[Orca Netw
 Gray Whale,2024-04-22 16:35:00-07:00,1.0,47.58126,-122.40559,1,194166,close to alki shore off 55th and alki
 Gray Whale,2024-04-22 12:21:00-07:00,1.0,48.00278,-122.31455,1,194137,
 Gray Whale,2024-04-22 11:45:00-07:00,1.0,48.07934,-122.40303,1,194136,[Orca Network] Saw a gray whale blow (Serena Tierra)
-Gray Whale,2024-04-22 10:55:00-07:00,1.0,48.06065,-122.39743,2,194135,[Orca Network] Two gray whales northbound (Teena Robinett)
