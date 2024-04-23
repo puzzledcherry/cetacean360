@@ -17,6 +17,10 @@ jobs:
           with:
             python-version: '3.x'
         
+        - name: Print PYTHONPATH
+          run: echo $PYTHONPATH
+          
+        
         - name: install dependencies
           run: |
             pip install pandas
