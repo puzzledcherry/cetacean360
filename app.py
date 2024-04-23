@@ -28,9 +28,6 @@ from data.hidden import PLOTLY_TOKEN
 chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = PLOTLY_TOKEN)
 chart_studio.tools.set_config_file(world_readable = True, sharing = 'public')
 
-import sys
-sys.path.insert(0, "./cetacean360")
-
 # run the scraper
 import data.scraper
 
