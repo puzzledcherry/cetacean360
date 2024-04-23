@@ -28,6 +28,9 @@ from data.hidden import PLOTLY_TOKEN
 chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = PLOTLY_TOKEN)
 chart_studio.tools.set_config_file(world_readable = True, sharing = 'public')
 
+import sys
+sys.path.insert(0, "./cetacean360")
+
 # run the scraper
 import data.scraper
 
@@ -91,9 +94,6 @@ def applyTransScale(normalized_time):
 
 # create map with lines connecting whale sightings
 def createMap():
-    
-    import sys
-    print(sys.path)
 
     # read CSV files into DFs
     connectedDF = readCSV('data/connectedSightings.csv')
