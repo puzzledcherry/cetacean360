@@ -1,4 +1,4 @@
-name: Github Actions Demo
+name: c360 refresh
 on: 
     schedule:
         - cron: "*/5 * * * *"
