@@ -1,11 +1,11 @@
 id,type,created,lat,lon,no_sighted,comment,recent
-0,Gray Whale,2024-04-22 11:45:00-07:00,48.07934,-122.40303,1,[Orca Network] Saw a gray whale blow (Serena Tierra),1
-0,Gray Whale,2024-04-22 10:55:00-07:00,48.06065,-122.39743,2,[Orca Network] Two gray whales northbound (Teena Robinett),0
-1,Gray Whale,2024-04-21 17:38:00-07:00,47.61032,-122.48607,1,[Orca Network] Gray heading southwest (WSF),1
-2,Gray Whale,2024-04-21 15:30:00-07:00,48.02549,-122.2723,2,[Orca Network] At least two grays milling (Marilyn Armbruster),1
-3,Orca,2024-04-22 09:32:00-07:00,47.36341,-122.42398,1,[Orca Network] One orca headed southbound (Amy Carey),1
-4,Orca,2024-04-21 16:30:00-07:00,47.36365,-123.08888,4,[Orca Network] Biggs T65As westbound (Stephanie Burton),1
-4,Orca,2024-04-21 16:05:00-07:00,47.35935,-123.02193,4,"[Orca Network] Biggs T65As westbound (Mike Maddox, Tori Dulemba)",0
-4,Orca,2024-04-21 15:30:00-07:00,47.37865,-123.00116,4,[Orca Network] Biggs T65As westbound (Aaron Rothfolk) (ID Serena Tierra),0
-4,Orca,2024-04-21 15:05:00-07:00,47.38529,-122.97815,3,"[Orca Network] Biggs, likely T65As, westbound (Mike Maddox)",0
-5,Orca,2024-04-21 13:37:00-07:00,47.41392,-122.89499,3,"[Orca Network] Biggs, likely T65As, eastbound (Stephanie Burton)",1
+0,Orca,2024-04-23 10:27:00-07:00,48.10833,-122.66288,6,"[Orca Network] Biggs, numbers approx, at least one male in there, headed slowly south. May be spread out (Rebecca Berger)",1
+0,Orca,2024-04-23 10:00:00-07:00,48.11063,-122.67318,6,"[Orca Network] facing north, numbers approximate (Rebecca Berger)",0
+0,Orca,2024-04-23 09:00:00-07:00,48.13515,-122.72845,2,"[Orca Network] heading north, then east/southeast (Christopher Lewman)",0
+0,Orca,2024-04-23 08:17:00-07:00,48.09339,-122.74189,2,[Orca Network] relayed sighting of at least two orcas (Trevor Tillman) ,0
+1,Orca,2024-04-23 09:23:00-07:00,47.73561,-122.51319,1,"[Orca Network] at least one, possibly two, milling, circling, maybe feeding (Gregory)",1
+2,Gray Whale,2024-04-22 16:37:00-07:00,47.5837,-122.40594,1,"[Orca Network] Baleen whale, probable gray, eastbound close to shore (Mary Hartmann) ",1
+2,Gray Whale,2024-04-22 16:35:00-07:00,47.58126,-122.40559,1,close to alki shore off 55th and alki,0
+3,Gray Whale,2024-04-22 12:21:00-07:00,48.00278,-122.31455,1,,1
+4,Gray Whale,2024-04-22 11:45:00-07:00,48.07934,-122.40303,1,[Orca Network] Saw a gray whale blow (Serena Tierra),1
+4,Gray Whale,2024-04-22 10:55:00-07:00,48.06065,-122.39743,2,[Orca Network] Two gray whales northbound (Teena Robinett),0
