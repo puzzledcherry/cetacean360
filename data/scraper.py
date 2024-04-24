@@ -8,6 +8,11 @@ import requests
 import pandas as pd
 from datetime import datetime, timedelta
 
+# ! secrets frenzy
+# if running with the hidden.py file, use direct secrets import
+# if running with cron job on github actions, use env secrets import
+# should match the secret type of app.py
+
 #* DIRECT SECRETS IMPORT
 # from data.hidden import TOKEN
 # token = TOKEN
@@ -15,7 +20,7 @@ from datetime import datetime, timedelta
 token = str(os.environ.get('TOKEN'))
 
 # classes
-# object for storing sighting info
+# *object for storing sighting info
 class Sighting:
   def __init__ (self, cetacean_type, created, lat, lon, no_sighted, comment):
     self.id = 0
@@ -29,7 +34,7 @@ class Sighting:
     self.recent = 0
 
 # method defs
-# scrape and clean acartia API pull, save to CSV and call connectSightings
+# *scrape and clean acartia API pull, save to CSV and call connectSightings
 def whaleScrape (): 
   
   # acartia API call, provide token and get JSON back
@@ -53,7 +58,7 @@ def whaleScrape ():
   timeFrame = timeFrame.tz_localize('America/Los_Angeles')
   
   # parsing 'created' datafield into datetime format, ignore errors
-  # convert to PST, drop values from more than 2 days ago
+  # convert to PST, drop values from more than 1 day ago
   acartia['created'] = pd.to_datetime(acartia['created'], errors='coerce')
   acartia['created'] = acartia['created'].dt.tz_localize('UTC')
   acartia['created'] = acartia['created'].dt.tz_convert('America/Los_Angeles')
@@ -69,10 +74,11 @@ def whaleScrape ():
   # create connections between sightings
   connectSightings(acartia)
 
-# using the pd df to connect whale sightings into data struct, call connection2CSV
+# *using the acartia df to connect whale sightings into complex data struct, call connection2CSV
 def connectSightings(acartia):
   # dictonionary for storing connections
   connections = {}
+  # default thresholds
   lat_threshold = 0.075
   lon_threshold = 0.075
   # adding an extra 5 minutes in case the whales dilly dally
@@ -80,18 +86,17 @@ def connectSightings(acartia):
   cetaceanCount = 0
   
   # identify whale travel paths
-  # for each sighting in the data pull (index of the row, conent of the row)
-  for index, row in acartia.iterrows():
+  # for each sighting in the data pull 
+  for row in acartia.iterrows():
     cetaceanCount += 1
     cetacean_type = row['type']
     
     # if we've seen the whale before
     if cetacean_type in connections:
-      # for each value vector element to the key 'type'
       added = False
       
       # assign thresholds based on whale type here
-      # calculations can be found in figjam diagram
+      # calculations & research can be found in figjam diagram
       if (cetacean_type == 'Gray Whale'):
         lat_threshold = 0.046
         lon_threshold = 0.073
@@ -102,18 +107,19 @@ def connectSightings(acartia):
         lat_threshold = 0.075
         lon_threshold = 0.075
       
+      # for each independent sighting vector element to the key 'type'
       for sightingVector in connections[cetacean_type]:
-        # grab the last element in the independent sighting vector 
+        # grab the last element in current independent sightings dependent sightings vector
         # aka the most recent sighting of that specific independant whale
         last_sighting = sightingVector[-1]
         
-        # calculate distance and time differences
+        # calculate distance and time differences (certain distance within 60 minutes)
         distance_lat = abs(float(row['latitude']) - float(last_sighting.lat))
         distance_lon = abs(float(row['longitude']) - float(last_sighting.lon))
         time_difference = row['created'] - last_sighting.created
         minutes_difference = abs(time_difference.total_seconds() // 60)
         
-        # if the sighting matches all the conditions, append it to the connected sightings vector
+        # if the sighting matches all the conditions, append it to the dependent sightings vector
         if (distance_lat <= lat_threshold and distance_lon <= lon_threshold
             and minutes_difference <= time_threshold):
           newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['no_sighted'], row['data_source_comments'])
@@ -130,36 +136,36 @@ def connectSightings(acartia):
     # if new whale type has been spotted
     else:
       # add new dictionary entry for that whale type 
-      # create a new sighting, put it into a vector for connected sightings, assign that vector to the key
+      # create a new sighting, put it into a vector for connected sightings, then into independent sightings vector, 
+      # then assign that vector to the key
       newSighting = Sighting(row['type'], row['created'], row['latitude'], row['longitude'], row['no_sighted'], row['data_source_comments'])
       connectedVector = [newSighting]
       valueVector = [connectedVector]
       connections[cetacean_type] = valueVector
     
-  # save data structure to CSV
+  # call connections2csv, save data structure to CSV
   connections2CSV(connections)
 
-# save data struct to CSV, assign ID to each whale
+# *save data struct to CSV, assign ID to each individual pod/whale
 def connections2CSV (connections):
   # create destination CSV file
   csv_file = 'data/connectedSightings.csv'
   fieldNames = ['id', 'type', 'created', 'lat', 'lon', 'no_sighted', 'comment', 'recent'] 
-  # begin assigning ID nums for each unique pod
   idNum = -1;
   
-  # start saving sightings w ID nums to CSV
+  # start saving sightings w assigned ID nums to CSV
   with open(csv_file, mode="w", newline="") as file:
     # create writer object & write header
     writer = csv.DictWriter(file, fieldnames = fieldNames)
     writer.writeheader()
     
-    # for each key in the complex data struct
+    # for each key in the complex data struct (whale type)
     for key, value in connections.items():
-      # for each dependent sightings vector in independent sightings vector
+      # for each dependent sightings vector in independent sightings vector (pod/whale connected sightings)
       for dependentSights in value:
-        # new ID number since we are on a new whale
+        # new ID number since we are on a new pod/whale
         idNum += 1
-        # each individual sighting in the dependent sightings vector
+        # each individual sighting in the dependent sightings vector (actual individual submitted sightings)
         for index, sighting in enumerate(dependentSights):
           # update ID number
           sighting.id = idNum

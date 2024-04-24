@@ -2,7 +2,7 @@
 # project name: cetacean 360
 # program name: app.py
 
-# panda data frame imports
+# os & pandas imports
 import os
 import pandas as pd
 import plotly.express as px
@@ -11,6 +11,11 @@ import plotly.graph_objs as go
 # chart studio imports for pushing to cloud
 import chart_studio
 import chart_studio.plotly as py
+
+# ! secrets frenzy
+# if running with the hidden.py file, use direct secrets import
+# if running with cron job on github actions, use env secrets import
+# should match the secret type of scraper.py
 
 # PLOTLY TOKENS
 #* DIRECT SECRETS IMPORT
@@ -26,7 +31,7 @@ plotly_token = str(os.environ.get('PLOTLY_TOKEN'))
 #* ENV SECRETS IMPORT
 mapbox_token = str(os.environ.get('MAPBOX_TOKEN'))
 
-# using tokens, mapbox
+# using tokens, mapbox access
 px.set_mapbox_access_token(mapbox_token)
 # using tokens, chart studio login
 chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = plotly_token)
@@ -34,10 +39,6 @@ chart_studio.tools.set_config_file(world_readable = True, sharing = 'public')
 
 # run the scraper
 import data.scraper
-
-# create dash application 
-# app = dash.Dash(__name__)
-# server = app.server
 
 # loading csv file into a pandas dataframe object
 def readCSV(csvFilePath):
@@ -49,7 +50,7 @@ def readCSV(csvFilePath):
         raise Exception("An error occurred while loading the CSV file:", e)
     return dataFrameObject
 
-# limit the width of a line in the hover text
+# limit the width of a line in the hover text to 50 chars
 def limitLineWidth(line, max_width = 50):
     # base case
     # if the line is over the max width, find space near max
@@ -65,7 +66,7 @@ def limitLineWidth(line, max_width = 50):
         return line
 
 # normalize time difference between sighting and now
-# 1 day timeframe
+# 24 hour timeframe; 0 most recent, 1 oldest
 def normalizeTimeDiff(sighting_time):
     max_time = 1440
     current_datetime = pd.Timestamp.now()
@@ -75,12 +76,10 @@ def normalizeTimeDiff(sighting_time):
 
     # convert difference onto a scale [0-1]
     normalized_time = minutes_difference / max_time
-    
-    # returning corresponding colour decimal
-    # 0 is most recent, 1 is oldest
+    # returning corresponding normalized decimal
     return normalized_time
 
-# quantizing normalized times differences onto transparency scale 
+# quantizing normalized time differences onto transparency scale 
 def applyTransScale(normalized_time):
     if (normalized_time <= 0.20):
         return 0.20
@@ -95,12 +94,12 @@ def applyTransScale(normalized_time):
 
 # create map with lines connecting whale sightings
 def createMap():
-
     # read CSV files into DFs
     connectedDF = readCSV('data/connectedSightings.csv')
     mostRecentDF = connectedDF[connectedDF['recent'] == 1]
     fig = go.Figure()
     
+    # creating actual map
     # define map visual specs, style zoom & default center
     fig.update_layout(
         # defining size of map
@@ -155,7 +154,7 @@ def createMap():
         f"Data aggregated by Acartia",
         axis = 1)
     
-    # creating dots (every sighting)  
+    # creating sighting dots
     # add dots for each sighting on the map, include hover info
     fig.add_trace(
         go.Scattermapbox(
@@ -178,30 +177,13 @@ def createMap():
         )
     )
     
+    # upload to plotly cloud
     fig.update_layout(showlegend = False)
     py.plot(fig, filename = 'whale-connections', auto_open = False)
     
     # return the created map with lines and hovers and dots
     return fig
     
-# HTML, display the map
-# app.layout = html.Div(
-#     className = 'whole-website',
-#     children = [
-#         html.Div(
-#             className = 'map-container',
-#             children = [
-#                 dcc.Graph (
-#                     id = 'plot',
-#                     figure = createMap()
-#                 ),
-                
-#             ]
-#         ) 
-#     ]
-# )
-
 # to run the program
 if __name__ == '__main__':
-    # app.run_server(debug = False, port = 8050)
     createMap()
