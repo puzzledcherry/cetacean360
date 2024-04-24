@@ -14,10 +14,10 @@ from datetime import datetime, timedelta
 # should match the secret type of app.py
 
 #* DIRECT SECRETS IMPORT
-# from data.hidden import TOKEN
-# token = TOKEN
+from data.hidden import TOKEN
+token = TOKEN
 #* ENV SECRETS IMPORT
-token = str(os.environ.get('TOKEN'))
+# token = str(os.environ.get('TOKEN'))
 
 # classes
 # *object for storing sighting info
@@ -87,7 +87,7 @@ def connectSightings(acartia):
   
   # identify whale travel paths
   # for each sighting in the data pull 
-  for row in acartia.iterrows():
+  for index, row in acartia.iterrows():
     cetaceanCount += 1
     cetacean_type = row['type']
     

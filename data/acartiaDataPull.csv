@@ -1,15 +1,34 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
+Orca,2024-04-24 13:33:00-07:00,1.0,48.01783,-122.53081,2,194281,"[Orca Network] Biggs, T65A3 and A5 eastbound then maybe  northbound (Rachel Haight)"
+Orca,2024-04-24 13:25:00-07:00,1.0,48.02584,-122.53413,2,194279,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Rachel Haight)
+Orca,2024-04-24 13:25:00-07:00,1.0,47.91697,-122.6312,4,194277,"[Orca Network] Biggs, members of the T65As (T65A, T65A2, T65A4, T65A6) only T65A2 confirmed so far. Northbound (Mike Maddox)"
+Orca,2024-04-24 12:59:00-07:00,1.0,47.86034,-122.62022,4,194276,"[Orca Network] Biggs, members of the T65As (T65A, T65A2, T65A4, T65A6) only T65A2 confirmed so far. Northbound (Mike Maddox) (ID Mike Maddox) "
+Orca,2024-04-24 12:58:00-07:00,1.0,48.05774,-122.53971,2,194278,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Rachel Haight0 
+Gray Whale,2024-04-24 12:45:00-07:00,1.0,48.12459,-122.52548,2,194267,[Orca Network] Containing northbound travels.  (Serena Tierra)
+Orca,2024-04-24 12:39:00-07:00,1.0,48.0808,-122.53818,2,194269,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Dan Gulden)
+Orca,2024-04-24 12:22:00-07:00,1.0,47.82787,-122.66984,3,194265,"[Orca Network] Biggs, at least 3. still here, moved to more mid channel (Delaney Russell)"
+Gray Whale,2024-04-24 12:16:00-07:00,1.0,48.11462,-122.52428,2,194262,[Orca Network] Northbound (Serena Tierra)
+Gray Whale,2024-04-24 12:01:00-07:00,1.0,48.10608,-122.48994,2,194257,[Orca Network] Northbound (Serena Tierra) 
+Orca,2024-04-24 12:00:00-07:00,1.0,47.82914,-122.67465,3,194261,"[Orca Network] Biggs, at least 3. Moving northbound  super slow and leisurely (Delaney Russell) "
+Orca,2024-04-24 11:45:00-07:00,1.0,48.09774,-122.55567,2,194272,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Joan Haines) 
+Orca,2024-04-24 11:36:00-07:00,1.0,48.66993,-122.74792,6,194250,[Orca Network] At least 6 Biggs including 2 males and juvenile northbound   (Rose Caitlin) 
+Orca,2024-04-24 11:35:00-07:00,1.0,48.13017,-122.54948,2,194249,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Aaron Gill) (ID Alisa Lemire Brooks) 
+Gray Whale,2024-04-24 11:33:00-07:00,1.0,48.07131,-122.44176,2,194252,[Orca Network] At least 2 grays milling.  (Serena Tierra)
+Orca,2024-04-24 11:31:00-07:00,1.0,48.68538,-122.78756,6,194251,"[Orca Network] northwestbound, group includes 2 males and a young one (Rose Caitlin)"
+Orca,2024-04-24 11:26:00-07:00,1.0,48.15368,-122.56295,2,194253,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Aaron Gill) (ID Alisa Lemire Brooks)
+Gray Whale,2024-04-24 11:11:00-07:00,1.0,48.07303,-122.44296,1,194248,"[Orca Network] Viewing from distance, whale appears southbound (Serena Tierra) "
+Orca,2024-04-24 10:25:00-07:00,1.0,48.6591,-122.72826,3,194247,"[Orca Network] At least 3, including possible male. Hunting (Megahn McMahan)"
+Orca,2024-04-24 09:53:00-07:00,1.0,47.74324,-122.74165,2,194245,"[Orca network] Biggs, at least 2 fem/juv, presumably members of the T65As, northbound passing by sub base per husband  (Crystal Mae Jackway) "
+Orca,2024-04-23 23:50:00-07:00,1.0,48.53914,-123.01184,2,194268,[WSSJI] blows heard and recorded in FB video (Frank Stucki)
+Orca,2024-04-23 20:17:00-07:00,1.0,48.57211,-122.89872,2,194229,[Orca network] 2 orca moving west in the northern portion of Upright Channel (WSF) 
+Orca,2024-04-23 20:00:00-07:00,1.0,48.58759,-122.91047,2,194255,"[WSSJI] Biggs, milling based on video from ferry, T49C and T49A2 (Michelle Benson, ID by Ellie Sawyer) "
+Orca,2024-04-23 19:27:00-07:00,1.0,48.58328,-122.8933,2,194254,"[WSSJI] Biggs, westbound, T49C and T49A2, who were traveling together earlier today around Crane - an uncle and nephew (Mariann Carrasco, ID by Ellie Sawyer) "
+Orca,2024-04-23 18:00:00-07:00,1.0,47.56941,-122.62042,1,194227,"[Orca Network] Probable T65A3 southeastbound, headed towards Bachmann Park (Mike Maddox)"
+Orca,2024-04-23 17:38:00-07:00,1.0,47.58114,-122.64251,1,194230,[Orca Network] T65A3 Amira traveling SE (Linda Weinacker) (ID Jami Cantrell) 
+Orca,2024-04-23 17:23:00-07:00,1.0,47.95457,-122.29292,3,194225,"[Orca Network] Orcas close to shore, breaching, splashing (Robyn Lynn)"
+Orca,2024-04-23 16:00:00-07:00,1.0,48.58384,-123.02222,2,194275,"[WSSJI] T49C and T49A2, northbound (J2 AIS track, IDs from Monika)"
 Orca,2024-04-23 15:55:00-07:00,1.0,47.56007,-122.61453,1,194221,[Orca Network] lone bull traveling  SW (Ashley Thomsen)
+Orca,2024-04-23 15:31:00-07:00,1.0,48.56442,-123.00591,2,194274,"[WSSJI] T49C and T49A2, northbound (J2 AIs track, IDs from Monika)"
+Orca,2024-04-23 15:25:00-07:00,1.0,48.55601,-122.99493,2,194273,"[WSSJI] T49C and T49A2, northbound (Bryn Black, IDs from Monika)"
+Orca,2024-04-23 14:15:00-07:00,1.0,48.45633,-122.95433,2,194271,"[WSSJI] 1 adult male, 1 other, northbound, later IDed as T49C and T49A2 (husband of Val Frease, Janelle Colleran-Owens, IDs from Monika)"
 Orca,2024-04-23 14:08:00-07:00,1.0,47.58519,-122.53498,1,194214,[Orca Network] Orca following Bainbridge coast from Restoration Point to Fort Ward (Mariah Vicary)
-Unspecified,2024-04-23 12:10:00-07:00,1.0,47.31006,-122.55356,1,194207,"[Orca Network] Gray or humpback. Reported as just floating, possibly logging (Deshea Hanson)"
-Orca,2024-04-23 12:10:00-07:00,1.0,48.047,-122.39728,1,194208,[Orca Network] At least one orca northbound slowly (Katie Davis Watkins)
-Orca,2024-04-23 11:21:00-07:00,1.0,48.05298,-122.62838,6,194196,"[Orca Network] Biggs, southbound moving towards Whidbey side (Rebecca Berger)"
-Orca,2024-04-23 10:51:00-07:00,1.0,48.03446,-122.65258,6,194193,"[Orca Network] Biggs, southbound towards south end of Marrowstone (Rebecca Berger)"
-Orca,2024-04-23 10:40:00-07:00,1.0,48.06384,-122.66151,6,194191,"[Orca Network] Biggs, southbound (Rebecca Berger)"
-Orca,2024-04-23 10:27:00-07:00,1.0,48.10833,-122.66288,6,194189,"[Orca Network] Biggs, numbers approx, at least one male in there, headed slowly south. May be spread out (Rebecca Berger)"
-Orca,2024-04-23 10:20:00-07:00,1.0,47.96984,-122.34274,3,194198,[Orca Network] appear to be circling gray whale (WSF)
-Orca,2024-04-23 10:00:00-07:00,1.0,48.11063,-122.67318,6,194186,"[Orca Network] facing north, numbers approximate (Rebecca Berger)"
-Gray Whale,2024-04-23 09:48:00-07:00,1.0,47.97558,-122.33003,1,194199,[Orca Network] heading towards Gedney Island (WSF)
-Orca,2024-04-23 09:23:00-07:00,1.0,47.73561,-122.51319,1,194185,"[Orca Network] at least one, possibly two, milling, circling, maybe feeding (Gregory)"
-Orca,2024-04-23 09:00:00-07:00,1.0,48.13515,-122.72845,2,194183,"[Orca Network] heading north, then east/southeast (Christopher Lewman)"
-Orca,2024-04-23 08:17:00-07:00,1.0,48.09339,-122.74189,2,194178,[Orca Network] relayed sighting of at least two orcas (Trevor Tillman) 
