@@ -19,10 +19,10 @@ import chart_studio.plotly as py
 
 # PLOTLY TOKENS
 #* DIRECT SECRETS IMPORT
-# from data.hidden import PLOTLY_TOKEN
-# plotly_token = PLOTLY_TOKEN
+from data.hidden import PLOTLY_TOKEN
+plotly_token = PLOTLY_TOKEN
 #* ENV SECRETS IMPORT
-plotly_token = str(os.environ.get('PLOTLY_TOKEN'))
+# plotly_token = str(os.environ.get('PLOTLY_TOKEN'))
 
 # MAPBOX TOKENS
 #* DIRECT SECRETS IMPORT
