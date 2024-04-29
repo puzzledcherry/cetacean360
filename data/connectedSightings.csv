@@ -1,32 +1,11 @@
 id,type,created,lat,lon,no_sighted,comment,recent
-0,Orca,2024-04-25 10:45:00-07:00,48.15311,-122.56721,2,[Orca Network] Biggs T65A3 Amira/a and T65A5 Indy southbound (Aaron Gill) (ID Alisa Lemire Brooks ,1
-1,Orca,2024-04-25 06:57:00-07:00,47.8627,-122.62367,2,"[Orca Network] Southbound, possibly hunting. Reported as at Hood Canal Bridge, exact location not provided (Joshua Grady) ",1
-2,Orca,2024-04-24 19:16:00-07:00,47.88945,-122.39847,2,"[Orca Network] Biggs, T65A3 and T65A5 looked to be southbound towards Edmonds ferry lanes (Candace Gavin)",1
-2,Orca,2024-04-24 19:00:00-07:00,47.90326,-122.37307,2,"[Orca Network] Biggs, T65A3 and A5, trending west (Rachel Haight)",0
-2,Orca,2024-04-24 18:40:00-07:00,47.91569,-122.36448,2,"[Orca Network] Biggs, T65A3 and A5 southbound (Rachel Haight)",0
-2,Orca,2024-04-24 18:20:00-07:00,47.9472,-122.34457,2,"[Orca Network] Biggs, T65A3 and A5 southbound (Rachel Haight, Marilyn Armbruster)",0
-2,Orca,2024-04-24 18:04:00-07:00,47.96847,-122.34045,2,"[Orca Network] T65A3 and A5 southbound (Natalie Scantlen, Rachel Haight)",0
-2,Orca,2024-04-24 17:55:00-07:00,47.9787,-122.33375,2,[Orca Network] Biggs T65A3 and A5 southbound (Sandy Pollard),0
-2,Orca,2024-04-24 17:44:00-07:00,47.98852,-122.34414,2,[Orca Network] Biggs T65A3 and A5 southbound (Rachel Haight),0
-2,Orca,2024-04-24 17:10:00-07:00,48.02619,-122.36027,2,"[Orca Network] Biggs, T65A3 and T65A5 southbound (Rachel Haight)",0
-2,Orca,2024-04-24 16:56:00-07:00,48.04502,-122.3946,2,"[Orca Network] Biggs T65A3 and A5 southbound (April Basham, Rachel Haight)",0
-2,Orca,2024-04-24 16:43:00-07:00,48.05661,-122.41481,2,"[Orca Network] biggs, T65A3 and A5 southbound (Freesia Krogstad)",0
-2,Orca,2024-04-24 15:55:00-07:00,48.06178,-122.44399,2,"[Orca Network] Biggs, T65A3 and A5 southbound (Rachel Haight)",0
-2,Orca,2024-04-24 15:20:00-07:00,48.09974,-122.48571,2,"[Orca Network] Biggs, T65A3 and A5 slowly trend south (Rachel Haight)",0
-3,Orca,2024-04-24 15:45:00-07:00,48.55914,-122.99389,5,"[WSSJI] Biggs, southbound, T36As (Monika Wieland Shields)",1
-4,Orca,2024-04-24 15:10:00-07:00,48.65465,-122.7367,4,"[Orca Network] Biggs, at least four and may include members of T36As and/or T65Bs (Rose Caitlin) (ID Brooke Cassanova)",1
-5,Orca,2024-04-24 13:35:49-07:00,48.0228658749,-122.529598273,2,,1
-5,Orca,2024-04-24 13:33:00-07:00,48.01783,-122.53081,2,"[Orca Network] Biggs, T65A3 and A5 eastbound then maybe  northbound (Rachel Haight)",0
-5,Orca,2024-04-24 13:25:00-07:00,48.02584,-122.53413,2,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Rachel Haight),0
-5,Orca,2024-04-24 12:58:00-07:00,48.05774,-122.53971,2,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Rachel Haight0 ,0
-5,Orca,2024-04-24 12:39:00-07:00,48.0808,-122.53818,2,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Dan Gulden),0
-5,Orca,2024-04-24 11:45:00-07:00,48.09774,-122.55567,2,[Orca Network] Biggs brothers T65A3 Amira and T65A5 Indy southbound (Joan Haines) ,0
-6,Orca,2024-04-24 13:25:00-07:00,47.91697,-122.6312,4,"[Orca Network] Biggs, members of the T65As (T65A, T65A2, T65A4, T65A6) only T65A2 confirmed so far. Northbound (Mike Maddox)",1
-6,Orca,2024-04-24 12:59:00-07:00,47.86034,-122.62022,4,"[Orca Network] Biggs, members of the T65As (T65A, T65A2, T65A4, T65A6) only T65A2 confirmed so far. Northbound (Mike Maddox) (ID Mike Maddox) ",0
-6,Orca,2024-04-24 12:22:00-07:00,47.82787,-122.66984,3,"[Orca Network] Biggs, at least 3. still here, moved to more mid channel (Delaney Russell)",0
-6,Orca,2024-04-24 12:00:00-07:00,47.82914,-122.67465,3,"[Orca Network] Biggs, at least 3. Moving northbound  super slow and leisurely (Delaney Russell) ",0
-7,Gray Whale,2024-04-24 14:24:00-07:00,48.68314,-122.62522,1,[Orca Network] visible in same area multiple times (Silver Hubble),1
-8,Gray Whale,2024-04-24 12:45:00-07:00,48.12459,-122.52548,2,[Orca Network] Containing northbound travels.  (Serena Tierra),1
-8,Gray Whale,2024-04-24 12:23:23-07:00,48.1154092763,-122.513872151,1,,0
-8,Gray Whale,2024-04-24 12:16:00-07:00,48.11462,-122.52428,2,[Orca Network] Northbound (Serena Tierra),0
-8,Gray Whale,2024-04-24 12:01:00-07:00,48.10608,-122.48994,2,[Orca Network] Northbound (Serena Tierra) ,0
+0,Gray Whale,2024-04-29 09:00:00-07:00,48.14896,-122.55833,1,[Orca Network] feeding (Aaron Gill) ,1
+1,Gray Whale,2024-04-28 11:55:00-07:00,48.11368,-122.49111,1,[Orca Network] Gray whale westbound (Brittany Windsor),1
+2,Gray Whale,2024-04-28 10:15:00-07:00,48.0207,-122.26229,1,[Orca Network] Gray blows (Marilyn Armbruster),1
+3,Orca,2024-04-28 18:50:00-07:00,48.0441,-122.53312,2,[Orca Network] Biggs T65A3 and T65A5 northbound with some surface activity (Sandy Pollard),1
+3,Orca,2024-04-28 18:01:00-07:00,48.02848,-122.52732,2,"[Orca Network] 2 orcas, no direction of travel given (Cindi Bowen)",0
+4,Orca,2024-04-28 16:42:00-07:00,48.00788,-122.23917,2,[Orca Network] Biggs T65A3 and T65A5 southbound (Lauren McManus),1
+5,Orca,2024-04-28 16:05:00-07:00,48.09502,-122.53576,2,[Orca Network] At least two orcas southbound (Martha Poppy Sinclair),1
+6,Orca,2024-04-28 15:20:00-07:00,48.36306,-123.3666,2,"[Orca Network] Two small orcas seen from Coho heading to Victoria, no direction of travel given (Therese Heublein)",1
+7,Orca,2024-04-28 14:09:00-07:00,48.08805,-122.42592,2,"[Orca Network] Biggs southbound, possibly hunting (Debbie Eliasen)",1
+8,Southern Resident Orca,2024-04-28 14:47:00-07:00,48.50959,-123.15465,25,"[Orca Network] J pod northbound, visible on LK webcam (Marla Smith)",1
