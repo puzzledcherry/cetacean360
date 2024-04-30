@@ -9,15 +9,15 @@ jobs:
         runs-on: ubuntu-latest
         
         steps:
-        - name: check code
+        - name: Checking Out Repo
           uses: actions/checkout@v2
 
-        - name: set up python
+        - name: Set Up Workflow
           uses: actions/setup-python@v2
           with:
             python-version: '3.x'
 
-        - name: install dependencies
+        - name: Install Dependencies
           run: |
             pip install pandas
             pip install plotly
@@ -25,7 +25,7 @@ jobs:
             pip install requests
             pip install datetime
         
-        - name: run c360
+        - name: Run C360
           env: 
             TOKEN: ${{ secrets.TOKEN }} 
             MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
