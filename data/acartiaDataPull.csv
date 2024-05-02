@@ -1,11 +1,15 @@
 type,created,trusted,latitude,longitude,no_sighted,data_source_id,data_source_comments
-Gray Whale,2024-04-29 09:00:00-07:00,1.0,48.14896,-122.55833,1,194518,[Orca Network] feeding (Aaron Gill) 
-Orca,2024-04-28 18:50:00-07:00,1.0,48.0441,-122.53312,2,194465,[Orca Network] Biggs T65A3 and T65A5 northbound with some surface activity (Sandy Pollard)
-Orca,2024-04-28 18:01:00-07:00,1.0,48.02848,-122.52732,2,194460,"[Orca Network] 2 orcas, no direction of travel given (Cindi Bowen)"
-Orca,2024-04-28 16:42:00-07:00,1.0,48.00788,-122.23917,2,194479,[Orca Network] Biggs T65A3 and T65A5 southbound (Lauren McManus)
-Orca,2024-04-28 16:05:00-07:00,1.0,48.09502,-122.53576,2,194461,[Orca Network] At least two orcas southbound (Martha Poppy Sinclair)
-Orca,2024-04-28 15:20:00-07:00,1.0,48.36306,-123.3666,2,194462,"[Orca Network] Two small orcas seen from Coho heading to Victoria, no direction of travel given (Therese Heublein)"
-Southern Resident Orca,2024-04-28 14:47:00-07:00,1.0,48.50959,-123.15465,25,194458,"[Orca Network] J pod northbound, visible on LK webcam (Marla Smith)"
-Orca,2024-04-28 14:09:00-07:00,1.0,48.08805,-122.42592,2,194457,"[Orca Network] Biggs southbound, possibly hunting (Debbie Eliasen)"
-Gray Whale,2024-04-28 11:55:00-07:00,1.0,48.11368,-122.49111,1,194452,[Orca Network] Gray whale westbound (Brittany Windsor)
-Gray Whale,2024-04-28 10:15:00-07:00,1.0,48.0207,-122.26229,1,194443,[Orca Network] Gray blows (Marilyn Armbruster)
+Orca,2024-05-09 17:10:00-07:00,1.0,47.93491,-122.34755,2,194652,[Orca Network] Biggs T65A3/A5 southbound (Andrew Nichols) 
+Orca,2024-05-02 12:40:00-07:00,1.0,47.90354,-122.44191,5,194689,[Orca Network] Biggs T99s drifting east (Donna Green Van Renselaar)
+Unspecified,2024-05-02 12:15:00-07:00,1.0,47.36178,-123.14687,1,194690,"[Orca Network] Possible minke. Brief sighting, direction of travel unknown (Jim Pasola)"
+Orca,2024-05-02 10:53:00-07:00,1.0,47.96034,-122.55659,5,194687,[Orca Network] Biggs T99s southbound (Tony Tilt) (ID Tony Tilt) 
+Gray Whale,2024-05-02 09:05:00-07:00,1.0,47.19874,-122.99449,1,194680,[Orca Network] Eastbound (PS Osborne) 
+Orca,2024-05-02 07:35:00-07:00,1.0,48.07156,-122.63263,2,194672,[Orca Network] reported as 2 males moving southbound quickly. (Jen Gordon) 
+Orca,2024-05-02 06:15:43-07:00,1.0,48.73,-122.67,2,194666,"My husband sent video of orcas he saw while waiting for the ferry at Gooseberry Point.
+"
+Gray Whale,2024-05-01 20:26:57-07:00,1.0,47.58466,-122.52974,1,194657,
+Humpback,2024-05-01 18:55:00-07:00,1.0,47.49012,-122.50167,1,194654,"[Orca Network] reported as humpback but may be gray whale, northbound (Roxane Jackson Johnson)"
+Humpback,2024-05-01 18:50:00-07:00,1.0,47.27555,-122.4282,1,194653,[Orca Network] diving (Jason Cook) 
+Humpback,2024-05-01 17:08:00-07:00,1.0,47.44869,-122.38906,1,194645,[Orca Network]  heading towards Commencement (Greg Brossart) 
+Gray Whale,2024-05-01 15:33:00-07:00,1.0,47.25167,-122.59748,1,194676,[PSWS} eastbound (Laney S) 
+Orca,2024-05-01 14:00:00-07:00,1.0,48.632417,-123.15965,8,194694,"[Orca Network] Biggs milling, hunting. 8 total (2 males), one maybe had a chipped dorsal fin (Michelle Nelson)"
