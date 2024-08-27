@@ -1,11 +1,9 @@
 id,type,created,lat,lon,no_sighted,comment,recent
-0,Gray Whale,2024-04-29 09:00:00-07:00,48.14896,-122.55833,1,[Orca Network] feeding (Aaron Gill) ,1
-1,Gray Whale,2024-04-28 11:55:00-07:00,48.11368,-122.49111,1,[Orca Network] Gray whale westbound (Brittany Windsor),1
-2,Gray Whale,2024-04-28 10:15:00-07:00,48.0207,-122.26229,1,[Orca Network] Gray blows (Marilyn Armbruster),1
-3,Orca,2024-04-28 18:50:00-07:00,48.0441,-122.53312,2,[Orca Network] Biggs T65A3 and T65A5 northbound with some surface activity (Sandy Pollard),1
-3,Orca,2024-04-28 18:01:00-07:00,48.02848,-122.52732,2,"[Orca Network] 2 orcas, no direction of travel given (Cindi Bowen)",0
-4,Orca,2024-04-28 16:42:00-07:00,48.00788,-122.23917,2,[Orca Network] Biggs T65A3 and T65A5 southbound (Lauren McManus),1
-5,Orca,2024-04-28 16:05:00-07:00,48.09502,-122.53576,2,[Orca Network] At least two orcas southbound (Martha Poppy Sinclair),1
-6,Orca,2024-04-28 15:20:00-07:00,48.36306,-123.3666,2,"[Orca Network] Two small orcas seen from Coho heading to Victoria, no direction of travel given (Therese Heublein)",1
-7,Orca,2024-04-28 14:09:00-07:00,48.08805,-122.42592,2,"[Orca Network] Biggs southbound, possibly hunting (Debbie Eliasen)",1
-8,Southern Resident Orca,2024-04-28 14:47:00-07:00,48.50959,-123.15465,25,"[Orca Network] J pod northbound, visible on LK webcam (Marla Smith)",1
+0,Orca,2024-08-26 14:47:00-07:00,48.23246,-122.77914,8,"[Orca Network] Biggs T46s, T124A1, T124Ds northbound (Sarah Geist)",1
+0,Orca,2024-08-26 14:22:00-07:00,48.2027,-122.76378,8,"[Orca Network] Biggs T46s, T124A1, T124Ds spread northbound, some close in to Whidbey (Sarah Geist, Devin Northrup)",0
+0,Orca,2024-08-26 13:47:00-07:00,48.16998,-122.73711,8,"[Orca Network] Biggs T46s, T124A1, T124Ds northbound (Kelly Dawson)",0
+0,Orca,2024-08-26 13:10:00-07:00,48.12756,-122.71098,8,"[Orca Network] Biggs T46s, T124A1, T124Ds northbound (Rachel Haight)",0
+0,Orca,2024-08-26 12:50:00-07:00,48.1091,-122.68355,1,"[Orca Network] Biggs T46s, T124A1, T124Ds northbound (Dan Kalbitz)",0
+0,Orca,2024-08-26 12:04:00-07:00,48.05965,-122.66977,8,"[Orca Network] Biggs T46s, T124A1, T124Ds northbound (Dan Kalbitz)",0
+0,Orca,2024-08-26 11:12:00-07:00,48.01296,-122.6347,8,"[Orca Network] Biggs, T46s, T124Ds and T124A1 north aiming towards Oak Bay (Bart Rulon)",0
+0,Orca,2024-08-26 10:41:00-07:00,47.99137,-122.62509,8,"[Orca Network] Biggs, T46s, T124Ds and T124A1 northwest bound (Bart Rulon) (ID Bart Rulon)",0

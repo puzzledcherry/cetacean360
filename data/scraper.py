@@ -4,6 +4,7 @@
 
 import os
 import csv
+import json
 import requests
 import pandas as pd
 from datetime import datetime, timedelta
@@ -146,7 +147,7 @@ def connectSightings(acartia):
   # call connections2csv, save data structure to CSV
   connections2CSV(connections)
 
-# *save data struct to CSV, assign ID to each individual pod/whale
+# *save data struct to CSV, assign ID to each individual pod/whale, then call toJSON
 def connections2CSV (connections):
   # create destination CSV file
   csv_file = 'data/connectedSightings.csv'
@@ -178,6 +179,65 @@ def connections2CSV (connections):
           # convert to dictionary row, write to csv
           row = {field: getattr(sighting, field) for field in fieldNames}
           writer.writerow(row)
+  
+  # get ready to send to signalK server
+  # toJSON()
+
+# !TO BE USED WITH AIS MAPPING BRANCH OF PROJECT
+# *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
+def toJSON():
+  # convert CSV to a pandasDF
+  df = pd.read_csv("connectedSightings.csv")
+  # convert each row into JSON format
+  signalk_data = df.apply(row2signalk, axis=1).tolist()
+  
+  # save JSON data to a file 
+  with open("signalkSightings.json", "w") as file:
+    json.dump(signalk_data, file, indent=4)
+  
+  # send to the signalK server
+  sendToSignalKServer(signalk_data)
+
+# *send JSON data to signalK server
+def sendToSignalKServer (signalk_data):
+  # signalk URL 
+  url = "http://localhost:3000/signalk/v1/api/vessels/self"
+
+  #loop through each sighting and send it to the server
+  for update in signalk_data:
+    response = requests.post(url, json=update)
+    if response.status_code == 200:
+        print("Data successfully sent to Signal K!")
+    else:
+        print(f"Failed to send data to Signal K: {response.status_code}")
+
+# *convert pandas row into JSON
+def row2signalk(row):
+  return {
+    "context": "environment.sightings.whales",  #! idk what this should be
+    "updates": [
+      {
+        "timestamp": pd.to_datetime(row['created']).isoformat(),
+        "values": [
+          {
+            "path": "environment.sightings.whales", #! idk what this should be
+            "value": {
+              "id": row['id'],
+              "type": row['type'],
+              "latitude": row['lat'],
+              "longitude": row['lon'],
+              "no_sighted": row['no_sighted'],
+              "comment": row['comment'],
+              "recent": row['recent']
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
+  
+  
 
 # start method call chain
 whaleScrape()
