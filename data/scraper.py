@@ -20,7 +20,7 @@ from datetime import datetime, timedelta
 #* ENV SECRETS IMPORT
 token = str(os.environ.get('TOKEN'))
 
-# classes
+# ! classes
 # *object for storing sighting info
 class Sighting:
   def __init__ (self, cetacean_type, created, lat, lon, no_sighted, comment):
@@ -34,7 +34,7 @@ class Sighting:
     # most recent sighting of this pod = 1; not most recent = 0
     self.recent = 0
 
-# method defs
+# ! method defs
 # *scrape and clean acartia API pull, save to CSV and call connectSightings
 def whaleScrape (): 
   
@@ -183,7 +183,7 @@ def connections2CSV (connections):
   # get ready to send to signalK server
   # toJSON()
 
-# !TO BE USED WITH AIS MAPPING BRANCH OF PROJECT
+# ! to be used with AIS integration layer
 # *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
 def toJSON():
   # convert CSV to a pandasDF
@@ -204,8 +204,8 @@ def sendToSignalKServer (signalk_data):
   url = "http://localhost:3000/signalk/v1/api/vessels/self"
 
   #loop through each sighting and send it to the server
-  for update in signalk_data:
-    response = requests.post(url, json=update)
+  for sighting in signalk_data:
+    response = requests.post(url, json=sighting)
     if response.status_code == 200:
         print("Data successfully sent to Signal K!")
     else:
@@ -236,8 +236,5 @@ def row2signalk(row):
     ]
   }
   
-  
-  
-
 # start method call chain
 whaleScrape()
