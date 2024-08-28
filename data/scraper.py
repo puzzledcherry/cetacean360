@@ -15,10 +15,10 @@ from datetime import datetime, timedelta
 # should match the secret type of app.py
 
 #* DIRECT SECRETS IMPORT
-# from data.hidden import TOKEN
-# token = TOKEN
+from data.hidden import TOKEN
+token = TOKEN
 #* ENV SECRETS IMPORT
-token = str(os.environ.get('TOKEN'))
+# token = str(os.environ.get('TOKEN'))
 
 # ! classes
 # *object for storing sighting info
@@ -181,22 +181,22 @@ def connections2CSV (connections):
           writer.writerow(row)
   
   # get ready to send to signalK server
-  # toJSON()
+  toJSON()
 
 # ! to be used with AIS integration layer
 # *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
 def toJSON():
   # convert CSV to a pandasDF
-  df = pd.read_csv("connectedSightings.csv")
+  df = pd.read_csv("data/connectedSightings.csv")
   # convert each row into JSON format
   signalk_data = df.apply(row2signalk, axis=1).tolist()
   
   # save JSON data to a file 
-  with open("signalkSightings.json", "w") as file:
+  with open("data/signalkSightings.json", "w") as file:
     json.dump(signalk_data, file, indent=4)
   
   # send to the signalK server
-  sendToSignalKServer(signalk_data)
+  # sendToSignalKServer(signalk_data)
 
 # *send JSON data to signalK server
 def sendToSignalKServer (signalk_data):
