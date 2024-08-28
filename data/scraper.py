@@ -36,7 +36,7 @@ class Sighting:
 
 # ! method defs
 # *scrape and clean acartia API pull, save to CSV and call connectSightings
-def whaleScrape (): 
+def whaleScrape ():
   
   # acartia API call, provide token and get JSON back
   url='https://acartia.io/api/v1/sightings/'
@@ -185,42 +185,28 @@ def connections2CSV (connections):
 
 # ! to be used with AIS integration layer
 # *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
-def toJSON():
-  # convert CSV to a pandasDF
-  df = pd.read_csv("data/connectedSightings.csv")
-  # convert each row into JSON format
-  signalk_data = df.apply(row2signalk, axis=1).tolist()
-  
-  # save JSON data to a file 
-  with open("data/signalkSightings.json", "w") as file:
-    json.dump(signalk_data, file, indent=4)
-  
-  # send to the signalK server
-  # sendToSignalKServer(signalk_data)
+def toNDJSON():
+    # convert csv to pandas df
+    df = pd.read_csv("data/connectedSightings.csv")
+    # convert each pandas data row into JSON
+    signalk_data = df.apply(row2signalk, axis=1).tolist()
 
-# *send JSON data to signalK server
-def sendToSignalKServer (signalk_data):
-  # signalk URL 
-  url = "http://localhost:3000/signalk/v1/api/vessels/self"
-
-  #loop through each sighting and send it to the server
-  for sighting in signalk_data:
-    response = requests.post(url, json=sighting)
-    if response.status_code == 200:
-        print("Data successfully sent to Signal K!")
-    else:
-        print(f"Failed to send data to Signal K: {response.status_code}")
+    # save as NDJSON to file
+    with open('data/signalkSightings.ndjson', 'w') as f:
+      # for each json object, write on a line of the file
+      for json_obj in signalk_data:
+        f.write(json.dumps(json_obj) + '\n')
 
 # *convert pandas row into JSON
 def row2signalk(row):
   return {
-    "context": "environment.sightings.whales",  #! idk what this should be
+    "context": "environment.sightings.whales",
     "updates": [
       {
         "timestamp": pd.to_datetime(row['created']).isoformat(),
         "values": [
           {
-            "path": "environment.sightings.whales", #! idk what this should be
+            "path": "environment.sightings.whales",
             "value": {
               "id": row['id'],
               "type": row['type'],
@@ -235,6 +221,7 @@ def row2signalk(row):
       }
     ]
   }
-  
+
 # start method call chain
-whaleScrape()
+# whaleScrape()
+toNDJSON()
