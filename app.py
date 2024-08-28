@@ -40,7 +40,9 @@ chart_studio.tools.set_config_file(world_readable = True, sharing = 'public')
 # run the scraper
 import data.scraper
 
-# loading csv file into a pandas dataframe object
+"""
+
+# loading csv file into a pandas data frame object
 def readCSV(csvFilePath):
     try:
         dataFrameObject = pd.read_csv(csvFilePath)
@@ -79,7 +81,7 @@ def normalizeTimeDiff(sighting_time):
     # returning corresponding normalized decimal
     return normalized_time
 
-# quantizing normalized time differences onto transparency scale 
+# quantizing normalized time differences onto transparency scale
 def applyTransScale(normalized_time):
     if (normalized_time <= 0.20):
         return 0.20
@@ -98,7 +100,7 @@ def createMap():
     connectedDF = readCSV('data/connectedSightings.csv')
     mostRecentDF = connectedDF[connectedDF['recent'] == 1]
     fig = go.Figure()
-    
+
     # creating actual map
     # define map visual specs, style zoom & default center
     fig.update_layout(
@@ -122,7 +124,7 @@ def createMap():
         # save curr and next sighting
         current_row = connectedDF.iloc[sighting]
         next_row = connectedDF.iloc[sighting + 1]
-        
+
         # if the ids match, connect with a line
         if (current_row['id'] == next_row['id']):
             fig.add_trace(
@@ -133,17 +135,17 @@ def createMap():
                     line = dict(width = 1, color = 'limegreen'),
                 )
             )
-    
+
     # calculate normalized values of times, invert for opacity
     # now, new sightings will be closer to 1 and old sightings closer to 0
     connectedDF['created'] = pd.to_datetime(connectedDF['created'], errors='coerce')
     connectedDF['time_diff'] = [normalizeTimeDiff(df) for df in connectedDF['created']]
     connectedDF['time_diff'] = (1 - connectedDF['time_diff'])
     connectedDF['time_diff'] = [applyTransScale(df) for df in connectedDF['time_diff']]
-    
+
     # creating hover text
     # create text for each row of the acartia data frame
-    hover_text = connectedDF.apply(lambda row: 
+    hover_text = connectedDF.apply(lambda row:
         f"{limitLineWidth(row['type'])}<br>"
         f"{limitLineWidth('Count: ' + str(row['no_sighted']))}<br>"
         f"{limitLineWidth('Created: ' + str(row['created']))}<br>"
@@ -153,7 +155,7 @@ def createMap():
         f"<br>"
         f"Data aggregated by Acartia",
         axis = 1)
-    
+
     # creating sighting dots
     # add dots for each sighting on the map, include hover info
     fig.add_trace(
@@ -163,27 +165,30 @@ def createMap():
             lat = connectedDF['lat'],
             marker = dict(
                 symbol = 'circle',
-                size = 15, 
+                size = 15,
                 color = 'blue',
                 opacity = connectedDF['time_diff']),
-            
+
             hoverinfo = 'text',
             text = hover_text,
-            
+
             hoverlabel = dict (
                 bgcolor = 'blue',
                 align = 'left',
             )
         )
     )
-    
+
     # upload to plotly cloud
     fig.update_layout(showlegend = False)
     py.plot(fig, filename = 'whale-connections', auto_open = False)
-    
+
     # return the created map with lines and hovers and dots
     return fig
-    
+
+
 # to run the program
 if __name__ == '__main__':
     createMap()
+
+"""
