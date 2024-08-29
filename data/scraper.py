@@ -192,10 +192,10 @@ def toNDJSON():
     signalk_data = df.apply(row2signalk, axis=1).tolist()
 
     # save as NDJSON to file
-    with open('data/signalkSightings.ndjson', 'w') as f:
-      # for each json object, write on a line of the file
-      for json_obj in signalk_data:
-        f.write(json.dumps(json_obj) + '\n')
+    with open('data/signalkSightings.json', 'w') as f:
+        json.dump(signalk_data, f, indent = 4)
+        # for json_obj in signalk_data:
+          # f.write(json.dumps(json_obj) + '\n')
 
 # *convert pandas row into JSON
 def row2signalk(row):
