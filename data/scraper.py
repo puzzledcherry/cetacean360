@@ -181,26 +181,27 @@ def connections2CSV (connections):
           writer.writerow(row)
 
   # get ready to send to signalK server
-  toNDJSON()
+  toJSON()
 
 # ! to be used with AIS integration layer
 # *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
-def toNDJSON():
+def toJSON():
     # convert csv to pandas df
     df = pd.read_csv("data/connectedSightings.csv")
     # convert each pandas data row into JSON
     signalk_data = df.apply(row2signalk, axis=1).tolist()
 
     # save as NDJSON to file
-    with open('data/signalkSightings.json', 'w') as f:
-        json.dump(signalk_data, f, indent = 4)
-        # for json_obj in signalk_data:
-          # f.write(json.dumps(json_obj) + '\n')
+    with open('data/signalkSightings.txt', 'w') as f:
+      for record in signalk_data:
+        json_str = json.dumps(record, indent=4)
+        single_line_json = ' '.join(json_str.split())  # Convert to a single line, keeping indentation
+        f.write(single_line_json + '\n')
 
 # *convert pandas row into JSON
 def row2signalk(row):
   return {
-    "context": "environment.sightings.whales",
+    "context": "vessels.self",
     "updates": [
       {
         "timestamp": pd.to_datetime(row['created']).isoformat(),
@@ -223,6 +224,6 @@ def row2signalk(row):
   }
 
 # start method call chain
-# ! uncommment whalescrape() and remove toNDJSON() call when ready to test on real data pulls
+# ! uncommment whalescrape() and remove toJSON() call when ready to test on real data pulls
 # whaleScrape()
-toNDJSON()
+toJSON()
