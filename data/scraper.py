@@ -199,7 +199,7 @@ def toJSON():
   destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
   shutil.copy("data/signalkSightings.json", destination)
 
-
+# *convert pandas row into signalK resource set
 def toGeoJSON():
   # convert csv to pandas df
   df = pd.read_csv("data/connectedSightings.csv")
@@ -228,7 +228,6 @@ def toGeoJSON():
   destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
   shutil.copy("data/signalkSightings.json", destination)
 
-
 # *convert pandas row into JSON
 def row2signalk(row):
     return {
@@ -245,6 +244,7 @@ def row2signalk(row):
         }
     }
 
+# *convert pandas row into signalK resource set
 def row2feature(row):
     return {
         "type": "Feature",
@@ -261,4 +261,4 @@ def row2feature(row):
 # start method call chain
 # ! uncommment whalescrape() and remove toJSON() call when ready to test on real data pulls
 # whaleScrape()
-toJSON()
+toGeoJSON()
