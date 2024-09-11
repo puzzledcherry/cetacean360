@@ -1,0 +1,130 @@
+[
+    {
+        "name": "Sighting #0",
+        "description": "Whale breaching near ferry",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3493,
+                    47.6205
+                ]
+            },
+            "properties": {}
+        }
+    },
+    {
+        "name": "Sighting #0",
+        "description": "Spotted heading north",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3866,
+                    47.6694
+                ]
+            },
+            "properties": {}
+        }
+    },
+    {
+        "name": "Sighting #1",
+        "description": "Pod spotted near Edmonds",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4092,
+                    47.7511
+                ]
+            },
+            "properties": {}
+        }
+    },
+    {
+        "name": "Sighting #1",
+        "description": "Same pod seen near Everett",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.517,
+                    47.8574
+                ]
+            },
+            "properties": {}
+        }
+    },
+    {
+        "name": "Sighting #2",
+        "description": "Lone whale near Whidbey Island",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.7644,
+                    48.0688
+                ]
+            },
+            "properties": {}
+        }
+    },
+    {
+        "name": "Sighting #3",
+        "description": "Larger pod moving west",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.7607,
+                    48.1239
+                ]
+            },
+            "properties": {}
+        }
+    },
+    {
+        "name": "Sighting #3",
+        "description": "Heading towards San Juan Islands",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6676,
+                    48.2782
+                ]
+            },
+            "properties": {}
+        }
+    },
+    {
+        "name": "Sighting #4",
+        "description": "Near Seattle waterfront",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3307,
+                    47.6235
+                ]
+            },
+            "properties": {}
+        }
+    }
+]
