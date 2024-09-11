@@ -5,6 +5,7 @@
 import os
 import csv
 import json
+import shutil
 import requests
 import pandas as pd
 from datetime import datetime, timedelta
@@ -186,42 +187,76 @@ def connections2CSV (connections):
 # ! to be used with AIS integration layer
 # *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
 def toJSON():
-    # convert csv to pandas df
-    df = pd.read_csv("data/connectedSightings.csv")
-    # convert each pandas data row into JSON
-    signalk_data = df.apply(row2signalk, axis=1).tolist()
+  # convert csv to pandas df
+  df = pd.read_csv("data/connectedSightings.csv")
+  # convert each pandas data row into JSON
+  signalk_data = df.apply(row2signalk, axis=1).tolist()
 
-    # save as NDJSON to file
-    with open('data/signalkSightings.txt', 'w') as f:
-      for record in signalk_data:
-        json_str = json.dumps(record, indent=4)
-        single_line_json = ' '.join(json_str.split())  # Convert to a single line, keeping indentation
-        f.write(single_line_json + '\n')
+  # save as JSON to file
+  with open('data/signalkSightings.json', 'w') as f:
+    json.dump(signalk_data, f, indent=4)
+
+  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
+  shutil.copy("data/signalkSightings.json", destination)
+
+
+def toGeoJSON():
+  # convert csv to pandas df
+  df = pd.read_csv("data/connectedSightings.csv")
+  features = df.apply(row2feature, axis=1).tolist()
+
+  resource_set = {
+    "type": "ResourceSet",
+    "name": "Whale Sightings",
+    "description": "Collection of whale sightings in the area",
+    "styles": {
+        "default": {
+            "width": 2,
+            "stroke": "#0000ff",
+            "fill": "#00ff00"
+        }
+    },
+    "values": {
+        "type": "FeatureCollection",
+        "features": features
+    }
+  }
+
+  with open('data/signalkSightings.json', 'w') as f:
+    json.dump(resource_set, f, indent=4)
+
+  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
+  shutil.copy("data/signalkSightings.json", destination)
+
 
 # *convert pandas row into JSON
 def row2signalk(row):
-  return {
-    "context": "vessels.self",
-    "updates": [
-      {
-        "timestamp": pd.to_datetime(row['created']).isoformat(),
-        "values": [
-          {
-            "path": "environment.sightings.whales",
-            "value": {
-              "id": row['id'],
-              "type": row['type'],
-              "latitude": row['lat'],
-              "longitude": row['lon'],
-              "no_sighted": row['no_sighted'],
-              "comment": row['comment'],
-              "recent": row['recent']
-            }
-          }
-        ]
-      }
-    ]
-  }
+    return {
+        "name": f"Sighting #{row['id']}",
+        "description": row['comment'] if row['comment'] else "No description provided",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [row['lon'], row['lat']]
+            },
+            "properties": {}
+        }
+    }
+
+def row2feature(row):
+    return {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [row['lon'], row['lat']]
+        },
+        "properties": {
+            "name": f"Sighting #{row['id']}",
+            "description": row['comment'] if row['comment'] else "No description provided"
+        }
+    }
 
 # start method call chain
 # ! uncommment whalescrape() and remove toJSON() call when ready to test on real data pulls
