@@ -36,6 +36,7 @@ class Sighting:
     self.recent = 0
 
 # ! method defs
+# ! pulling whale data & cleaning
 # *scrape and clean acartia API pull, save to CSV and call connectSightings
 def whaleScrape ():
 
@@ -185,6 +186,7 @@ def connections2CSV (connections):
   toJSON()
 
 # ! to be used with AIS integration layer
+# ! convert to signalK GeoJSON and save into resource location
 # *convert pandas row into signalK resource set
 def toGeoJSON():
   # convert csv to pandas df
@@ -228,7 +230,7 @@ def row2feature(row):
         }
     }
 
-# *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
+# using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
 '''
 def toJSON():
   # convert csv to pandas df
@@ -244,7 +246,7 @@ def toJSON():
   shutil.copy("data/signalkSightings.json", destination)
 '''
 
-# *convert pandas row into JSON
+# convert pandas row into JSON
 '''
 def row2signalk(row):
     return {
@@ -261,7 +263,6 @@ def row2signalk(row):
         }
     }
 '''
-
 
 # start method call chain
 # ! uncommment whalescrape() and remove toJSON() call when ready to test on real data pulls
