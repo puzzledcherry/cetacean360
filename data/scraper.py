@@ -185,20 +185,6 @@ def connections2CSV (connections):
   toJSON()
 
 # ! to be used with AIS integration layer
-# *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
-def toJSON():
-  # convert csv to pandas df
-  df = pd.read_csv("data/connectedSightings.csv")
-  # convert each pandas data row into JSON
-  signalk_data = df.apply(row2signalk, axis=1).tolist()
-
-  # save as JSON to file
-  with open('data/signalkSightings.json', 'w') as f:
-    json.dump(signalk_data, f, indent=4)
-
-  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
-  shutil.copy("data/signalkSightings.json", destination)
-
 # *convert pandas row into signalK resource set
 def toGeoJSON():
   # convert csv to pandas df
@@ -225,24 +211,8 @@ def toGeoJSON():
   with open('data/signalkSightings.json', 'w') as f:
     json.dump(resource_set, f, indent=4)
 
-  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
+  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\signalkSightings"
   shutil.copy("data/signalkSightings.json", destination)
-
-# *convert pandas row into JSON
-def row2signalk(row):
-    return {
-        "name": f"Sighting #{row['id']}",
-        "description": row['comment'] if row['comment'] else "No description provided",
-        "type": "Whale Sighting",
-        "feature": {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [row['lon'], row['lat']]
-            },
-            "properties": {}
-        }
-    }
 
 # *convert pandas row into signalK resource set
 def row2feature(row):
@@ -257,6 +227,41 @@ def row2feature(row):
             "description": row['comment'] if row['comment'] else "No description provided"
         }
     }
+
+# *using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
+'''
+def toJSON():
+  # convert csv to pandas df
+  df = pd.read_csv("data/connectedSightings.csv")
+  # convert each pandas data row into JSON
+  signalk_data = df.apply(row2signalk, axis=1).tolist()
+
+  # save as JSON to file
+  with open('data/signalkSightings.json', 'w') as f:
+    json.dump(signalk_data, f, indent=4)
+
+  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
+  shutil.copy("data/signalkSightings.json", destination)
+'''
+
+# *convert pandas row into JSON
+'''
+def row2signalk(row):
+    return {
+        "name": f"Sighting #{row['id']}",
+        "description": row['comment'] if row['comment'] else "No description provided",
+        "type": "Whale Sighting",
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [row['lon'], row['lat']]
+            },
+            "properties": {}
+        }
+    }
+'''
+
 
 # start method call chain
 # ! uncommment whalescrape() and remove toJSON() call when ready to test on real data pulls
