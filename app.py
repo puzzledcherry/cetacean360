@@ -2,8 +2,7 @@
 # project name: cetacean 360
 # program name: app.py
 
-# os & pandas imports
-import os
+# imports
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objs as go
@@ -26,21 +25,19 @@ plotly_token = PLOTLY_TOKEN
 
 # MAPBOX TOKENS
 #* DIRECT SECRETS IMPORT
-# from data.hidden import MAPBOX_TOKEN
-# mapbox_token = MAPBOX_TOKEN
+from data.hidden import MAPBOX_TOKEN
+mapbox_token = MAPBOX_TOKEN
 #* ENV SECRETS IMPORT
-mapbox_token = str(os.environ.get('MAPBOX_TOKEN'))
+# mapbox_token = str(os.environ.get('MAPBOX_TOKEN'))
 
 # using tokens, mapbox access
 px.set_mapbox_access_token(mapbox_token)
 # using tokens, chart studio login
-chart_studio.tools.set_credentials_file(username = 'skylatran', api_key = plotly_token)
+chart_studio.tools.set_credentials_file(username = 'skylatran03', api_key = plotly_token)
 chart_studio.tools.set_config_file(world_readable = True, sharing = 'public')
 
 # run the scraper
 import data.scraper
-
-"""
 
 # loading csv file into a pandas data frame object
 def readCSV(csvFilePath):
@@ -186,9 +183,6 @@ def createMap():
     # return the created map with lines and hovers and dots
     return fig
 
-
 # to run the program
 if __name__ == '__main__':
     createMap()
-
-"""

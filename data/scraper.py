@@ -2,10 +2,7 @@
 # project name: cetacean 360
 # program name: scraper.py
 
-import os
 import csv
-import json
-import shutil
 import requests
 import pandas as pd
 from datetime import datetime, timedelta
@@ -21,7 +18,7 @@ token = TOKEN
 #* ENV SECRETS IMPORT
 # token = str(os.environ.get('TOKEN'))
 
-# ! classes
+# ! sightings class
 # *object for storing sighting info
 class Sighting:
   def __init__ (self, cetacean_type, created, lat, lon, no_sighted, comment):
@@ -35,8 +32,7 @@ class Sighting:
     # most recent sighting of this pod = 1; not most recent = 0
     self.recent = 0
 
-# ! method defs
-# ! pulling whale data & cleaning
+# ! method defs, pulling whale data & cleaning
 # *scrape and clean acartia API pull, save to CSV and call connectSightings
 def whaleScrape ():
 
@@ -182,89 +178,5 @@ def connections2CSV (connections):
           row = {field: getattr(sighting, field) for field in fieldNames}
           writer.writerow(row)
 
-  # get ready to send to signalK server
-  toJSON()
-
-# ! to be used with AIS integration layer
-# ! convert to signalK GeoJSON and save into resource location
-# *convert pandas row into signalK resource set
-def toGeoJSON():
-  # convert csv to pandas df
-  df = pd.read_csv("data/connectedSightings.csv")
-  features = df.apply(row2feature, axis=1).tolist()
-
-  resource_set = {
-    "type": "ResourceSet",
-    "name": "Whale Sightings",
-    "description": "Collection of whale sightings in the area",
-    "styles": {
-        "default": {
-            "width": 2,
-            "stroke": "#0000ff",
-            "fill": "#00ff00"
-        }
-    },
-    "values": {
-        "type": "FeatureCollection",
-        "features": features
-    }
-  }
-
-  with open('data/signalkSightings.json', 'w') as f:
-    json.dump(resource_set, f, indent=4)
-
-  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\signalkSightings"
-  shutil.copy("data/signalkSightings.json", destination)
-
-# *convert pandas row into signalK resource set
-def row2feature(row):
-    return {
-        "type": "Feature",
-        "geometry": {
-            "type": "Point",
-            "coordinates": [row['lon'], row['lat']]
-        },
-        "properties": {
-            "name": f"Sighting #{row['id']}",
-            "description": row['comment'] if row['comment'] else "No description provided"
-        }
-    }
-
-# using the connectionsCSV and row2signalk, convert to JSON then call sendToSignalKServer
-'''
-def toJSON():
-  # convert csv to pandas df
-  df = pd.read_csv("data/connectedSightings.csv")
-  # convert each pandas data row into JSON
-  signalk_data = df.apply(row2signalk, axis=1).tolist()
-
-  # save as JSON to file
-  with open('data/signalkSightings.json', 'w') as f:
-    json.dump(signalk_data, f, indent=4)
-
-  destination = r"C:\signalk\signalkhome\.signalk\plugin-config-data\resources-provider\resources\waypoints"
-  shutil.copy("data/signalkSightings.json", destination)
-'''
-
-# convert pandas row into JSON
-'''
-def row2signalk(row):
-    return {
-        "name": f"Sighting #{row['id']}",
-        "description": row['comment'] if row['comment'] else "No description provided",
-        "type": "Whale Sighting",
-        "feature": {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [row['lon'], row['lat']]
-            },
-            "properties": {}
-        }
-    }
-'''
-
 # start method call chain
-# ! uncommment whalescrape() and remove toJSON() call when ready to test on real data pulls
-# whaleScrape()
-toGeoJSON()
+whaleScrape()
